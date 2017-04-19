@@ -1,0 +1,1039 @@
+/*
+Theme Name: Envision Magazine
+Theme URI: https://ag.purdue.edu/envision
+Author: Kenny Wilson, Osmar Lopez
+Author URI: https://ag.purdue.edu/agcomm
+Description: Theme for Envision Magazine
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: envision
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Envision Magazine is created by the theme generator at http://components.underscores.me/, (C) 2015-2016 Automattic, Inc.
+Components is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Accessibility
+# Alignments
+# Clearings
+# Typography
+# Forms
+# Buttons
+# Formatting
+# Lists
+# Tables
+# Navigation
+# Links
+# Layout
+	## Posts
+	## Pages
+# Comments
+# Widgets
+# Infinite scroll
+# Media
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 7, ../sass/shared/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 11, ../sass/shared/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 26, ../sass/shared/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 34, ../sass/shared/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 39, ../sass/shared/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 44, ../sass/shared/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 48, ../sass/shared/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 53, ../sass/shared/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 57, ../sass/shared/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 62, ../sass/shared/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 66, ../sass/shared/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 71, ../sass/shared/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 76, ../sass/shared/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 80, ../sass/shared/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 88, ../sass/shared/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 92, ../sass/shared/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 96, ../sass/shared/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 100, ../sass/shared/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 104, ../sass/shared/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 108, ../sass/shared/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 113, ../sass/shared/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 117, ../sass/shared/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 125, ../sass/shared/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 135, ../sass/shared/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 139, ../sass/shared/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 144, ../sass/shared/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 152, ../sass/shared/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 157, ../sass/shared/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 163, ../sass/shared/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/* line 167, ../sass/shared/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 173, ../sass/shared/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 178, ../sass/shared/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 183, ../sass/shared/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 188, ../sass/shared/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 194, ../sass/shared/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 199, ../sass/shared/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 203, ../sass/shared/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 207, ../sass/shared/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 212, ../sass/shared/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+/* line 2, ../sass/shared/_accessibility.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/* line 9, ../sass/shared/_accessibility.scss */
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+/* line 30, ../sass/shared/_accessibility.scss */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_alignments.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+/* line 7, ../sass/shared/_alignments.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+/* line 13, ../sass/shared/_alignments.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_clearings.scss */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+/* line 16, ../sass/shared/_clearings.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_typography.scss */
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* line 12, ../sass/shared/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+/* line 16, ../sass/shared/_typography.scss */
+p {
+  margin-bottom: 1.5em;
+}
+
+/* line 20, ../sass/shared/_typography.scss */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 24, ../sass/shared/_typography.scss */
+blockquote {
+  margin: 0 1.5em;
+}
+
+/* line 28, ../sass/shared/_typography.scss */
+address {
+  margin: 0 0 1.5em;
+}
+
+/* line 32, ../sass/shared/_typography.scss */
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+/* line 43, ../sass/shared/_typography.scss */
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+/* line 48, ../sass/shared/_typography.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+/* line 53, ../sass/shared/_typography.scss */
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+/* line 58, ../sass/shared/_typography.scss */
+big {
+  font-size: 125%;
+}
+
+/* line 62, ../sass/shared/_typography.scss */
+blockquote, q {
+  quotes: "" "";
+}
+/* line 65, ../sass/shared/_typography.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_forms.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+/* line 21, ../sass/shared/_forms.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: #111;
+}
+
+/* line 26, ../sass/shared/_forms.scss */
+select {
+  border: 1px solid #ccc;
+}
+
+/* line 30, ../sass/shared/_forms.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
+  padding: 3px;
+}
+
+/* line 48, ../sass/shared/_forms.scss */
+textarea {
+  padding-left: 3px;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_buttons.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+/* line 16, ../sass/shared/_buttons.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+/* line 21, ../sass/shared/_buttons.scss */
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: #aaa #bbb #bbb;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/*--------------------------------------------------------------
+# Formattings
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_formatting.scss */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Lists
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_lists.scss */
+ul, ol {
+  margin: 0 0 1.5em 3em;
+}
+
+/* line 5, ../sass/shared/_lists.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 9, ../sass/shared/_lists.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 13, ../sass/shared/_lists.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+/* line 19, ../sass/shared/_lists.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 23, ../sass/shared/_lists.scss */
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_tables.scss */
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/* line 1, ../sass/components/_navigation-top.scss */
+.main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 7, ../sass/components/_navigation-top.scss */
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+/* line 13, ../sass/components/_navigation-top.scss */
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 1.5em;
+  left: -999em;
+  z-index: 99999;
+}
+/* line 21, ../sass/components/_navigation-top.scss */
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+/* line 27, ../sass/components/_navigation-top.scss */
+.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+/* line 33, ../sass/components/_navigation-top.scss */
+.main-navigation ul ul a {
+  width: 200px;
+}
+/* line 46, ../sass/components/_navigation-top.scss */
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+/* line 52, ../sass/components/_navigation-top.scss */
+.main-navigation li {
+  float: left;
+  position: relative;
+}
+/* line 61, ../sass/components/_navigation-top.scss */
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Small menu. */
+/* line 74, ../sass/components/_navigation-top.scss */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+/* line 79, ../sass/components/_navigation-top.scss */
+.menu-toggle:before {
+  content: "\2630";
+  display: inline-block;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 37.5em) {
+  /* line 86, ../sass/components/_navigation-top.scss */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* line 89, ../sass/components/_navigation-top.scss */
+  .main-navigation ul {
+    display: block;
+  }
+}
+/* line 7, ../sass/shared/_navigation.scss */
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+/* line 12, ../sass/shared/_navigation.scss */
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+/* line 17, ../sass/shared/_navigation.scss */
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_links.scss */
+a {
+  color: royalblue;
+}
+/* line 4, ../sass/shared/_links.scss */
+a:visited {
+  color: purple;
+}
+/* line 7, ../sass/shared/_links.scss */
+a:hover, a:focus, a:active {
+  color: midnightblue;
+}
+/* line 12, ../sass/shared/_links.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 15, ../sass/shared/_links.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/* line 1, ../sass/layout/_layout.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/layout/_layout.scss */
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+/* line 11, ../sass/layout/_layout.scss */
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+/* line 1, ../sass/layout/_content-sidebar-sidebar.scss */
+.content-area {
+  float: left;
+  width: 100%;
+}
+
+/* line 5, ../sass/layout/_content-sidebar-sidebar.scss */
+.site-main {
+  margin: 0 50% 0 0;
+}
+
+/* line 8, ../sass/layout/_content-sidebar-sidebar.scss */
+.site-content .widget-area {
+  float: left;
+  margin: 0 0 0 -50%;
+  overflow: hidden;
+  width: 25%;
+}
+
+/* line 14, ../sass/layout/_content-sidebar-sidebar.scss */
+.site-content #tertiary.widget-area {
+  margin: 0 0 0 -25%;
+}
+
+/* line 17, ../sass/layout/_content-sidebar-sidebar.scss */
+.site-footer {
+  clear: both;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Posts
+--------------------------------------------------------------*/
+/* line 1, ../sass/layout/_posts.scss */
+.sticky {
+  display: block;
+}
+
+/* line 5, ../sass/layout/_posts.scss */
+.hentry {
+  margin: 0 0 1.5em;
+}
+
+/* line 9, ../sass/layout/_posts.scss */
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 14, ../sass/layout/_posts.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+/* line 19, ../sass/layout/_posts.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+/*--------------------------------------------------------------
+## Pages
+--------------------------------------------------------------*/
+/* line 1, ../sass/layout/_pages.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+/* line 1, ../sass/sections/_comments.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* line 4, ../sass/sections/_comments.scss */
+.bypostauthor {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/* line 1, ../sass/sections/_widgets.scss */
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+}
+/* line 5, ../sass/sections/_widgets.scss */
+.widget select {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 2, ../sass/shared/_infinitescroll.scss */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+/* line 8, ../sass/shared/_infinitescroll.scss */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_media.scss */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+/* line 6, ../sass/shared/_media.scss */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+/* line 16, ../sass/shared/_media.scss */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* line 22, ../sass/shared/_media.scss */
+.wp-caption {
+  margin: 1em 0 1.5em;
+  max-width: 100%;
+}
+/* line 26, ../sass/shared/_media.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 30, ../sass/shared/_media.scss */
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+/* Ensure center-aligned captions center-align properly. */
+/* line 36, ../sass/shared/_media.scss */
+.wp-caption.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Give some padding to floated elements, to prevent them butting up against text. */
+/* line 42, ../sass/shared/_media.scss */
+.wp-caption.alignleft {
+  margin-right: 20px;
+}
+
+/* line 46, ../sass/shared/_media.scss */
+.wp-caption.alignright {
+  margin-left: 20px;
+}
+
+/* line 50, ../sass/shared/_media.scss */
+.wp-caption-text {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+/* line 1, ../sass/shared/_galleries.scss */
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+/* line 5, ../sass/shared/_galleries.scss */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+/* line 11, ../sass/shared/_galleries.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+/* line 15, ../sass/shared/_galleries.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+/* line 19, ../sass/shared/_galleries.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+/* line 23, ../sass/shared/_galleries.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+/* line 27, ../sass/shared/_galleries.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+/* line 31, ../sass/shared/_galleries.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+/* line 35, ../sass/shared/_galleries.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+/* line 39, ../sass/shared/_galleries.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+/* line 44, ../sass/shared/_galleries.scss */
+.gallery-caption {
+  display: block;
+}

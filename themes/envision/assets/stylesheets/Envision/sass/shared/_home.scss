@@ -1,0 +1,102 @@
+.navbar-transparent {
+  background-color: rgba(0,0,0,.3);
+  border: none !important;
+  height: 120px;
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.navbar-top-seriously {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.landing {
+  background-image: url("/envision/wp-content/uploads/2017/04/mag-bg.jpg");
+  min-height: 60vh;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 7px solid #FFD100;
+}
+
+@media (max-width: 768px) {
+ //TODO size of banner on mobile??
+ .landing {
+  min-height: 80vh;
+ }
+}
+
+.mag-headline {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+ //TODO resize headine text for mobile
+}
+
+.mag-headline span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+/*makes read more fade in*/
+#scroll-down p, #scroll-down {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: white;
+  font-size: 21px;
+  text-align: center;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 4s; /* Opera */
+}
+
+.bleed-left {
+  padding-left: 0;
+}
+
+.bleed-right {
+  padding-right: 0;
+}
+
+.bleed-both {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .bleed-left {
+  padding-left: 15px;
+}
+
+.bleed-right {
+  margin-top: 20px;
+  padding-right: 15px;
+}
+
+}
+
+.feature-two {
+  background: url('https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg');
+  height: 400px;
+}
+
+.feature-three {
+  background: url('https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg');
+  height: 400px;
+}

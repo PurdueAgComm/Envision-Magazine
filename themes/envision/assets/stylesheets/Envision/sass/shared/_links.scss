@@ -1,5 +1,7 @@
 a {
 	color: $color__link;
+	text-decoration: underline;
+	font-weight: 600;
 
 	&:visited {
 		color: $color__link-visited;
@@ -15,5 +17,6 @@ a {
 	&:hover,
 	&:active {
 		outline: 0;
+		text-decoration: none;
 	}
 }

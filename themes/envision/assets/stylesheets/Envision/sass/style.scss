@@ -1,7 +1,7 @@
 /*
 Theme Name: Envision Magazine
 Theme URI: https://ag.purdue.edu/envision
-Author: Kenny Wilson
+Author: Kenny Wilson, Osmar Lopez, Andrew Banta
 Author URI: https://ag.purdue.edu/agcomm
 Description: Theme for Envision Magazine
 Version: 1.0.0
@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Infinite scroll
 # Media
 	## Galleries
+# Home page
 --------------------------------------------------------------*/
 @import "variables/variables-base";
 @import "mixins/mixins-base";
@@ -50,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@import "shared/normalize";
+//@import "shared/normalize";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -70,7 +71,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@import "shared/typography";
+//@import "shared/typography";
 
 /*--------------------------------------------------------------
 # Forms
@@ -131,3 +132,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "shared/media";
+
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+@import "shared/home";

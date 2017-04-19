@@ -1,0 +1,42 @@
+@import "../components/navigation-top";
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+.navbar-brand{
+	padding-left: 0;
+  font-size: 1.7em;
+  text-decoration: none;
+  color: #fff !important;
+  font-family: 'Montserrat';
+}
+
+ul.nav li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+		-webkit-box-shadow: inset 0 5px 0 rgba(255,209,0,1);
+    -moz-box-shadow: inset 0 5px 0 rgba(255,209,0,1);
+    box-shadow: inset 0 5px 0 rgba(255,209,0,1);
+}
