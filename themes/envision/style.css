@@ -1,7 +1,7 @@
 /*
 Theme Name: Envision Magazine
 Theme URI: https://ag.purdue.edu/envision
-Author: Kenny Wilson
+Author: Kenny Wilson, Osmar Lopez, Andrew Banta
 Author URI: https://ag.purdue.edu/agcomm
 Description: Theme for Envision Magazine
 Version: 1.0.0
@@ -35,237 +35,23 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Navigation
 # Links
 # Layout
-  ## Posts
-  ## Pages
+	## Posts
+	## Pages
 # Comments
 # Widgets
 # Infinite scroll
 # Media
-  ## Galleries
+	## Galleries
+# Home page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-[hidden],
-template {
-  display: none;
-}
-
-a {
-  background-color: transparent;
-}
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-b,
-strong {
-  font-weight: bold;
-}
-
-dfn {
-  font-style: italic;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-img {
-  border: 0;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-pre {
-  overflow: auto;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-button {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-input {
-  line-height: normal;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-  border: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
-}
-
-optgroup {
-  font-weight: bold;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-}
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
+/* line 2, assets/stylesheets/Envision/sass/shared/_accessibility.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -273,6 +59,7 @@ th {
   width: 1px;
   overflow: hidden;
 }
+/* line 9, assets/stylesheets/Envision/sass/shared/_accessibility.scss */
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -295,6 +82,7 @@ th {
 }
 
 /* Do not show the outline on the skip link target. */
+/* line 30, assets/stylesheets/Envision/sass/shared/_accessibility.scss */
 #content[tabindex="-1"]:focus {
   outline: 0;
 }
@@ -302,18 +90,21 @@ th {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_alignments.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
+/* line 7, assets/stylesheets/Envision/sass/shared/_alignments.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
+/* line 13, assets/stylesheets/Envision/sass/shared/_alignments.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -324,6 +115,7 @@ th {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_clearings.scss */
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -341,6 +133,7 @@ th {
   table-layout: fixed;
 }
 
+/* line 16, assets/stylesheets/Envision/sass/shared/_clearings.scss */
 .clear:after,
 .entry-content:after,
 .comment-content:after,
@@ -353,80 +146,10 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
-  color: #404040;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  clear: both;
-}
-
-p {
-  margin-bottom: 1.5em;
-}
-
-dfn, cite, em, i {
-  font-style: italic;
-}
-
-blockquote {
-  margin: 0 1.5em;
-}
-
-address {
-  margin: 0 0 1.5em;
-}
-
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6em;
-}
-
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-}
-
-abbr, acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help;
-}
-
-mark, ins {
-  background: #fff9c0;
-  text-decoration: none;
-}
-
-big {
-  font-size: 125%;
-}
-
-blockquote, q {
-  quotes: "" "";
-}
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-}
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_forms.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -447,6 +170,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
+/* line 21, assets/stylesheets/Envision/sass/shared/_forms.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -466,10 +190,12 @@ textarea:focus {
   color: #111;
 }
 
+/* line 26, assets/stylesheets/Envision/sass/shared/_forms.scss */
 select {
   border: 1px solid #ccc;
 }
 
+/* line 30, assets/stylesheets/Envision/sass/shared/_forms.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -488,14 +214,16 @@ input[type="color"] {
   padding: 3px;
 }
 
+/* line 48, assets/stylesheets/Envision/sass/shared/_forms.scss */
 textarea {
   padding-left: 3px;
   width: 100%;
 }
 
 /*--------------------------------------------------------------
-# Forms
+# Buttons
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -512,6 +240,7 @@ input[type="submit"] {
   padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
+/* line 16, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -519,6 +248,7 @@ input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
+/* line 21, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 button:active, button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
@@ -533,6 +263,7 @@ input[type="submit"]:focus {
 /*--------------------------------------------------------------
 # Formattings
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_formatting.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -543,28 +274,34 @@ hr {
 /*--------------------------------------------------------------
 # Lists
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_lists.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
+/* line 5, assets/stylesheets/Envision/sass/shared/_lists.scss */
 ul {
   list-style: disc;
 }
 
+/* line 9, assets/stylesheets/Envision/sass/shared/_lists.scss */
 ol {
   list-style: decimal;
 }
 
+/* line 13, assets/stylesheets/Envision/sass/shared/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
+/* line 19, assets/stylesheets/Envision/sass/shared/_lists.scss */
 dt {
   font-weight: bold;
 }
 
+/* line 23, assets/stylesheets/Envision/sass/shared/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
@@ -572,6 +309,7 @@ dd {
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_tables.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
@@ -580,18 +318,21 @@ table {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .main-navigation {
   clear: both;
   display: block;
   float: left;
   width: 100%;
 }
+/* line 7, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
+/* line 13, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -600,35 +341,43 @@ table {
   left: -999em;
   z-index: 99999;
 }
+/* line 21, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
+/* line 27, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
+/* line 33, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
+/* line 46, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
+/* line 52, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .main-navigation li {
   float: left;
   position: relative;
 }
+/* line 61, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu. */
+/* line 74, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
+/* line 79, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
 .menu-toggle:before {
   content: "\2630";
   display: inline-block;
@@ -636,26 +385,31 @@ table {
 }
 
 @media screen and (min-width: 37.5em) {
+  /* line 86, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
   .menu-toggle {
     display: none;
   }
 
+  /* line 89, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
   .main-navigation ul {
     display: block;
   }
 }
+/* line 7, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
+/* line 12, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
+/* line 17, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -664,51 +418,65 @@ table {
   width: 50%;
 }
 
-/*--------------------------------------------------------------
-# Links
---------------------------------------------------------------*/
-a {
-  color: royalblue;
+/* line 24, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+.navbar-brand {
+  padding-left: 0;
+  font-size: 1.7em;
+  text-decoration: none;
+  color: #fff !important;
+  font-family: 'Montserrat';
 }
-a:visited {
-  color: purple;
+
+/* line 32, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+ul.nav li a {
+  color: #fff;
+  text-decoration: none;
 }
-a:hover, a:focus, a:active {
-  color: midnightblue;
-}
-a:focus {
-  outline: thin dotted;
-}
-a:hover, a:active {
-  outline: 0;
+
+/* line 37, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 5px 0 #ffd100;
+  -moz-box-shadow: inset 0 5px 0 #ffd100;
+  box-shadow: inset 0 5px 0 #ffd100;
 }
 
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_links.scss */
 a {
-  color: royalblue;
+  color: #000;
+  text-decoration: underline;
+  font-weight: 600;
 }
+/* line 6, assets/stylesheets/Envision/sass/shared/_links.scss */
 a:visited {
-  color: purple;
+  color: #AD1F65;
 }
+/* line 9, assets/stylesheets/Envision/sass/shared/_links.scss */
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #000;
 }
+/* line 14, assets/stylesheets/Envision/sass/shared/_links.scss */
 a:focus {
   outline: thin dotted;
 }
+/* line 17, assets/stylesheets/Envision/sass/shared/_links.scss */
 a:hover, a:active {
   outline: 0;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/layout/_layout.scss */
 html {
   box-sizing: border-box;
 }
 
+/* line 5, assets/stylesheets/Envision/sass/layout/_layout.scss */
 *,
 *:before,
 *:after {
@@ -716,68 +484,68 @@ html {
   box-sizing: inherit;
 }
 
+/* line 11, assets/stylesheets/Envision/sass/layout/_layout.scss */
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
 }
 
-@media screen and (min-width: 37.5em) {
-    .content-area {
-      float: left;
-      margin: 0 -25% 0 0;
-      width: 100%;
-    }
-
-    .site-main {
-      margin: 0 25% 0 0;
-    }
-
-    .site-content .widget-area {
-      float: right;
-      overflow: hidden;
-      width: 25%;
-    }
-
-    .site-footer {
-      clear: both;
-      width: 100%;
-    }
+/* line 1, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
+.content-area {
+  float: left;
+  width: 100%;
 }
 
-/*--------------------------------------------------------------
-## Single Column / No Active Sidebar
---------------------------------------------------------------*/
-.no-sidebar .site-main {
-  margin: 0;
+/* line 5, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
+.site-main {
+  margin: 0 50% 0 0;
 }
 
-.no-sidebar .content-area {
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
+/* line 8, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
+.site-content .widget-area {
+  float: left;
+  margin: 0 0 0 -50%;
+  overflow: hidden;
+  width: 25%;
+}
+
+/* line 14, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
+.site-content #tertiary.widget-area {
+  margin: 0 0 0 -25%;
+}
+
+/* line 17, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
+.site-footer {
+  clear: both;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
 ## Posts
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/layout/_posts.scss */
 .sticky {
   display: block;
 }
 
+/* line 5, assets/stylesheets/Envision/sass/layout/_posts.scss */
 .hentry {
   margin: 0 0 1.5em;
 }
 
+/* line 9, assets/stylesheets/Envision/sass/layout/_posts.scss */
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
+/* line 14, assets/stylesheets/Envision/sass/layout/_posts.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
+/* line 19, assets/stylesheets/Envision/sass/layout/_posts.scss */
 .page-content,
 .entry-content,
 .entry-summary {
@@ -787,6 +555,7 @@ body {
 /*--------------------------------------------------------------
 ## Pages
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/layout/_pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -795,10 +564,12 @@ body {
 /*--------------------------------------------------------------
 # Comments
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/sections/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
+/* line 4, assets/stylesheets/Envision/sass/sections/_comments.scss */
 .bypostauthor {
   display: block;
 }
@@ -806,10 +577,12 @@ body {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/sections/_widgets.scss */
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
 }
+/* line 5, assets/stylesheets/Envision/sass/sections/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
@@ -818,6 +591,7 @@ body {
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 2, assets/stylesheets/Envision/sass/shared/_infinitescroll.scss */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -825,6 +599,7 @@ body {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+/* line 8, assets/stylesheets/Envision/sass/shared/_infinitescroll.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -832,6 +607,7 @@ body {
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_media.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -839,6 +615,7 @@ img {
   /* Adhere to container width. */
 }
 
+/* line 6, assets/stylesheets/Envision/sass/shared/_media.scss */
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -849,38 +626,48 @@ img {
 }
 
 /* Make sure embeds and iframes fit their containers. */
+/* line 16, assets/stylesheets/Envision/sass/shared/_media.scss */
 embed,
 iframe,
 object {
   max-width: 100%;
 }
 
+/* line 22, assets/stylesheets/Envision/sass/shared/_media.scss */
 .wp-caption {
   margin: 1em 0 1.5em;
   max-width: 100%;
 }
+/* line 26, assets/stylesheets/Envision/sass/shared/_media.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+/* line 30, assets/stylesheets/Envision/sass/shared/_media.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
 /* Ensure center-aligned captions center-align properly. */
+/* line 36, assets/stylesheets/Envision/sass/shared/_media.scss */
 .wp-caption.aligncenter {
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Give some padding to floated elements, to prevent them butting up against text. */
+/* line 42, assets/stylesheets/Envision/sass/shared/_media.scss */
 .wp-caption.alignleft {
   margin-right: 20px;
 }
+
+/* line 46, assets/stylesheets/Envision/sass/shared/_media.scss */
 .wp-caption.alignright {
   margin-left: 20px;
 }
+
+/* line 50, assets/stylesheets/Envision/sass/shared/_media.scss */
 .wp-caption-text {
   text-align: center;
 }
@@ -888,41 +675,170 @@ object {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
 
+/* line 5, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-item {
   display: inline-block;
   text-align: center;
   vertical-align: top;
   width: 100%;
 }
+/* line 11, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
+/* line 15, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
+/* line 19, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
+/* line 23, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
+/* line 27, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
+/* line 31, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
+/* line 35, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
+/* line 39, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
+/* line 44, assets/stylesheets/Envision/sass/shared/_galleries.scss */
 .gallery-caption {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/shared/_home.scss */
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none !important;
+  height: 120px;
+  background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* line 10, assets/stylesheets/Envision/sass/shared/_home.scss */
+.navbar-top-seriously {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* line 17, assets/stylesheets/Envision/sass/shared/_home.scss */
+.landing {
+  background-image: url("/envision/wp-content/uploads/2017/04/mag-bg.jpg");
+  min-height: 60vh;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 7px solid #FFD100;
+}
+
+@media (max-width: 768px) {
+  /* line 31, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .landing {
+    min-height: 80vh;
+  }
+}
+/* line 36, assets/stylesheets/Envision/sass/shared/_home.scss */
+.mag-headline {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+/* line 49, assets/stylesheets/Envision/sass/shared/_home.scss */
+.mag-headline span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+/*makes read more fade in*/
+/* line 58, assets/stylesheets/Envision/sass/shared/_home.scss */
+#scroll-down p, #scroll-down {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: white;
+  font-size: 21px;
+  text-align: center;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  /* Firefox */
+  -webkit-animation: fadein 4s;
+  /* Safari and Chrome */
+  -o-animation: fadein 4s;
+  /* Opera */
+}
+
+/* line 70, assets/stylesheets/Envision/sass/shared/_home.scss */
+.bleed-left {
+  padding-left: 0;
+}
+
+/* line 74, assets/stylesheets/Envision/sass/shared/_home.scss */
+.bleed-right {
+  padding-right: 0;
+}
+
+/* line 78, assets/stylesheets/Envision/sass/shared/_home.scss */
+.bleed-both {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  /* line 83, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .bleed-left {
+    padding-left: 15px;
+  }
+
+  /* line 87, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .bleed-right {
+    margin-top: 20px;
+    padding-right: 15px;
+  }
+}
+/* line 94, assets/stylesheets/Envision/sass/shared/_home.scss */
+.feature-two {
+  background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg");
+  height: 400px;
+}
+
+/* line 99, assets/stylesheets/Envision/sass/shared/_home.scss */
+.feature-three {
+  background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg");
+  height: 400px;
 }
