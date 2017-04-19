@@ -10,8 +10,9 @@
  */
 
 ?>
-
-	</div>
+      </div> <!-- /.row from header.php -->
+    </div> <!-- /.container from header.php -->
+  </div> <!-- /#content from header.php -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<?php get_template_part( 'components/footer/site', 'info' ); ?>
 	</footer>
