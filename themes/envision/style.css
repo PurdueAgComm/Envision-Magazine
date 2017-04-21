@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Galleries
 # Home page
+# Footer
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -841,4 +842,22 @@ object {
 .feature-three {
   background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg");
   height: 400px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/* line 1, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.footer-span {
+  margin-top: 20px;
+  background-color: #374046;
+  border-top: 7px solid #FFD100;
+}
+/* line 6, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.footer-span p {
+  color: red;
+}
+/* line 10, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.footer-span .btn {
+  background-color: #0a0a0a;
 }

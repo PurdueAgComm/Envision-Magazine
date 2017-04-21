@@ -13,10 +13,14 @@
       </div> <!-- /.row from header.php -->
     </div> <!-- /.container from header.php -->
   </div> <!-- /#content from header.php -->
+
+<div class="section footer-span">
+  <div class="container">
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<?php get_template_part( 'components/footer/site', 'info' ); ?>
+      <?php get_template_part( 'components/footer/site', 'info' ); ?>
 	</footer>
 </div>
+
 <?php wp_footer(); ?>
 
 </body>
