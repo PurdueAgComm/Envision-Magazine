@@ -1,14 +1,76 @@
 .footer-span {
+  background-color: #2c2c30;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 20px;
-  background-color: #374046;
-  border-top: 7px solid $color__gold;
+
+  h3 {
+    font-family: "Oswald", Arial, sans-serif;
+    color: white;
+  }
+}
+
+
+.footer-nav {
+  font-size: 1.2em;
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+      border-bottom: 1px solid #686868;
+      padding: 5px 0;
+      margin-right: 20%;
+
+      &:last-child {
+        border-bottom: none;
+      }
+  }
+
+  a {
+    font-family: "Oswald", Arial, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+  }
+
+}
+
+ul.footer-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.social-media {
+  font-size: 1.8em;
+  margin-top: 10px;
+
+  a {
+      color: #bababa;
+
+      &:first-child {margin-left: -5px; }
+  }
+
+
+}
+
+.ada-span {
+  background-color: #1d1d1d;
+  padding: 20px 0;
 
   p {
-    color: #acb5bf;
-  }
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #bbb;
+    font-size: 0.9em;
+    margin: 3px;
+    padding: 0;
 
-  .btn {
-    background-color: #acb5bf;
+    a { color: #bbb;}
   }
+}
 
+.ag-logo {
+  margin-top: 55px;
 }
