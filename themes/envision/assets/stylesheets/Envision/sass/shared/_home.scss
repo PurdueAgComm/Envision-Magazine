@@ -20,10 +20,10 @@
   height: 100px;
   width: 100%;
   position: relative;
-  background-position: center;
+  background-attachment: fixed;
+  background-position: 0% 40%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 7px solid #FFD100;
 }
 
 @media (max-width: 768px) {
@@ -36,7 +36,7 @@
 .mag-headline {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 38%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -46,13 +46,19 @@
  //TODO resize headine text for mobile
 }
 
-.mag-headline span.border {
-  background-color: #111;
-  color: #fff;
+.mag-headline div.border {
+  font-family: "destroy", "Open Sans", Arial, sans-serif;
+  color: #f87428;
+  background-color: rgba(0, 0, 0, .8);
   padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  font-size: 3em;
+  letter-spacing: 5px;
+  word-spacing: -10px;
+  width: 55%;
+  margin: 0 auto;
 }
+
+
 
 /*makes read more fade in*/
 #scroll-down p, #scroll-down {
@@ -77,6 +83,7 @@
 
 .bleed-both {
   padding: 0;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -99,4 +106,27 @@
 .feature-three {
   background: url('https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg');
   height: 400px;
+}
+
+.infocus-header {
+  font-family: "Oswald", Arial, sans-serif;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.infocus {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  li {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bababa;
+
+    a {
+      font-size: 1.4em;
+      text-decoration: none;
+    }
+  }
 }

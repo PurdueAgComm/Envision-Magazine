@@ -147,6 +147,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'destroy';
+  src: url("assets/fonts/DESTROY-fontsquirrel.eot");
+  src: url("assets/fonts/DESTROY-fontsquirrel.eot?#iefix") format("embedded-opentype"), url("assets/fonts/DESTROY-fontsquirrel.woff") format("woff"), url("assets/fonts/DESTROY-fontsquirrel.ttf") format("truetype"), url("assets/fonts/DESTROY-fontsquirrel.svg#destroyregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, assets/stylesheets/Envision/sass/shared/_typography.scss */
+* {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -224,43 +236,6 @@ textarea {
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
-/* line 1, assets/stylesheets/Envision/sass/shared/_buttons.scss */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-/* line 16, assets/stylesheets/Envision/sass/shared/_buttons.scss */
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-}
-/* line 21, assets/stylesheets/Envision/sass/shared/_buttons.scss */
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-
 /*--------------------------------------------------------------
 # Formattings
 --------------------------------------------------------------*/
@@ -757,10 +732,10 @@ object {
   height: 100px;
   width: 100%;
   position: relative;
-  background-position: center;
+  background-attachment: fixed;
+  background-position: 0% 40%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 7px solid #FFD100;
 }
 
 @media (max-width: 768px) {
@@ -773,23 +748,27 @@ object {
 .mag-headline {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 38%;
   width: 100%;
   text-align: center;
   color: #000;
 }
 
 /* line 49, assets/stylesheets/Envision/sass/shared/_home.scss */
-.mag-headline span.border {
-  background-color: #111;
-  color: #fff;
+.mag-headline div.border {
+  font-family: "destroy", "Open Sans", Arial, sans-serif;
+  color: #f87428;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  font-size: 3em;
+  letter-spacing: 5px;
+  word-spacing: -10px;
+  width: 55%;
+  margin: 0 auto;
 }
 
 /*makes read more fade in*/
-/* line 58, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 64, assets/stylesheets/Envision/sass/shared/_home.scss */
 #scroll-down p, #scroll-down {
   margin-top: 20px;
   margin-bottom: 0;
@@ -805,43 +784,69 @@ object {
   /* Opera */
 }
 
-/* line 70, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 76, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-left {
   padding-left: 0;
 }
 
-/* line 74, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 80, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-right {
   padding-right: 0;
 }
 
-/* line 78, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 84, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-both {
   padding: 0;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
-  /* line 83, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 90, assets/stylesheets/Envision/sass/shared/_home.scss */
   .bleed-left {
     padding-left: 15px;
   }
 
-  /* line 87, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 94, assets/stylesheets/Envision/sass/shared/_home.scss */
   .bleed-right {
     margin-top: 20px;
     padding-right: 15px;
   }
 }
-/* line 94, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 101, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-two {
   background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg");
   height: 400px;
 }
 
-/* line 99, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 106, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-three {
   background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg");
   height: 400px;
+}
+
+/* line 111, assets/stylesheets/Envision/sass/shared/_home.scss */
+.infocus-header {
+  font-family: "Oswald", Arial, sans-serif;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* line 117, assets/stylesheets/Envision/sass/shared/_home.scss */
+.infocus {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* line 122, assets/stylesheets/Envision/sass/shared/_home.scss */
+.infocus li {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #bababa;
+}
+/* line 127, assets/stylesheets/Envision/sass/shared/_home.scss */
+.infocus li a {
+  font-size: 1.4em;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -849,15 +854,83 @@ object {
 --------------------------------------------------------------*/
 /* line 1, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .footer-span {
+  background-color: #2c2c30;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 20px;
-  background-color: #374046;
-  border-top: 7px solid #FFD100;
 }
-/* line 6, assets/stylesheets/Envision/sass/sections/_footer.scss */
-.footer-span p {
-  color: red;
+/* line 7, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.footer-span h3 {
+  font-family: "Oswald", Arial, sans-serif;
+  color: white;
 }
-/* line 10, assets/stylesheets/Envision/sass/sections/_footer.scss */
-.footer-span .btn {
-  background-color: #0a0a0a;
+
+/* line 14, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.footer-nav {
+  font-size: 1.2em;
+}
+/* line 17, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.footer-nav ul {
+  margin: 0;
+}
+/* line 21, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.footer-nav li {
+  border-bottom: 1px solid #686868;
+  padding: 5px 0;
+  margin-right: 20%;
+}
+/* line 26, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.footer-nav li:last-child {
+  border-bottom: none;
+}
+/* line 31, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.footer-nav a {
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1.1px;
+}
+
+/* line 41, assets/stylesheets/Envision/sass/sections/_footer.scss */
+ul.footer-nav {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 46, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.social-media {
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+/* line 50, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.social-media a {
+  color: #bababa;
+}
+/* line 53, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.social-media a:first-child {
+  margin-left: -5px;
+}
+
+/* line 59, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.ada-span {
+  background-color: #1d1d1d;
+  padding: 20px 0;
+}
+/* line 63, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.ada-span p {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #bbb;
+  font-size: 0.9em;
+  margin: 3px;
+  padding: 0;
+}
+/* line 70, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.ada-span p a {
+  color: #bbb;
+}
+
+/* line 74, assets/stylesheets/Envision/sass/sections/_footer.scss */
+.ag-logo {
+  margin-top: 55px;
 }

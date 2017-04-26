@@ -1,10 +1,36 @@
-<div class="col-md-4">
-<p><img src="http://placehold.it/150x150?text=Dean" alt="Glenn W. Sample Dean of Agriculture" class="img-thumbnail img-responsive pull-left"> These are exciting times to be a part of the agricultural, food, life, and natural resource sciences and the Purdue College of Agriculture!  Recently ranked number 5 in the world by QS World University Rankings​, our College’s learning, discovery, and engagement programs focus on some of the most pressing issues facing our world: food security and food safety, human and animal health, environmental and natural resource management, the bioeconomy, and agricultural competitiveness.</p>
-<a href="#" class="btn btn-default btn-sm btn-block">Read More &raquo;</a>
-</div>
-<div class="col-md-6">
-<script type="text/javascript" src="https://purdueagcommunication.formstack.com/forms/js.php/general_contact"></script><noscript><a href="https://purdueagcommunication.formstack.com/forms/general_contact" title="Online Form">Online Form - General Contact</a></noscript><div style="text-align:right; font-size:x-small;"><a href="http://www.formstack.com?utm_source=jsembed&utm_medium=product&utm_campaign=product+branding&fa=h,2675455" title="HTML Form Generator">HTML Form Generator</a></div>
-</div>
-<div class="col-md-2">
-row 3
-</div>
+<div class="row">
+  <div class="col-md-4">
+    <h3>Browse Envision</h3>
+    <ul class="footer-nav">
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Previous Issues</a></li>
+    </ul>
+  </div>
+
+  <div class="col-md-4 col-md-offset-1">
+    <h3>Subscribe to Envision</h3>
+    <form class="form-inline" style="margin-top: 17px;">
+      <div class="form-group">
+        <input class="form-control" type="email" placeholder="Email">
+        <input type="submit" class="btn btn-default">
+      </div>
+    </form>
+
+    <div class="social-media">
+      <a alt="Facebook" class="social-link" href="https://www.facebook.com/PurdueAg" itemprop="sameAs" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+      <a alt="Twitter" class="social-link" href="https://twitter.com/PurdueAg" itemprop="sameAs" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+      <a alt="YouTube" class="social-link" href="http://www.youtube.com/user/Purdueagriculture" itemprop="sameAs" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+      <a alt="Instagram" class="social-link" href="https://instagram.com/purdue_ag" itemprop="sameAs" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+      <a alt="Snapchat" class="social-link" href="https://www.snapchat.com/add/purdue_ag" itemprop="sameAs" target="_blank"><i class="fa fa-fw fa-snapchat"></i></a>
+      <a alt="LinkedIn" class="social-link" href="https://www.linkedin.com/company/purdue-agriculture" itemprop="sameAs" target="_blank"><i class="fa fa-fw fa-linkedin-square"></i></a>
+    </div>
+  </div>
+
+  <div class="col-md-offset-1 col-md-2">
+    <a href="https://ag.purdue.edu"><img class="img-responsive ag-logo" alt="Purdue Agriculture" src="<?php  echo get_template_directory_uri(); ?>/assets/PurdueAgLogoWhite.png"></a>
+  </div>
+
+
+</div> <!-- /.row -->
+
