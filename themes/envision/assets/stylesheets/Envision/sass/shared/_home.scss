@@ -16,7 +16,7 @@
 
 .landing {
   background-image: url("/envision/wp-content/uploads/2017/04/mag-bg.jpg");
-  min-height: 60vh;
+  min-height: 70vh;
   height: 100px;
   width: 100%;
   position: relative;
@@ -51,14 +51,14 @@
   color: #f87428;
   background-color: rgba(0, 0, 0, .8);
   padding: 18px;
-  font-size: 3em;
+  font-size: 3.1em;
   letter-spacing: 5px;
   word-spacing: -10px;
   width: 55%;
   margin: 0 auto;
 }
 
-
+.two-features {margin-top: 25px;}
 
 /*makes read more fade in*/
 #scroll-down p, #scroll-down {
@@ -75,10 +75,12 @@
 
 .bleed-left {
   padding-left: 0;
+  padding-right: 25px;
 }
 
 .bleed-right {
   padding-right: 0;
+  padding-left: 25px;
 }
 
 .bleed-both {
@@ -99,13 +101,20 @@
 }
 
 .feature-two {
-  background: url('https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg');
-  height: 400px;
+  background: url('https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/feature2.jpg');
+  height: 550px;
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+
 }
 
 .feature-three {
-  background: url('https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/mag-bg.jpg');
-  height: 400px;
+  background: url('https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/bearmarket.jpg');
+  height: 550px;
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .infocus-header {
@@ -114,19 +123,131 @@
   margin-top: 0;
 }
 
+
+li {
+    display: block;
+}
+
+
+
 .infocus {
   padding: 0;
   margin: 0;
-  list-style-type: none;
+  margin-left: 12px;
 
   li {
     padding-top: 10px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #bababa;
+    display: block;
+   // border-bottom: 1px solid #bababa;
 
     a {
       font-size: 1.4em;
       text-decoration: none;
+      color: black;
+    }
+     a:visited {
+      color: black;
+    }
+
+     a:hover {
+      font-size: 1.4em;
+      text-decoration: underline;
     }
   }
+
+  li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e250";
+    font-family: 'Glyphicons Halflings';
+    font-size: 12px;
+    float: left;
+    margin-top: 6px;
+    margin-left: -17px;
+    color: #4D4038;
+}
+}
+
+.idea-infocus{
+  margin-bottom: 40px;
+}
+
+.viewahead-alumni  {
+  background-color: rgba(186, 168, 146, 0.42);
+  padding: 40px 0px;
+}
+
+.evertrue-container { padding: 40px 0px;}
+
+.dean {
+  float: left;
+  width: 100%;
+}
+
+.deansignature{
+  padding-right: 0;
+}
+
+.viewahead {
+  padding-bottom: 36px;
+  margin-bottom:20px;
+}
+.viewahead-text {padding:0;}
+
+.viewahead-title, .evertrue-header{
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 800;
+}
+
+.Alumni-headline {
+  font-family: "Oswald", Arial, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.headline {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+}
+
+.feature-headline-shader {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.feature-headline {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+.btn-1 {
+    border: 2px solid #171717;
+    border-radius: 0;
+    color: #171717;
+}
+.btn-1a:visited, .btn-1a:link {
+    color: #171717;
+    text-decoration: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    width: 50%;
+}
+
+.btn-1a:hover, .btn-1a:active {
+    color: #171717;
+    background: #FFD100;
 }
