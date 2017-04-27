@@ -169,15 +169,31 @@ li {
 }
 
 .idea-infocus{
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  margin-top: 80px;
 }
 
 .viewahead-alumni  {
   background-color: rgba(186, 168, 146, 0.42);
-  padding: 40px 0px;
+  padding: 60px 0 40px 0;
 }
 
 .evertrue-container { padding: 40px 0px;}
+
+.evertrue-pic {
+  height: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big-idea-section {
+  background-color: #5b6870;
+  padding:40px;
+}
+
+.big-idea-pic {
+  height: 364px;
+}
 
 .dean {
   float: left;
@@ -191,20 +207,45 @@ li {
 .viewahead {
   padding-bottom: 36px;
   margin-bottom:20px;
+  background-color: white;
+  padding: 10px;
+  padding-top: 18px;
+  padding-bottom: 0px;
 }
-.viewahead-text {padding:0;}
+.viewahead-text {
+  padding:0;
+  margin-bottom: 20px;
+}
 
 .viewahead-title, .evertrue-header{
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 800;
 }
 
-.Alumni-headline {
+.alumni-headline {
   font-family: "Oswald", Arial, sans-serif;
   color: white;
   margin: 0;
+  text-align: center;
 }
 
+.alumni-pic {
+  width: 100%;
+  max-height: 438px;
+}
+
+.alumni-headline-shader {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 16px;
+  bottom: 0;
+  width: 100%;
+  margin-top: -65px;
+  position: relative;
+}
+
+.alumni-column {
+  padding-left: 25px;
+}
 .headline {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -250,4 +291,67 @@ p {
 .btn-1a:hover, .btn-1a:active {
     color: #171717;
     background: #FFD100;
+}
+
+
+.hp-section.popular-section .popular-types .items.horizontal {
+    border: 1px solid #E4E4E4;
+    border-width: 1px 0;
+    padding: 30px 0;
+    margin-top: 0;
+}
+
+.hp-section.popular-section .popular-types .items {
+    clear: both;
+    float: left;
+    margin: 40px 0;
+}
+
+.hp-section .items {
+    overflow: hidden;
+}
+
+.hp-section.popular-section .popular-types .items.horizontal .item:first-child {
+    border-left-width: 0;
+}
+
+.hp-section.popular-section .popular-types .items.horizontal .item {
+    border: 1px solid #E4E4E4;
+    border-width: 0 1px;
+}
+
+.hp-section.popular-section .popular-types .items .item {
+    color: #000;
+    font-family: farnhamdisplayregular,Georgia,serif;
+    font-size: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.hp-section .items .item {
+    position: relative;
+    text-align: left;
+    float: left;
+    width: 33%;
+    padding: 2px 30px;
+    min-height: 135px;
+    margin-bottom: 20px;
+
+    a {
+      text-decoration:none;
+    }
+}
+
+.article-heading {
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.item{
+ border-left: 3px solid #ffd100;
 }

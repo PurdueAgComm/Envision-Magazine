@@ -65,58 +65,86 @@ get_header('faded'); ?>
   </div>
 </div>
 
+<h2 class="infocus-header" style="text-align: center;">In Focus Articles</h2>
+<hr>
+<section class="hp-section popular-section stay">
+    <div class="col-sm-4">
+      <img src="https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/EverTrue.jpg" alt="Ever True - The Campaign for Purdue University" class="img-responsive evertrue-pic ">
+    </div>
+  <div class="items horizontal secondary">
+    <div class="item">
+      <div class="body">
+        <h5 class="channel"><a href="story/you-can-book-luxury-hotels-for-minutes-at-a-time-with-this-new-app">Art</a></h5>
+        <h3 class="article-heading"><a href="story/you-can-book-luxury-hotels-for-minutes-at-a-time-with-this-new-app">Sculpture honoring pioneering entomologists</a></h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="body">
+        <h5 class="channel"><a href="story/life-magazine-building-reborn-as-boutique-hotel-nyc">Tap Room</a></h5>
+        <h3 class="article-heading"><a href="story/life-magazine-building-reborn-as-boutique-hotel-nyc">Union Tap Room features local brews and science</a></h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="body">
+        <h5 class="channel"><a href="galleries/2016-04-20/best-new-hotels-in-africa-and-middle-east-hot-list">Awards</a></h5>
+        <h3 class="article-heading"><a href="galleries/2016-04-20/best-new-hotels-in-africa-and-middle-east-hot-list">Best New Hotels in Africa and the Middle East: Hot List 2017</a></h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="body">
+        <h5 class="channel"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Soundscapes</a></h5>
+        <h3 class="article-heading"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Vanishing Soundscapes Initiative featured on CNN</a></h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="body">
+        <h5 class="channel"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Discovery</a></h5>
+        <h3 class="article-heading"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Breakthrough discovery for detecting cancer</a></h3>
+      </div>
+    </div>
+    <div class="item">
+      <div class="body">
+        <h5 class="channel"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Award</a></h5>
+        <h3 class="article-heading"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Plant scientist wins award for early-career innovation</a></h3>
+      </div>
+    </div>
+  </div>
 
 <!--Big Idea & Spotlights-->
-<div class="container idea-infocus">
-  <div class="row">
-    <div class="col-sm-6">
-      <img src="https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/dna-strand-example-do-not-use-not-ours-please.png" alt="DNA STRAND EXAMPLE" class="img-responsive">
-      <!--
-      <div class="headline">
-        <h2 class="Alumni-headline">The Big Idea</h2>
+<div class="section big-idea-section">
+  <div class="container">
+      <div class="col-sm-4 col-md-offset-4">
+        <img src="https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/The-Big-Idea.png" alt="DNA STRAND EXAMPLE" class="img-responsive big-idea-pic">
       </div>
-      -->
-    </div>
-    <div class="col-sm-6">
-      <h2 class="infocus-header">In Focus Articles</h2>
-      <ul class="infocus">
-        <li><a href="#">Sculpture honoring pioneering entomologists</a></li>
-        <li><a href="#">Union Tap Room features local brews and science</a></li>
-        <li><a href="#">New website acts as information hub for Indiana CFOs</a></li>
-        <li><a href="#">Vanishing Soundscapes Initiative featured on CNN</a></li>
-        <li><a href="#">Breakthrough discovery for detecting cancer</a></li>
-        <li><a href="#notseen">Plant scientist wins award for early-career innovation</a></li>
-      </ul>
-    </div>
   </div>
 </div>
 
 <!--The View Ahead and Alumni section-->
 <div class="section viewahead-alumni">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-       <div class="col-md-6 viewahead">
-        <div class="col-md-6 deansignature">
+       <div class="col-md-5 col-md-offset-1 viewahead">
+        <div class="col-xs-6 deansignature">
           <img src="https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/Jay-profile-signature-1.png" alt="Jay Adkrige" class="img-responsive dean">
         </div>
-        <div class="col-md-6 viewahead-text">
+        <div class="col-xs-5 viewahead-text">
           <h2 class="viewahead-title">The View Ahead</h2>
           <p>Welcome to the inaugural edition of Envision, the new Purdue College of Agriculture magazine! Envision showcases the Purdue College of Agriculture’s distinctive strengths and global impact through the efforts of our faculty, staff, students, and alumni.</p>
           <a href="/experience/Pages/index.html" class="btn btn-1 btn-1a pull-right">
         Read More</a>
         </div>
      </div>
-      <div class="col-md-6">
-        <img src="https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/alumnicloseup.jpg" alt="Alumni Close Up" class="img-responsive">
-        <div class="headline">
-          <h2 class="Alumni-headline">Alumni Close Up</h2>
+      <div class="col-md-5 alumni-column">
+        <img src="https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/alumnicloseup.jpg" alt="Alumni Close Up" class="img-responsive alumni-pic">
+        <div class="alumni-headline-shader">
+          <h2 class="alumni-headline">Alumni Close Up</h2>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!--Ever True Campaign (Not a main feature area)-->
+<!--Ever True Campaign (Not a main feature area)
 <div class="section evertrue-container">
   <div class="container">
     <div class="row">
@@ -125,11 +153,11 @@ get_header('faded'); ?>
       </div>
        <div class="col-sm-6">
           <h2 class="evertrue-header">Ever True Campaign</h2>
-          <p>The Ever True campaign to advance Purdue as a national and global leader spans July 2012 through June 2019. See what generous support of the College of Agriculture has accomplished so far. </p>
+          <p>The Ever True campaign to advance Purdue as a national and global leader spans July 2012 through June 2019. See what generous support of the College of Agriculture has accomplisarticle-heading so far. </p>
        </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
