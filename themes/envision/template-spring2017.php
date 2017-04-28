@@ -11,7 +11,7 @@ get_header('faded'); ?>
 <!-- TODO: change highlight color to that of story -->
 <div class="landing" style="border-bottom: 7px solid #f87428;">
   <div class="mag-headline">
-    <div class="border">FUNGI HUNTERS UNCOVER HIDDEN WORLDS</div>
+  <div class="border typewriter"><h1>FUNGI HUNTERS UNCOVER HIDDEN WORLDS</h1></div>
     <div id="scroll-down" style="color: white;"><p>Read More &raquo;</p> </div>
   </div>
 </div>
