@@ -371,6 +371,12 @@ table {
     display: block;
   }
 }
+/* line 94, assets/stylesheets/Envision/sass/components/_navigation-top.scss */
+.navbar-secondary {
+  background-color: #2c2c30;
+  border-bottom: 4px solid #ffd100;
+}
+
 /* line 7, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
