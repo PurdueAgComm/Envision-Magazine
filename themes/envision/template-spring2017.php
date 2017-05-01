@@ -162,25 +162,28 @@ get_header('faded'); ?>
 </style>
 <!-- PRIMARY FEATURE -->
 <div style="overflow-x: hidden;">
-  <div class="landing" style="border-bottom: 7px solid #f87428;">
-    <div class="mag-headline">
-      <div class="border"><h1 style="line-height: 1.4em;">FUNGI HUNTERS UNCOVER HIDDEN WORLDS</h1></div>
-      <div id="scroll-down" style="color: white;"><p>Read More &raquo;</p> </div>
+  <a href="GOOGLE">
+    <div class="landing" style="border-bottom: 7px solid #f87428;">
+      <!-- TODO: update link -->
+        <div id="scroll-down" class="mag-headline">
+          <div class="border"><h1>FUNGI HUNTERS UNCOVER HIDDEN WORLDS</h1></div>
+          <br>
+          <div class="btn btn-default">Read More &raquo;</div>
+        </div>
+      <div id="foglayer_01" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_02" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_03" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
     </div>
-    <div id="foglayer_01" class="fog">
-      <div class="image01"></div>
-      <div class="image02"></div>
-    </div>
-    <div id="foglayer_02" class="fog">
-      <div class="image01"></div>
-      <div class="image02"></div>
-    </div>
-    <div id="foglayer_03" class="fog">
-      <div class="image01"></div>
-      <div class="image02"></div>
-    </div>
-  </div>
-
+  </a>
   <!-- TODO: change highlight color to that of story -->
   <!-- <div class="landing" style="border-bottom: 7px solid #f87428;">
     <div class="mag-headline">
@@ -219,7 +222,8 @@ get_header('faded'); ?>
         <a href="#">
           <!-- TODO: Change color to match story -->
           <div class="col-sm-12 feature-two" style="border-bottom: 7px solid green;">
-            <img src="/envision/wp-content/uploads/2017/04/feature2.jpg" alt="Launching Technology from Discovery to Delivery" class="img-responsive">
+            <!-- TODO: Update image and alt text -->
+            <img src="/envision/wp-content/uploads/2017/05/launching-technology.jpg" alt="Launching Technology from Discovery to Delivery" class="img-responsive" style="width: 100%;">
             <div class="feature-headline-shader">
               <h1 class="feature-headline">Launching Technology from Discovery to Delivery</h1>
             </div>
@@ -230,7 +234,8 @@ get_header('faded'); ?>
         <a href="#">
           <!-- TODO: Change color to match story -->
           <div class="col-sm-12 feature-three" style="border-bottom: 7px solid #5B6870;">
-            <img src="/envision/wp-content/uploads/2017/04/bearmarket.jpg" alt="Taming Bear Market" class="img-responsive">
+            <!-- TODO: Update image and alt text -->
+            <img src="/envision/wp-content/uploads/2017/05/bear-market.jpg" alt="Taming Bear Market" class="img-responsive" style="width: 100%;">
             <div class="feature-headline-shader">
               <h1 class="feature-headline">Taming the Bear Market</h1>
             </div>
@@ -240,53 +245,71 @@ get_header('faded'); ?>
     </div>
   </div>
 
+  <div class="section infocus-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="#">
+            <img src="/envision/wp-content/uploads/2017/04/EverTrue.jpg" alt="Ever True - The Campaign for Purdue University" class="img-responsive infocus-pic" >
+          </a>
+        </div>
+
+    <div class="col-sm-8 ">
+      <!-- TODO: update URL, article headline, article category -->
+      <a href="article1">
+        <div class="col-sm-4 infocus-article">
+          <h5 class="channel">Alumni</h5>
+          <h3 class="article-heading">Sculpture honoring pioneering entomologists</h3>
+        </div>
+      </a>
+
+      <!-- TODO: update URL, article headline, article category -->
+      <a href="ARTICLEURL">
+        <div class="col-sm-4 infocus-article">
+          <h5 class="channel">Outreach</h5>
+          <h3 class="article-heading">New website acts as information hub for Indiana CFOs</h3>
+        </div>
+      </a>
+
+      <!-- TODO: update URL, article headline, article category -->
+      <a href="ARTICLEURL">
+        <div class="col-sm-4 infocus-article">
+          <h5 class="channel">Alumni</h5>
+          <h3 class="article-heading">Union Tap Room features local brews and science</h3>
+        </div>
+      </a>
+
+      <!-- TODO: update URL, article headline, article category -->
+      <a href="ARTICLEURL">
+        <div class="col-sm-4 infocus-article">
+          <h5 class="channel">Research</h5>
+          <h3 class="article-heading">Vanishing Soundscapes Initiative featured on CNN</h3>
+        </div>
+      </a>
+
+      <!-- TODO: update URL, article headline, article category -->
+      <a href="ARTICLEURL">
+        <div class="col-sm-4 infocus-article">
+          <h5 class="channel">Research</h5>
+          <h3 class="article-heading">Breakthrough disocvery for detecting cancer</h3>
+        </div>
+      </a>
+
+      <!-- TODO: update URL, article headline, article category -->
+      <a href="ARTICLEURL">
+        <div class="col-sm-4 infocus-article">
+          <h5 class="channel">Awards</h5>
+          <h3 class="article-heading">Plant scientist wins award for early-career innovation</h3>
+        </div>
+      </a>
+    </div> <!-- /.col-sm-8-->
+  </div> <!-- /.row -->
+  </div></div>
 
 
 
 
-  <section class="hp-section popular-section stay">
-      <div class="col-sm-4">
-        <img src="/envision/wp-content/uploads/2017/04/EverTrue.jpg" alt="Ever True - The Campaign for Purdue University" class="img-responsive evertrue-pic ">
-      </div>
-    <div class="items horizontal secondary">
-      <div class="item">
-        <div class="body">
-          <h5 class="channel"><a href="story/you-can-book-luxury-hotels-for-minutes-at-a-time-with-this-new-app">Art</a></h5>
-          <h3 class="article-heading"><a href="story/you-can-book-luxury-hotels-for-minutes-at-a-time-with-this-new-app">Sculpture honoring pioneering entomologists</a></h3>
-        </div>
-      </div>
-      <div class="item">
-        <div class="body">
-          <h5 class="channel"><a href="story/life-magazine-building-reborn-as-boutique-hotel-nyc">Tap Room</a></h5>
-          <h3 class="article-heading"><a href="story/life-magazine-building-reborn-as-boutique-hotel-nyc">Union Tap Room features local brews and science</a></h3>
-        </div>
-      </div>
-      <div class="item">
-        <div class="body">
-          <h5 class="channel"><a href="galleries/2016-04-20/best-new-hotels-in-africa-and-middle-east-hot-list">Awards</a></h5>
-          <h3 class="article-heading"><a href="galleries/2016-04-20/best-new-hotels-in-africa-and-middle-east-hot-list">Best New Hotels in Africa and the Middle East: Hot List 2017</a></h3>
-        </div>
-      </div>
-      <div class="item">
-        <div class="body">
-          <h5 class="channel"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Soundscapes</a></h5>
-          <h3 class="article-heading"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Vanishing Soundscapes Initiative featured on CNN</a></h3>
-        </div>
-      </div>
-      <div class="item">
-        <div class="body">
-          <h5 class="channel"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Discovery</a></h5>
-          <h3 class="article-heading"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Breakthrough discovery for detecting cancer</a></h3>
-        </div>
-      </div>
-      <div class="item">
-        <div class="body">
-          <h5 class="channel"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Award</a></h5>
-          <h3 class="article-heading"><a href="story/domaine-des-etangs-memorable-stay-french-chateau">Plant scientist wins award for early-career innovation</a></h3>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!--Big Idea & Spotlights-->
   <div class="section big-idea-section parallax">

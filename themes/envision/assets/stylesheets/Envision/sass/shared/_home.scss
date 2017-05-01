@@ -16,19 +16,18 @@
 
 .landing {
   background-image: url("/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
-  min-height: 70vh;
-  height: 100px;
+  height: 70vh;
+  min-height: 400px;
   width: 100%;
   position: relative;
   background-attachment: fixed;
-  background-position: 0% 40%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
   @media (max-width: 768px) {
    .landing {
-    min-height: 80vh;
     background-attachment: scroll;
    }
   }
@@ -36,15 +35,18 @@
 .mag-headline {
   position: absolute;
   left: 0;
-  top: 20vh;
+  top: 27vh;
   width: 100%;
   text-align: center;
   color: #000;
   z-index: 100;
-}
 
-@media (max-width: 768px) {
- //TODO resize headine text for mobile
+  h1 {
+    font-size: 3.1em;
+    letter-spacing: 5px;
+    word-spacing: -10px;
+    line-height: 1.4em;
+  }
 }
 
 .mag-headline div.border {
@@ -52,13 +54,20 @@
   color: #f87428;
   background-color: rgba(0, 0, 0, .8);
   padding: 18px;
-  font-size: 3.1em;
-  letter-spacing: 5px;
-  word-spacing: -10px;
   width: 55%;
   min-width: 300px;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mag-headline {
+    top: 15vh;
+  }
+
+  .mag-headline h1 {
+    font-size: 1.8em;
+  }
 }
 
 
@@ -66,21 +75,16 @@
 
 /*makes read more fade in*/
 #scroll-down p, #scroll-down {
-  margin-top: 20px;
-  margin-bottom: 0;
-  color: white;
-  font-size: 21px;
-  text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  animation: fadein 12s;
-  -moz-animation: fadein 12s; /* Firefox */
-  -webkit-animation: fadein 12s; /* Safari and Chrome */
-  -o-animation: fadein 12s; /* Opera */
+  animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -o-animation: fadein 5s; /* Opera */
 }
 
 .bleed-left {
   padding-left: 0;
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 .bleed-right {
@@ -95,14 +99,14 @@
 
 @media (max-width: 768px) {
   .bleed-left {
-  padding-left: 15px;
-}
+    padding-left: 15px;
+  }
 
-.bleed-right {
-  margin-top: 20px;
-  padding-right: 25px;
-  padding-left: 15px;
-}
+  .bleed-right {
+    margin-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
 }
 
@@ -110,16 +114,27 @@
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+
+  img { width: 100%;}
 }
 
 .feature-three {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+
+  img { width: 100%;}
+
 }
 
 li {
     display: block;
+}
+
+@media (min-width: 768px) {
+  .infocus-section {
+    margin-top: 20px;
+  }
 }
 
 .infocus {
@@ -165,6 +180,16 @@ li {
   margin-top: 80px;
 }
 
+.infocus-pic {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .infocus-pic {
+    width: 100%;
+  }
+}
+
 .viewahead-alumni  {
   padding: 60px 0 40px 0;
 }
@@ -174,14 +199,6 @@ li {
   margin-bottom: 60px;
 }
 .evertrue-container { padding: 40px 0px;}
-
-.evertrue-pic {
-  height: 290px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-
-}
 
 .big-idea-section {
   background-color: #5b6870;
@@ -303,43 +320,9 @@ p {
     background: #FFD100;
 }
 
-
-.hp-section.popular-section .popular-types .items.horizontal {
-    border: 1px solid #E4E4E4;
-    border-width: 1px 0;
-    padding: 30px 0;
-    margin-top: 0;
-}
-
-.hp-section.popular-section .popular-types .items {
-    clear: both;
-    float: left;
-    margin: 40px 0;
-}
-
-.hp-section .items {
-    overflow: hidden;
-}
-
-  @media (max-width: 768px) {
-    .hp-section .items .item {
-      width: 100%;
-      margin-left: 20px;
-    }
-  }
-
-.hp-section.popular-section .popular-types .items.horizontal .item:first-child {
-    border-left-width: 0;
-}
-
-.hp-section.popular-section .popular-types .items.horizontal .item {
-    border: 1px solid #E4E4E4;
-    border-width: 0 1px;
-}
-
-.hp-section.popular-section .popular-types .items .item {
+.infocus-article {
     color: #000;
-    font-family: farnhamdisplayregular,Georgia,serif;
+    font-family: "Oswald", "Open Sans", Arial, sans-serif;
     font-size: 1rem;
     font-size: 16px;
     font-weight: 400;
@@ -348,21 +331,27 @@ p {
     letter-spacing: normal;
     text-decoration: none;
     text-transform: none;
-}
-
-.hp-section .items .item {
-    position: relative;
-    text-align: left;
-    float: left;
-    width: 33%;
-    padding: 2px 30px;
-    min-height: 135px;
+    border-left: 3px solid #ffd100;
+    height: 130px;
     margin-bottom: 20px;
+    padding-top: 5px;
 
-    a {
-      text-decoration:none;
+    &:hover {
+      background-color: #efefef;
     }
 }
+
+  @media (max-width: 992px) {
+    .infocus-article {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .infocus-article {
+      height: 125px;
+    }
+  }
 
 .article-heading {
   text-decoration: none;
