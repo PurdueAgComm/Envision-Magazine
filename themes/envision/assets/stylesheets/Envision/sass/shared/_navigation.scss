@@ -22,11 +22,12 @@
 }
 
 .navbar-brand{
-	padding-left: 0;
-  font-size: 1.7em;
+  font-size: 2em;
   text-decoration: none;
   color: #fff !important;
-  font-family: 'Montserrat';
+  font-family: "Oswald", Arial, sans-serif; //champion substitute
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 ul.nav li a {

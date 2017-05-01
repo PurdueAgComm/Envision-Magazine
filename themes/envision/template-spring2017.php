@@ -7,14 +7,172 @@
 
 get_header('faded'); ?>
 
+
+<style>
+/* FOG ANIMATION */
+.fogwrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#foglayer_01 {
+  width: 200%;
+  height: 100%;
+  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+#foglayer_01 .image01, #foglayer_01 .image02 {
+  background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/fog1.png") repeat-x top left transparent;
+  background-size: 100%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#foglayer_02 {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+   top: 0;
+  animation: foglayer_02_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+  -webkit-animation: foglayer_01_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+}
+#foglayer_02 .image01, #foglayer_02 .image02 {
+  background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/fog2.png") repeat-x top left transparent;
+  background-size: 100%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#foglayer_03 {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+   top: 0;
+  animation: foglayer_02_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+  -webkit-animation: foglayer_01_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+}
+#foglayer_03 .image01, #foglayer_03 .image02 {
+  background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/fog2.png") repeat-x top left transparent;
+  background-size: 100%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+@keyframes foglayer_01_opacity {
+  0% {
+    opacity: .4;
+  }
+  22% {
+    opacity: .8;
+  }
+  40% {
+    opacity: .58;
+  }
+  58% {
+    opacity: .7;
+  }
+  80% {
+    opacity: .46;
+  }
+  100% {
+    opacity: .4;
+  }
+}
+
+
+@keyframes foglayer_02_opacity {
+  0% {
+    opacity: .8;
+  }
+  25% {
+    opacity: .5;
+  }
+  50% {
+    opacity: .4;
+  }
+  80% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .8;
+  }
+}
+
+
+@keyframes foglayer_03_opacity {
+  0% {
+    opacity: 1;
+  }
+  27% {
+    opacity: .5;
+  }
+  52% {
+    opacity: .9;
+  }
+  68% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes foglayer_moveme {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-webkit-keyframes foglayer_moveme {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+
+</style>
 <!-- PRIMARY FEATURE -->
-<!-- TODO: change highlight color to that of story -->
 <div class="landing" style="border-bottom: 7px solid #f87428;">
   <div class="mag-headline">
-  <div class="border typewriter"><h1>FUNGI HUNTERS UNCOVER HIDDEN WORLDS</h1></div>
+    <div class="border"><h1 style="line-height: 1.4em;" >FUNGI HUNTERS UNCOVER HIDDEN WORLDS</h1></div>
     <div id="scroll-down" style="color: white;"><p>Read More &raquo;</p> </div>
   </div>
+  <div id="foglayer_01" class="fog">
+    <div class="image01"></div>
+    <div class="image02"></div>
+  </div>
+  <div id="foglayer_02" class="fog">
+    <div class="image01"></div>
+    <div class="image02"></div>
+  </div>
+  <div id="foglayer_03" class="fog">
+    <div class="image01"></div>
+    <div class="image02"></div>
+  </div>
 </div>
+
+<!-- TODO: change highlight color to that of story -->
+<!-- <div class="landing" style="border-bottom: 7px solid #f87428;">
+  <div class="mag-headline">
+  <div class="border"><h1 style="line-height: 1.4em;" >FUNGI HUNTERS UNCOVER HIDDEN WORLDS</h1></div>
+    <div id="scroll-down" style="color: white;"><p>Read More &raquo;</p> </div>
+  </div>
+</div> -->
 <br>
 
 <!-- <?php
@@ -107,12 +265,13 @@ get_header('faded'); ?>
       </div>
     </div>
   </div>
+</section>
 
 <!--Big Idea & Spotlights-->
-<div class="section big-idea-section">
+<div class="section big-idea-section parallax">
   <div class="container">
-      <div class="col-sm-4 col-md-offset-4">
-        <img src="https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/The-Big-Idea.png" alt="DNA STRAND EXAMPLE" class="img-responsive big-idea-pic">
+      <div class="col-sm-4">
+        <img src="https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/big-idea-logo.png" alt="the big idea" class="img-responsive big-idea-pic">
       </div>
   </div>
 </div>

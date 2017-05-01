@@ -15,7 +15,7 @@
 }
 
 .landing {
-  background-image: url("/envision/wp-content/uploads/2017/04/mag-bg.jpg");
+  background-image: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
   min-height: 70vh;
   height: 100px;
   width: 100%;
@@ -40,6 +40,7 @@
   width: 100%;
   text-align: center;
   color: #000;
+  z-index: 100;
 }
 
 @media (max-width: 768px) {
@@ -54,7 +55,7 @@
   font-size: 3.1em;
   letter-spacing: 5px;
   word-spacing: -10px;
-  width: 86%;
+  width: 55%;
   margin: 0 auto;
 }
 
@@ -166,7 +167,6 @@ li {
 }
 
 .viewahead-alumni  {
-  background-color: rgba(186, 168, 146, 0.42);
   padding: 60px 0 40px 0;
 }
 
@@ -349,31 +349,46 @@ p {
  border-left: 3px solid #ffd100;
 }
 
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation:
-    typing 5.5s steps(38, end),
-    fadein 2s,
-    blink-caret .75s step-end infinite;
-}
+// .typewriter h1 {
+//   overflow: hidden; /* Ensures the content is not revealed until the animation */
+//   border-right: .15em solid orange; /* The typwriter cursor */
+//   white-space: nowrap; /* Keeps the content on a single line */
+//   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//   letter-spacing: .15em; Adjust as needed
+//   animation:
+//     typing 5.5s steps(38, end),
+//     fadein 2s,
+//     blink-caret .75s step-end infinite;
+// }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+// /* The typing effect */
+// @keyframes typing {
+//   from { width: 0 }
+//   to { width: 100% }
+// }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
+// /* The typewriter cursor effect */
+// @keyframes blink-caret {
+//   from, to { border-color: transparent }
+//   50% { border-color: orange; }
+// }
 
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+.parallax {
+    /* The image used */
+    background-image: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effects */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

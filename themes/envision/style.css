@@ -402,20 +402,21 @@ table {
 
 /* line 24, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .navbar-brand {
-  padding-left: 0;
-  font-size: 1.7em;
+  font-size: 2em;
   text-decoration: none;
   color: #fff !important;
-  font-family: 'Montserrat';
+  font-family: "Oswald", Arial, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
-/* line 32, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 33, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 ul.nav li a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 37, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 38, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: transparent;
   -webkit-box-shadow: inset 0 5px 0 #ffd100;
@@ -733,7 +734,7 @@ object {
 
 /* line 17, assets/stylesheets/Envision/sass/shared/_home.scss */
 .landing {
-  background-image: url("/envision/wp-content/uploads/2017/04/mag-bg.jpg");
+  background-image: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
   min-height: 70vh;
   height: 100px;
   width: 100%;
@@ -758,9 +759,10 @@ object {
   width: 100%;
   text-align: center;
   color: #000;
+  z-index: 100;
 }
 
-/* line 49, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 50, assets/stylesheets/Envision/sass/shared/_home.scss */
 .mag-headline div.border {
   font-family: "destroy", "Open Sans", Arial, sans-serif;
   color: #f87428;
@@ -769,17 +771,17 @@ object {
   font-size: 3.1em;
   letter-spacing: 5px;
   word-spacing: -10px;
-  width: 86%;
+  width: 55%;
   margin: 0 auto;
 }
 
-/* line 61, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 62, assets/stylesheets/Envision/sass/shared/_home.scss */
 .two-features {
   margin-top: 25px;
 }
 
 /*makes read more fade in*/
-/* line 64, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 65, assets/stylesheets/Envision/sass/shared/_home.scss */
 #scroll-down p, #scroll-down {
   margin-top: 20px;
   margin-bottom: 0;
@@ -797,37 +799,37 @@ object {
   /* Opera */
 }
 
-/* line 77, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 78, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-left {
   padding-left: 0;
   padding-right: 25px;
 }
 
-/* line 82, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 83, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-right {
   padding-right: 0;
   padding-left: 25px;
 }
 
-/* line 87, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 88, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-both {
   padding: 0;
   margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
-  /* line 93, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 94, assets/stylesheets/Envision/sass/shared/_home.scss */
   .bleed-left {
     padding-left: 15px;
   }
 
-  /* line 97, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 98, assets/stylesheets/Envision/sass/shared/_home.scss */
   .bleed-right {
     margin-top: 20px;
     padding-right: 15px;
   }
 }
-/* line 104, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 105, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-two {
   background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/feature2.jpg");
   height: 550px;
@@ -836,7 +838,7 @@ object {
   padding-right: 0;
 }
 
-/* line 113, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 114, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-three {
   background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/bearmarket.jpg");
   height: 550px;
@@ -845,39 +847,39 @@ object {
   padding-right: 0;
 }
 
-/* line 121, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 122, assets/stylesheets/Envision/sass/shared/_home.scss */
 li {
   display: block;
 }
 
-/* line 125, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 126, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus {
   padding: 0;
   margin: 0;
   margin-left: 12px;
 }
-/* line 130, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 131, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li {
   padding-top: 10px;
   padding-bottom: 5px;
   display: block;
 }
-/* line 136, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 137, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a {
   font-size: 1.4em;
   text-decoration: none;
   color: black;
 }
-/* line 141, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 142, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a:visited {
   color: black;
 }
-/* line 145, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 146, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a:hover {
   font-size: 1.4em;
   text-decoration: underline;
 }
-/* line 151, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 152, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li:before {
   /*Using a Bootstrap glyphicon as the bullet point*/
   content: "\e250";
@@ -889,15 +891,14 @@ li {
   color: #4D4038;
 }
 
-/* line 163, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 164, assets/stylesheets/Envision/sass/shared/_home.scss */
 .idea-infocus {
   margin-bottom: 50px;
   margin-top: 80px;
 }
 
-/* line 168, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 169, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-alumni {
-  background-color: rgba(186, 168, 146, 0.42);
   padding: 60px 0 40px 0;
 }
 
@@ -1113,39 +1114,6 @@ p {
   border-left: 3px solid #ffd100;
 }
 
-/* line 352, assets/stylesheets/Envision/sass/shared/_home.scss */
-.typewriter h1 {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  /* Adjust as needed */
-  animation: typing 5.5s steps(38, end), fadein 2s, blink-caret 0.75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -1154,6 +1122,19 @@ p {
     opacity: 1;
   }
 }
+/* line 381, assets/stylesheets/Envision/sass/shared/_home.scss */
+.parallax {
+  /* The image used */
+  background-image: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effects */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
