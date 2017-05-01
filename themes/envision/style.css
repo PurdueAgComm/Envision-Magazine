@@ -734,7 +734,7 @@ object {
 
 /* line 17, assets/stylesheets/Envision/sass/shared/_home.scss */
 .landing {
-  background-image: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
+  background-image: url("/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
   min-height: 70vh;
   height: 100px;
   width: 100%;
@@ -746,16 +746,17 @@ object {
 }
 
 @media (max-width: 768px) {
-  /* line 31, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 30, assets/stylesheets/Envision/sass/shared/_home.scss */
   .landing {
     min-height: 80vh;
+    background-attachment: scroll;
   }
 }
 /* line 36, assets/stylesheets/Envision/sass/shared/_home.scss */
 .mag-headline {
   position: absolute;
   left: 0;
-  top: 38%;
+  top: 20vh;
   width: 100%;
   text-align: center;
   color: #000;
@@ -772,16 +773,18 @@ object {
   letter-spacing: 5px;
   word-spacing: -10px;
   width: 55%;
+  min-width: 300px;
   margin: 0 auto;
+  text-align: center;
 }
 
-/* line 62, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 65, assets/stylesheets/Envision/sass/shared/_home.scss */
 .two-features {
   margin-top: 25px;
 }
 
 /*makes read more fade in*/
-/* line 65, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 68, assets/stylesheets/Envision/sass/shared/_home.scss */
 #scroll-down p, #scroll-down {
   margin-top: 20px;
   margin-bottom: 0;
@@ -799,87 +802,84 @@ object {
   /* Opera */
 }
 
-/* line 78, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 81, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-left {
   padding-left: 0;
   padding-right: 25px;
 }
 
-/* line 83, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 86, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-right {
   padding-right: 0;
   padding-left: 25px;
 }
 
-/* line 88, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 91, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-both {
   padding: 0;
   margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
-  /* line 94, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 97, assets/stylesheets/Envision/sass/shared/_home.scss */
   .bleed-left {
     padding-left: 15px;
   }
 
-  /* line 98, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 101, assets/stylesheets/Envision/sass/shared/_home.scss */
   .bleed-right {
     margin-top: 20px;
-    padding-right: 15px;
+    padding-right: 25px;
+    padding-left: 15px;
   }
 }
-/* line 105, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 109, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-two {
-  background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/feature2.jpg");
-  height: 550px;
-  background-size: cover;
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 114, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 115, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-three {
-  background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/bearmarket.jpg");
-  height: 550px;
-  background-size: cover;
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 122, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 121, assets/stylesheets/Envision/sass/shared/_home.scss */
 li {
   display: block;
 }
 
-/* line 126, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 125, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus {
   padding: 0;
   margin: 0;
   margin-left: 12px;
 }
-/* line 131, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 130, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li {
   padding-top: 10px;
   padding-bottom: 5px;
   display: block;
 }
-/* line 137, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 136, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a {
   font-size: 1.4em;
   text-decoration: none;
   color: black;
 }
-/* line 142, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 141, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a:visited {
   color: black;
 }
-/* line 146, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 145, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a:hover {
   font-size: 1.4em;
   text-decoration: underline;
 }
-/* line 152, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 151, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li:before {
   /*Using a Bootstrap glyphicon as the bullet point*/
   content: "\e250";
@@ -891,52 +891,59 @@ li {
   color: #4D4038;
 }
 
-/* line 164, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 163, assets/stylesheets/Envision/sass/shared/_home.scss */
 .idea-infocus {
   margin-bottom: 50px;
   margin-top: 80px;
 }
 
-/* line 169, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 168, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-alumni {
   padding: 60px 0 40px 0;
 }
 
-/* line 173, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 172, assets/stylesheets/Envision/sass/shared/_home.scss */
+.popular-section {
+  margin-top: 75px;
+  margin-bottom: 60px;
+}
+
+/* line 176, assets/stylesheets/Envision/sass/shared/_home.scss */
 .evertrue-container {
   padding: 40px 0px;
 }
 
-/* line 175, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 178, assets/stylesheets/Envision/sass/shared/_home.scss */
 .evertrue-pic {
   height: 290px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
 }
 
-/* line 181, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 186, assets/stylesheets/Envision/sass/shared/_home.scss */
 .big-idea-section {
   background-color: #5b6870;
   padding: 40px;
 }
 
-/* line 186, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 191, assets/stylesheets/Envision/sass/shared/_home.scss */
 .big-idea-pic {
   height: 364px;
 }
 
-/* line 190, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 195, assets/stylesheets/Envision/sass/shared/_home.scss */
 .dean {
   float: left;
   width: 100%;
 }
 
-/* line 195, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 200, assets/stylesheets/Envision/sass/shared/_home.scss */
 .deansignature {
   padding-right: 0;
 }
 
-/* line 199, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 204, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead {
   padding-bottom: 36px;
   margin-bottom: 20px;
@@ -946,19 +953,19 @@ li {
   padding-bottom: 0px;
 }
 
-/* line 207, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 212, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-text {
   padding: 0;
   margin-bottom: 20px;
 }
 
-/* line 212, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 217, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-title, .evertrue-header {
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 800;
 }
 
-/* line 217, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 222, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-headline {
   font-family: "Oswald", Arial, sans-serif;
   color: white;
@@ -966,13 +973,13 @@ li {
   text-align: center;
 }
 
-/* line 224, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 229, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-pic {
   width: 100%;
   max-height: 438px;
 }
 
-/* line 229, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 234, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-headline-shader {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -982,12 +989,12 @@ li {
   position: relative;
 }
 
-/* line 238, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 243, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-column {
   padding-left: 25px;
 }
 
-/* line 241, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 246, assets/stylesheets/Envision/sass/shared/_home.scss */
 .headline {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -996,7 +1003,7 @@ li {
   width: 95%;
 }
 
-/* line 249, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 254, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-headline-shader {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -1005,7 +1012,7 @@ li {
   width: 100%;
 }
 
-/* line 257, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 262, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-headline {
   font-family: "Oswald", Arial, sans-serif;
   color: white;
@@ -1015,20 +1022,32 @@ li {
   letter-spacing: 1px;
 }
 
-/* line 266, assets/stylesheets/Envision/sass/shared/_home.scss */
+@media (max-width: 768px) {
+  /* line 272, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .feature-headline {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 992px) {
+  /* line 278, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .feature-headline {
+    font-size: 1.8em;
+  }
+}
+/* line 283, assets/stylesheets/Envision/sass/shared/_home.scss */
 p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.2em;
 }
 
-/* line 271, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 288, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1 {
   border: 2px solid #171717;
   border-radius: 0;
   color: #171717;
 }
 
-/* line 276, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 293, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1a:visited, .btn-1a:link {
   color: #171717;
   text-decoration: none;
@@ -1037,13 +1056,13 @@ p {
   width: 50%;
 }
 
-/* line 284, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 301, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1a:hover, .btn-1a:active {
   color: #171717;
   background: #FFD100;
 }
 
-/* line 290, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 307, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items.horizontal {
   border: 1px solid #E4E4E4;
   border-width: 1px 0;
@@ -1051,30 +1070,37 @@ p {
   margin-top: 0;
 }
 
-/* line 297, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 314, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items {
   clear: both;
   float: left;
   margin: 40px 0;
 }
 
-/* line 303, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 320, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section .items {
   overflow: hidden;
 }
 
-/* line 307, assets/stylesheets/Envision/sass/shared/_home.scss */
+@media (max-width: 768px) {
+  /* line 325, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .hp-section .items .item {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
+/* line 331, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items.horizontal .item:first-child {
   border-left-width: 0;
 }
 
-/* line 311, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 335, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items.horizontal .item {
   border: 1px solid #E4E4E4;
   border-width: 0 1px;
 }
 
-/* line 316, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 340, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items .item {
   color: #000;
   font-family: farnhamdisplayregular,Georgia,serif;
@@ -1088,7 +1114,7 @@ p {
   text-transform: none;
 }
 
-/* line 329, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 353, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section .items .item {
   position: relative;
   text-align: left;
@@ -1098,18 +1124,18 @@ p {
   min-height: 135px;
   margin-bottom: 20px;
 }
-/* line 338, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 362, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section .items .item a {
   text-decoration: none;
 }
 
-/* line 343, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 367, assets/stylesheets/Envision/sass/shared/_home.scss */
 .article-heading {
   text-decoration: none;
   margin-top: 0;
 }
 
-/* line 348, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 372, assets/stylesheets/Envision/sass/shared/_home.scss */
 .item {
   border-left: 3px solid #ffd100;
 }
@@ -1122,10 +1148,10 @@ p {
     opacity: 1;
   }
 }
-/* line 381, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 405, assets/stylesheets/Envision/sass/shared/_home.scss */
 .parallax {
   /* The image used */
-  background-image: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
+  background-image: url("/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
   /* Set a specific height */
   height: 500px;
   /* Create the parallax scrolling effects */

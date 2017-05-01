@@ -15,7 +15,7 @@
 }
 
 .landing {
-  background-image: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
+  background-image: url("/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
   min-height: 70vh;
   height: 100px;
   width: 100%;
@@ -26,17 +26,17 @@
   background-size: cover;
 }
 
-@media (max-width: 768px) {
- //TODO size of banner on mobile??
- .landing {
-  min-height: 80vh;
- }
-}
+  @media (max-width: 768px) {
+   .landing {
+    min-height: 80vh;
+    background-attachment: scroll;
+   }
+  }
 
 .mag-headline {
   position: absolute;
   left: 0;
-  top: 38%;
+  top: 20vh;
   width: 100%;
   text-align: center;
   color: #000;
@@ -56,8 +56,11 @@
   letter-spacing: 5px;
   word-spacing: -10px;
   width: 55%;
+  min-width: 300px;
   margin: 0 auto;
+  text-align: center;
 }
+
 
 .two-features {margin-top: 25px;}
 
@@ -97,24 +100,20 @@
 
 .bleed-right {
   margin-top: 20px;
-  padding-right: 15px;
+  padding-right: 25px;
+  padding-left: 15px;
 }
 
 }
 
 .feature-two {
-  background: url('https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/feature2.jpg');
-  height: 550px;
-  background-size: cover;
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
-
 }
 
 .feature-three {
-  background: url('https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/bearmarket.jpg');
-  height: 550px;
-  background-size: cover;
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
@@ -170,12 +169,18 @@ li {
   padding: 60px 0 40px 0;
 }
 
+.popular-section{
+  margin-top: 75px;
+  margin-bottom: 60px;
+}
 .evertrue-container { padding: 40px 0px;}
 
 .evertrue-pic {
   height: 290px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
+
 }
 
 .big-idea-section {
@@ -263,6 +268,18 @@ li {
   letter-spacing: 1px;
 }
 
+  @media (max-width: 768px) {
+    .feature-headline {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .feature-headline {
+      font-size: 1.8em;
+    }
+  }
+
 p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.2em;
@@ -303,6 +320,13 @@ p {
 .hp-section .items {
     overflow: hidden;
 }
+
+  @media (max-width: 768px) {
+    .hp-section .items .item {
+      width: 100%;
+      margin-left: 20px;
+    }
+  }
 
 .hp-section.popular-section .popular-types .items.horizontal .item:first-child {
     border-left-width: 0;
@@ -380,7 +404,7 @@ p {
 
 .parallax {
     /* The image used */
-    background-image: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
+    background-image: url("/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
 
     /* Set a specific height */
     height: 500px;
