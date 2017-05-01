@@ -840,45 +840,38 @@ object {
 }
 
 /* line 121, assets/stylesheets/Envision/sass/shared/_home.scss */
-.infocus-header {
-  font-family: "Oswald", Arial, sans-serif;
-  padding-top: 0;
-  margin-top: 0;
-}
-
-/* line 128, assets/stylesheets/Envision/sass/shared/_home.scss */
 li {
   display: block;
 }
 
-/* line 134, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 125, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus {
   padding: 0;
   margin: 0;
   margin-left: 12px;
 }
-/* line 139, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 130, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li {
   padding-top: 10px;
   padding-bottom: 5px;
   display: block;
 }
-/* line 145, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 136, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a {
   font-size: 1.4em;
   text-decoration: none;
   color: black;
 }
-/* line 150, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 141, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a:visited {
   color: black;
 }
-/* line 154, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 145, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a:hover {
   font-size: 1.4em;
   text-decoration: underline;
 }
-/* line 160, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 151, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li:before {
   /*Using a Bootstrap glyphicon as the bullet point*/
   content: "\e250";
@@ -890,53 +883,53 @@ li {
   color: #4D4038;
 }
 
-/* line 172, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 163, assets/stylesheets/Envision/sass/shared/_home.scss */
 .idea-infocus {
   margin-bottom: 50px;
   margin-top: 80px;
 }
 
-/* line 177, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 168, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-alumni {
   background-color: rgba(186, 168, 146, 0.42);
   padding: 60px 0 40px 0;
 }
 
-/* line 182, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 173, assets/stylesheets/Envision/sass/shared/_home.scss */
 .evertrue-container {
   padding: 40px 0px;
 }
 
-/* line 184, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 175, assets/stylesheets/Envision/sass/shared/_home.scss */
 .evertrue-pic {
   height: 290px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 190, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 181, assets/stylesheets/Envision/sass/shared/_home.scss */
 .big-idea-section {
   background-color: #5b6870;
   padding: 40px;
 }
 
-/* line 195, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 186, assets/stylesheets/Envision/sass/shared/_home.scss */
 .big-idea-pic {
   height: 364px;
 }
 
-/* line 199, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 190, assets/stylesheets/Envision/sass/shared/_home.scss */
 .dean {
   float: left;
   width: 100%;
 }
 
-/* line 204, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 195, assets/stylesheets/Envision/sass/shared/_home.scss */
 .deansignature {
   padding-right: 0;
 }
 
-/* line 208, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 199, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead {
   padding-bottom: 36px;
   margin-bottom: 20px;
@@ -946,19 +939,19 @@ li {
   padding-bottom: 0px;
 }
 
-/* line 216, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 207, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-text {
   padding: 0;
   margin-bottom: 20px;
 }
 
-/* line 221, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 212, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-title, .evertrue-header {
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 800;
 }
 
-/* line 226, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 217, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-headline {
   font-family: "Oswald", Arial, sans-serif;
   color: white;
@@ -966,13 +959,13 @@ li {
   text-align: center;
 }
 
-/* line 233, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 224, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-pic {
   width: 100%;
   max-height: 438px;
 }
 
-/* line 238, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 229, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-headline-shader {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -982,12 +975,12 @@ li {
   position: relative;
 }
 
-/* line 247, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 238, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-column {
   padding-left: 25px;
 }
 
-/* line 250, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 241, assets/stylesheets/Envision/sass/shared/_home.scss */
 .headline {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -996,7 +989,7 @@ li {
   width: 95%;
 }
 
-/* line 258, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 249, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-headline-shader {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -1005,29 +998,30 @@ li {
   width: 100%;
 }
 
-/* line 266, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 257, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-headline {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   color: white;
   margin: 0;
   text-align: center;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
-/* line 274, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 266, assets/stylesheets/Envision/sass/shared/_home.scss */
 p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.2em;
 }
 
-/* line 279, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 271, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1 {
   border: 2px solid #171717;
   border-radius: 0;
   color: #171717;
 }
 
-/* line 284, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 276, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1a:visited, .btn-1a:link {
   color: #171717;
   text-decoration: none;
@@ -1036,13 +1030,13 @@ p {
   width: 50%;
 }
 
-/* line 292, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 284, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1a:hover, .btn-1a:active {
   color: #171717;
   background: #FFD100;
 }
 
-/* line 298, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 290, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items.horizontal {
   border: 1px solid #E4E4E4;
   border-width: 1px 0;
@@ -1050,30 +1044,30 @@ p {
   margin-top: 0;
 }
 
-/* line 305, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 297, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items {
   clear: both;
   float: left;
   margin: 40px 0;
 }
 
-/* line 311, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 303, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section .items {
   overflow: hidden;
 }
 
-/* line 315, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 307, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items.horizontal .item:first-child {
   border-left-width: 0;
 }
 
-/* line 319, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 311, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items.horizontal .item {
   border: 1px solid #E4E4E4;
   border-width: 0 1px;
 }
 
-/* line 324, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 316, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section.popular-section .popular-types .items .item {
   color: #000;
   font-family: farnhamdisplayregular,Georgia,serif;
@@ -1087,7 +1081,7 @@ p {
   text-transform: none;
 }
 
-/* line 337, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 329, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section .items .item {
   position: relative;
   text-align: left;
@@ -1097,23 +1091,23 @@ p {
   min-height: 135px;
   margin-bottom: 20px;
 }
-/* line 346, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 338, assets/stylesheets/Envision/sass/shared/_home.scss */
 .hp-section .items .item a {
   text-decoration: none;
 }
 
-/* line 351, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 343, assets/stylesheets/Envision/sass/shared/_home.scss */
 .article-heading {
   text-decoration: none;
   margin-top: 0;
 }
 
-/* line 356, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 348, assets/stylesheets/Envision/sass/shared/_home.scss */
 .item {
   border-left: 3px solid #ffd100;
 }
 
-/* line 360, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 352, assets/stylesheets/Envision/sass/shared/_home.scss */
 .typewriter h1 {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */

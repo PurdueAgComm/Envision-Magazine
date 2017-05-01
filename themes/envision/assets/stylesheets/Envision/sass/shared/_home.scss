@@ -118,18 +118,9 @@
   padding-right: 0;
 }
 
-.infocus-header {
-  font-family: "Oswald", Arial, sans-serif;
-  padding-top: 0;
-  margin-top: 0;
-}
-
-
 li {
     display: block;
 }
-
-
 
 .infocus {
   padding: 0;
@@ -264,11 +255,12 @@ li {
 }
 
 .feature-headline {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Oswald", Arial, sans-serif;
   color: white;
   margin: 0;
   text-align: center;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 p {

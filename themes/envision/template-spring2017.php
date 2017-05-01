@@ -65,8 +65,6 @@ get_header('faded'); ?>
   </div>
 </div>
 
-<h2 class="infocus-header" style="text-align: center;">In Focus Articles</h2>
-<hr>
 <section class="hp-section popular-section stay">
     <div class="col-sm-4">
       <img src="https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/04/EverTrue.jpg" alt="Ever True - The Campaign for Purdue University" class="img-responsive evertrue-pic ">
