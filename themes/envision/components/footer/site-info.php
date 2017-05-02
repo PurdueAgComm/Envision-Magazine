@@ -4,18 +4,18 @@
     <ul class="footer-nav">
       <li><a href="#">Contact Us</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Previous Issues</a></li>
+      <!-- <li><a href="#">Previous Issues</a></li> -->
     </ul>
   </div>
 
   <div class="col-md-4 col-md-offset-1">
-    <h3>Subscribe to Envision</h3>
-    <form class="form-inline" style="margin-top: 17px;">
+    <h3>Follow Envision</h3>
+    <!-- <form class="form-inline" style="margin-top: 17px;">
       <div class="form-group">
         <input class="form-control" type="email" placeholder="Email">
         <input type="submit" class="btn btn-default">
       </div>
-    </form>
+    </form> -->
 
     <div class="social-media">
       <a alt="Facebook" class="social-link" href="https://www.facebook.com/PurdueAg" itemprop="sameAs" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
@@ -27,7 +27,7 @@
     </div>
   </div>
 
-  <div class="col-md-offset-1 col-md-2">
+  <div class="col-md-offset-1 col-md-2 col-sm-4 col-xs-7">
     <a href="https://ag.purdue.edu"><img class="img-responsive ag-logo" alt="Purdue Agriculture" src="<?php  echo get_template_directory_uri(); ?>/assets/PurdueAgLogoWhite.png"></a>
   </div>
 
