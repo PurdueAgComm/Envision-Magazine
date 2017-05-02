@@ -25,7 +25,7 @@
   <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'envision' ); ?></a>
 
   <header id="masthead" class="site-header" role="banner">
-    <nav class="navbar navbar-transparent navbar-top-seriously" role="navigation">
+    <nav class="navbar navbar-secondary" role="navigation">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -35,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo home_url(); ?>" style="padding-left: 0;">
+          <a class="navbar-brand" href="<?php echo home_url(); ?>">
             ENVISION
           </a>
         </div>
