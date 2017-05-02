@@ -162,13 +162,13 @@ get_header('faded'); ?>
 </style>
 <!-- PRIMARY FEATURE -->
 <div style="overflow-x: hidden;">
-  <a href="GOOGLE">
+  <a href="#">
     <div class="landing" style="border-bottom: 7px solid #f87428;">
       <!-- TODO: update link -->
         <div id="scroll-down" class="mag-headline">
           <div class="border"><h1>FUNGI HUNTERS UNCOVER HIDDEN WORLDS</h1></div>
           <br>
-          <div class="btn btn-default">Read More &raquo;</div>
+          <div class="btn btn-success">Read More &raquo;</div>
         </div>
       <div id="foglayer_01" class="fog">
         <div class="image01"></div>
@@ -314,8 +314,14 @@ get_header('faded'); ?>
   <!--Big Idea & Spotlights-->
   <div class="section big-idea-section parallax">
     <div class="container">
-        <div class="col-sm-4">
-          <img src="/envision/wp-content/uploads/2017/05/The-Big-Idea-ver1.png" alt="the big idea" class="img-responsive big-idea-pic">
+        <div class="col-sm-4 col-sm-offset-1">
+          <!-- TODO: link big idea & change alt text -->
+          <a href="#"><img src="/envision/wp-content/uploads/2017/05/The-Big-Idea-ver1.png" alt="the big idea - PHENOTYPING" class="img-responsive big-idea-pic"></a>
+        </div>
+        <div class="col-sm-5 throw-shade big-idea-callout">
+          <h1>PHENOTYPING</h1>
+          <p class="hidden-xs">Phenotyping, the process of measuring and analyzing observable plant characteristics, is a term used frequently in the College of Agriculture these days—and a technique that is now automated for field research at Purdue.</p>
+          <a href="#" class="btn btn-success">Read More &raquo;</a>
         </div>
     </div>
   </div>
@@ -324,18 +330,18 @@ get_header('faded'); ?>
   <div class="section viewahead-alumni">
     <div class="container-fluid">
       <div class="row">
-         <div class="col-md-5 col-md-offset-1 viewahead">
-          <div class="col-xs-6 deansignature">
-            <img src="/envision/wp-content/uploads/2017/04/Jay-profile-signature-1.png" alt="Jay Adkrige" class="img-responsive dean">
+        <div class="col-sm-6">
+          <div class="col-sm-5 hidden-xs">
+            <img src="/envision/wp-content/uploads/2017/04/Jay-profile-signature-1.png" alt="Jay Adkrige" class="img-responsive">
           </div>
-          <div class="col-xs-5 viewahead-text">
+          <div class="col-sm-7 viewahead-text">
             <h2 class="viewahead-title">The View Ahead</h2>
             <p>Welcome to the inaugural edition of Envision, the new Purdue College of Agriculture magazine! Envision showcases the Purdue College of Agriculture’s distinctive strengths and global impact through the efforts of our faculty, staff, students, and alumni.</p>
-            <a href="/experience/Pages/index.html" class="btn btn-1 btn-1a pull-right">
+            <a href="/experience/Pages/index.html" class="btn btn-primary btn-block">
           Read More</a>
           </div>
-       </div>
-        <div class="col-md-5 alumni-column">
+        </div>
+        <div class="col-sm-6">
           <img src="/envision/wp-content/uploads/2017/04/alumnicloseup.jpg" alt="Alumni Close Up" class="img-responsive alumni-pic">
           <div class="alumni-headline-shader">
             <h2 class="alumni-headline">Alumni Close Up</h2>
