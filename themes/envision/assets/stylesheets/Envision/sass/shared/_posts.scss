@@ -1,3 +1,14 @@
-.story-body {
+.story-body, .page {
   min-height: 70vh;
+}
+
+.blog-meta {
+    border-left: 3px solid #ffd100;
+    padding: 10px;
+    background-color: #fafafa;
+    margin-top: 20px;
+}
+
+.maincontent {
+  margin-bottom: 20px;
 }

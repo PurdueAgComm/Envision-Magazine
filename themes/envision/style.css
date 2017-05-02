@@ -156,19 +156,41 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-style: normal;
 }
 /* line 12, assets/stylesheets/Envision/sass/shared/_typography.scss */
-* {
-  font-family: "Open Sans", Arial, sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 /* line 16, assets/stylesheets/Envision/sass/shared/_typography.scss */
+.maincontent {
+  font-size: 1.2em;
+}
+
+/* line 20, assets/stylesheets/Envision/sass/shared/_typography.scss */
+.maincontent,
+.maincontent p,
+.maincontent li {
+  font-family: "PT Serif", Georgia, serif;
+}
+
+/* line 26, assets/stylesheets/Envision/sass/shared/_typography.scss */
+.maincontent table {
+  font-size: 1.2em;
+}
+
+/* line 30, assets/stylesheets/Envision/sass/shared/_typography.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Oswald", "Open Sans", Arial, sans-serif;
 }
 
-/* line 20, assets/stylesheets/Envision/sass/shared/_typography.scss */
+/* line 34, assets/stylesheets/Envision/sass/shared/_typography.scss */
 h1 {
   font-size: 3em;
   font-weight: bold;
+}
+
+/* line 39, assets/stylesheets/Envision/sass/shared/_typography.scss */
+blockquote {
+  border-left: 3px solid #ffd100;
 }
 
 /*--------------------------------------------------------------
@@ -358,28 +380,38 @@ ul, ol {
 }
 
 /* line 5, assets/stylesheets/Envision/sass/shared/_lists.scss */
+ul ul {
+  font-size: 1em;
+}
+
+/* line 9, assets/stylesheets/Envision/sass/shared/_lists.scss */
+ol ol {
+  font-size: 1em;
+}
+
+/* line 13, assets/stylesheets/Envision/sass/shared/_lists.scss */
 ul {
   list-style: initial;
 }
 
-/* line 9, assets/stylesheets/Envision/sass/shared/_lists.scss */
+/* line 17, assets/stylesheets/Envision/sass/shared/_lists.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 13, assets/stylesheets/Envision/sass/shared/_lists.scss */
+/* line 21, assets/stylesheets/Envision/sass/shared/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 19, assets/stylesheets/Envision/sass/shared/_lists.scss */
+/* line 27, assets/stylesheets/Envision/sass/shared/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 23, assets/stylesheets/Envision/sass/shared/_lists.scss */
+/* line 31, assets/stylesheets/Envision/sass/shared/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
@@ -479,21 +511,26 @@ table {
   border-bottom: 4px solid #ffd100;
 }
 
-/* line 7, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 3, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* line 11, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 12, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 16, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 17, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 21, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -502,7 +539,7 @@ table {
   width: 50%;
 }
 
-/* line 24, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 28, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .navbar-brand {
   font-size: 2em;
   text-decoration: none;
@@ -512,13 +549,13 @@ table {
   font-weight: 600;
 }
 
-/* line 33, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 37, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 ul.nav li a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 38, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 42, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: transparent;
   -webkit-box-shadow: inset 0 5px 0 #ffd100;
@@ -573,36 +610,6 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-}
-
-/* line 1, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
-.content-area {
-  float: left;
-  width: 100%;
-}
-
-/* line 5, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
-.site-main {
-  margin: 0 50% 0 0;
-}
-
-/* line 8, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
-.site-content .widget-area {
-  float: left;
-  margin: 0 0 0 -50%;
-  overflow: hidden;
-  width: 25%;
-}
-
-/* line 14, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
-.site-content #tertiary.widget-area {
-  margin: 0 0 0 -25%;
-}
-
-/* line 17, assets/stylesheets/Envision/sass/layout/_content-sidebar-sidebar.scss */
-.site-footer {
-  clear: both;
-  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -1297,8 +1304,21 @@ p {
 # Posts
 --------------------------------------------------------------*/
 /* line 1, assets/stylesheets/Envision/sass/shared/_posts.scss */
-.story-body {
+.story-body, .page {
   min-height: 70vh;
+}
+
+/* line 5, assets/stylesheets/Envision/sass/shared/_posts.scss */
+.blog-meta {
+  border-left: 3px solid #ffd100;
+  padding: 10px;
+  background-color: #fafafa;
+  margin-top: 20px;
+}
+
+/* line 12, assets/stylesheets/Envision/sass/shared/_posts.scss */
+.maincontent {
+  margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1309,37 +1329,36 @@ p {
   background-color: #2c2c30;
   padding-top: 20px;
   padding-bottom: 40px;
-  margin-top: 0;
 }
-/* line 7, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 6, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .footer-span h3 {
   font-family: "Oswald", Arial, sans-serif;
   color: white;
 }
-/* line 12, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 11, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .footer-span li {
   list-style-type: none;
 }
 
-/* line 18, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 17, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .footer-nav {
   font-size: 1.2em;
 }
-/* line 21, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 20, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .footer-nav ul {
   margin: 0;
 }
-/* line 25, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 24, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .footer-nav li {
   border-bottom: 1px solid #686868;
   padding: 5px 0;
   margin-right: 20%;
 }
-/* line 30, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 29, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .footer-nav li:last-child {
   border-bottom: none;
 }
-/* line 35, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 34, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .footer-nav a {
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 300;
@@ -1348,32 +1367,32 @@ p {
   letter-spacing: 1.1px;
 }
 
-/* line 45, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 44, assets/stylesheets/Envision/sass/sections/_footer.scss */
 ul.footer-nav {
   margin: 0;
   padding: 0;
 }
 
-/* line 50, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 49, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .social-media {
   font-size: 1.8em;
   margin-top: 10px;
 }
-/* line 54, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 53, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .social-media a {
   color: #bababa;
 }
-/* line 57, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 56, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .social-media a:first-child {
   margin-left: -5px;
 }
 
-/* line 63, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 62, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .ada-span {
   background-color: #1d1d1d;
   padding: 20px 0;
 }
-/* line 67, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 66, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .ada-span p {
   font-family: "Open Sans", Arial, sans-serif;
   color: #bbb;
@@ -1381,12 +1400,12 @@ ul.footer-nav {
   margin: 3px;
   padding: 0;
 }
-/* line 74, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 73, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .ada-span p a {
   color: #bbb;
 }
 
-/* line 78, assets/stylesheets/Envision/sass/sections/_footer.scss */
+/* line 77, assets/stylesheets/Envision/sass/sections/_footer.scss */
 .ag-logo {
   margin-top: 24px;
 }
