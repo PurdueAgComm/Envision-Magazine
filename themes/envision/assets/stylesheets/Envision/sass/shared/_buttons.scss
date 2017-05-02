@@ -1,0 +1,71 @@
+.btn {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+    font-weight: bold;
+}
+.btn-primary {
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+.btn-primary:hover,
+.btn-primary:active {
+    background: $color__gold;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-success {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+    color: #000 !important;
+    background: $color__gold !important;
+    border: 2px solid darken($color__gold, 15) !important;
+}
+
+.btn-info {
+    background: none;
+    border: 2px solid #5bc0de;
+    color: #5bc0de;
+}
+.btn-info:hover,
+.btn-info:active {
+    color: #FFF;
+    background: #39b3d7;
+}
+
+.btn-warning {
+    background: none;
+    border: 2px solid #f0ad4e;
+    color: #f0ad4e;
+}
+.btn-warning:hover,
+.btn-warning:active {
+    color: #FFF;
+    background: #ed9c28;
+}
+
+.btn-danger {
+    background: none;
+    border: 2px solid #d9534f;
+    color: #d9534f;
+}
+.btn-danger:hover,
+.btn-danger:active {
+    color: #FFF;
+    background: #d2322d;
+}
+
+a.btn:link,
+a.btn:hover,
+a.btn:visited {
+    color: inherit;
+    text-decoration: none;
+}
