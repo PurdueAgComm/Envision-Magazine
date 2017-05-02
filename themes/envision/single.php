@@ -9,6 +9,9 @@
 
 $postID = get_the_ID();
 $featuredURL = get_the_post_thumbnail_url($postID, "full");
+
+$custom_fields = get_post_custom();
+
 // if post has featured image, display it in a banner
 if(!empty($featuredURL)) {
   get_header('faded');
@@ -27,9 +30,23 @@ if(!empty($featuredURL)) : ?>
   <div class="row">
     <div class="maincontent blog-maincontent col-md-offset-1 col-md-10">
         <h1 class="blog-title"><?php the_title(); ?></h1>
-        <div class="blog-date text-muted"><i class="fa fa-calendar"></i> <?php the_time('l, F jS, Y'); ?></div>
+        <div class="blog-date text-muted">
+          <i class="fa fa-calendar fa-fw"></i> <?php the_time('l, F jS, Y'); ?>
+          <?php
+            // set variable
+            if(isset($custom_fields["byline"])) {
+              $byline = $custom_fields['byline'];
+          ?>
+            <i class="fa fa-user fa-fw"></i> <?php echo $byline[0]; ?>
+          <?php } ?>
+        </div>
+        <br>
 
-        <?php the_content(); ?>
+        <?php the_content();
+
+        if(isset($custom_fields["photo-credit"])) {
+          echo "<p class='text-muted small'><em>Photos provided by " . $custom_fields['photo-credit'][0] . ".</em></p>";
+        } ?>
 
         <?php if(has_category() || has_tag()) : ?>
           <div class="blog-meta">
