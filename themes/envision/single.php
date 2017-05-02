@@ -6,12 +6,19 @@
  *
  * @package Envision_Magazine
  */
-get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-  $postID = get_the_ID();
+$postID = get_the_ID();
 $featuredURL = get_the_post_thumbnail_url($postID, "full");
 // if post has featured image, display it in a banner
+if(!empty($featuredURL)) {
+  get_header('faded');
+}
+else {
+  get_header();
+}
+
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+
 if(!empty($featuredURL)) : ?>
 	<div class="landing" style="background-image: url('<?php echo get_the_post_thumbnail_url($postID, "full"); ?>')"></div>
 <?php endif; ?>
