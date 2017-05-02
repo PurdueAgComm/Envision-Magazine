@@ -35,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo home_url(); ?>" style="padding-left: 0;">
+          <a class="navbar-brand" href="<?php echo home_url(); ?>">
             ENVISION
           </a>
         </div>
