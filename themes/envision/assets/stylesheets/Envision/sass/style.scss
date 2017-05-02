@@ -44,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Galleries
 # Home page
+# Posts
 # Footer
 --------------------------------------------------------------*/
 @import "variables/variables-base";
@@ -138,6 +139,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Home Page
 --------------------------------------------------------------*/
 @import "shared/home";
+
+/*--------------------------------------------------------------
+# Posts
+--------------------------------------------------------------*/
+@import "shared/posts";
 
 /*--------------------------------------------------------------
 # Footer
