@@ -342,7 +342,7 @@ get_header('faded'); ?>
           </div>
         </div>
         <div class="col-sm-6">
-          <img src="/envision/wp-content/uploads/2017/04/alumnicloseup.jpg" alt="Alumni Close Up" class="img-responsive alumni-pic">
+          <img src="/envision/wp-content/uploads/2017/05/alumnicloseup.jpg" alt="Alumni Close Up" class="img-responsive alumni-pic">
           <div class="alumni-headline-shader">
             <h2 class="alumni-headline">Alumni Close Up</h2>
           </div>
