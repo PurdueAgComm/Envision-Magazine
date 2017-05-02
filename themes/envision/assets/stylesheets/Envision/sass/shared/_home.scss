@@ -1,3 +1,8 @@
+.navbar-brand {
+
+
+}
+
 .navbar-transparent {
   background-color: rgba(0,0,0,.3);
   border: none !important;
@@ -17,7 +22,7 @@
 .landing {
   background-image: url("/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
   height: 70vh;
-  min-height: 400px;
+  min-height: 500px;
   width: 100%;
   position: relative;
   background-attachment: fixed;
@@ -31,6 +36,7 @@
     background-attachment: scroll;
    }
   }
+
 
 .mag-headline {
   position: absolute;
@@ -46,30 +52,53 @@
     letter-spacing: 5px;
     word-spacing: -10px;
     line-height: 1.4em;
+    font-weight: normal;
   }
 }
 
 .mag-headline div.border {
-  font-family: "destroy", "Open Sans", Arial, sans-serif;
-  color: #f87428;
   background-color: rgba(0, 0, 0, .8);
   padding: 18px;
   width: 55%;
   min-width: 300px;
   margin: 0 auto;
   text-align: center;
+
+  h1 {
+    font-family: "destroy", "Open Sans", Arial, sans-serif;
+    color: #f87428;
+  }
+}
+
+@media (max-width: 1500px) {
+  .mag-headline {
+    top: 20vh;
+  }
+
+  .mag-headline h1 {
+    font-size: 2.4em;
+  }
+}
+
+@media (max-width: 992px) {
+  .mag-headline div.border {
+    width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
   .mag-headline {
     top: 15vh;
+
+    div.border {
+      width: 80%;
+    }
   }
 
   .mag-headline h1 {
     font-size: 1.8em;
   }
 }
-
 
 .two-features {margin-top: 25px;}
 
@@ -127,15 +156,10 @@
 
 }
 
-li {
-    display: block;
-}
-
-@media (min-width: 768px) {
   .infocus-section {
     margin-top: 20px;
+    margin-bottom: 25px;
   }
-}
 
 .infocus {
   padding: 0;
@@ -191,7 +215,8 @@ li {
 }
 
 .viewahead-alumni  {
-  padding: 60px 0 40px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .popular-section{
@@ -205,27 +230,42 @@ li {
   padding:40px;
 }
 
+.throw-shade {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .8);
+  padding: 18px;
+
+  h1 {
+    font-family: "Oswald", Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 3em;
+  }
+}
+
+.big-idea-callout {
+  margin-top: 3%;
+}
+
+@media (min-width: 992px) {
+  .big-idea-callout {
+    max-height: 364px;
+  }
+}
+
+@media (max-width: 768px){
+  .big-idea-callout {
+    text-align: center;
+  }
+  .throw-shade h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+}
+
 .big-idea-pic {
-  height: 364px;
+  max-height: 364px;
 }
 
-.dean {
-  float: left;
-  width: 100%;
-}
-
-.deansignature{
-  padding-right: 0;
-}
-
-.viewahead {
-  padding-bottom: 36px;
-  margin-bottom:20px;
-  background-color: white;
-  padding: 10px;
-  padding-top: 18px;
-  padding-bottom: 0px;
-}
 .viewahead-text {
   padding:0;
   margin-bottom: 20px;
@@ -257,9 +297,7 @@ li {
   position: relative;
 }
 
-.alumni-column {
-  padding-left: 25px;
-}
+
 .headline {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -396,7 +434,7 @@ p {
     background-image: url("/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
 
     /* Set a specific height */
-    height: 500px;
+    height: 100%;
 
     /* Create the parallax scrolling effects */
     background-attachment: fixed;
@@ -404,4 +442,12 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+
 
