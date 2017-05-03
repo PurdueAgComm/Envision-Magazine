@@ -1349,6 +1349,18 @@ p {
   }
 }
 
+/* line 29, assets/stylesheets/Envision/sass/shared/_posts.scss */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #2b2a3a;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

@@ -35,16 +35,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand navbar-brand-full" href="<?php echo home_url(); ?>">
-            <div class="COA-heading">PURDUE COLLEGE OF AGRICULTURE</div>
-            <div style="margin-top: 10px; font-size: 1.13em;">ENVISION</div>
+          <a class="navbar-brand" href="<?php echo home_url(); ?>">
+            ENVISION
           </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <!-- TODO: remove navigation if not needed -->
           <!-- <?php get_template_part( 'components/navigation/navigation', 'top' ); ?> -->
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><i class="fa fa-search" style="font-size: 1.4em"></i></a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
           </ul>
         </div>
       </div>

@@ -14,7 +14,7 @@ $custom_fields = get_post_custom();
 
 // if post has featured image, display it in a banner
 if(!empty($featuredURL)) {
-  get_header('faded');
+  get_header('secondary-faded');
 }
 else {
   get_header();
