@@ -1,47 +1,60 @@
 <?php
-/**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package Envision_Magazine
- */
-
+/* Template for displaying all category posts */
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+      <style>
+      .breadcrumb{
+       display: none;
+      }
+      </style>
 
-		<?php
-		if ( have_posts() ) : ?>
+<div class="container">
+  <div class="row">
+    <div class="maincontent col-lg-7 col-md-7 col-sm-7">
+   <?php
+$s=get_search_query();
+$args = array(
+                's' =>$s
+            );
+    // The Query
+$the_query = new WP_Query( $args );
+if ( $the_query->have_posts() ) {
+        _e("<h1>Search Results</h1>");
+        echo "<p>Your search results for <strong>" . get_query_var('s') . "</strong>: </p>";
+        while ( $the_query->have_posts() ) {
+           $the_query->the_post();
+                 ?>
+                 	<div class="row post-bg" style="border-left: 7px solid #ffd100;">
+				        <div class="col-sm-12">
+				          <h2 style="padding-top: 0"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				          <p class="text-muted"><em><?php the_time('l, F jS, Y'); ?></em></p>
+				          <?php the_excerpt(); ?>
+				          <?php echo "<a class='btn btn-default btn-block' href='" . get_the_permalink() . "'>Read More</a>"; ?>
+				        </div>
+				      </div>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'envision' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header>
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+                 <?php
+        }
+        echo "<br><div class='well'><h2>Couldn't find what you were looking for?</h2>";
+        echo "<p>Try your search again.</p>";
+        get_search_form();
+        echo "</div>";
+    }else{
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'components/post/content', 'search' );
 
-			endwhile;
+?>
 
-			the_posts_navigation();
+        <h1>Nothing Found</h1>
+        <div class="alert alert-info">
+          <p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
+        </div>
+        <?php get_search_form(); ?>
+<?php } ?>
+    </div>
 
-		else :
+    <?php get_sidebar('sidenav'); ?>
+    <?php get_sidebar('sidecontent'); ?>
+  </div>
+</div>
+<?php get_footer(); ?>
 
-			get_template_part( 'components/post/content', 'none' );
-
-		endif; ?>
-
-		</main>
-	</section>
-<?php
-get_sidebar();
-get_sidebar( '2' );
-get_footer();
