@@ -12,8 +12,13 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<div class="col-sm-4" style="border: 3px solid red;">
-  <aside id="secondary" role="complementary">
-  	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-  </aside>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <aside id="secondary" role="complementary">
+          	    <?php dynamic_sidebar( 'sidebar-1' ); ?>
+            </aside>
+        </div>
+    </div>
 </div>
