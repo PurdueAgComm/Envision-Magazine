@@ -44,7 +44,7 @@
           <!-- TODO: remove navigation if not needed -->
           <!-- <?php get_template_part( 'components/navigation/navigation', 'top' ); ?> -->
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><i class="fa fa-search" style="font-size: 1.4em"></i></a></li>
+            <li><a href="/envision/?s="><i class="fa fa-search" style="font-size: 1.4em"></i></a></li>
           </ul>
         </div>
       </div>
