@@ -28,40 +28,11 @@ if(!empty($featuredURL)) : ?>
 
 <style>
   .takeaway-parallax {
-    background: url("/envision/wp-content/uploads/2017/05/takeaway-bg.jpg");
-    height: 100%;
+    background: url("/envision/wp-content/uploads/2017/05/takeaway-bg-fungi.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 30px;
-    margin-top: -20px;
-  }
-
-  .takeaway {
-    color: #fff;
-  }
-
-  .takeaway-header {
-    background-color: #2b2a3a;
-    padding: 20px;
-    color: white;
-    margin-bottom: 0;
-  }
-
-  .takeaway-header h2 {
-    margin: 0;
-    padding: 0;
-  }
-
-  ul.takeaway {
-    font-family: "Open Sans", Georgia, serif;
-    font-size: 1.3em;
-    padding: 30px;
-  }
-
-  ul.takeaway li {
-    padding: 10px;
   }
 </style>
 
@@ -91,18 +62,19 @@ if(!empty($featuredURL)) : ?>
   </div>
   <!--Big Idea & Spotlights-->
 
-  <div class="section takeaway-header">
-    <div class="container">
-      <h2>the takeaway</h2>
-    </div>
-  </div>
-  <div class="arrow-down"></div>
+
   <div class="section takeaway-parallax">
+    <div class="section takeaway-header">
+      <div class="container">
+        <h2>the takeaway</h2>
+      </div>
+    </div>
+    <div class="arrow-down"></div>
     <div class="container">
         <div class="col-sm-12 takeaway">
             <ul class="takeaway">
               <li>Guyana, in the northeastern corner of South America, hosts some of the world’s last remaining virgin tropical rainforests. There, in the upper Potaro Basin of western Guyana near Mount Ayanganna, Professor Cathie Aime and her colleagues hunt for undiscovered fungi.</li>
-              <li>140 NEW SPECIES - THE TEAM HAS RACKED UP DESCRIPTIONS OF ABOUT 140 NEW SPECIES OF MUSHROOMS AND EIGHT NEW GENERA SO FAR. DISCOVERING A NEW GENUS IS A RARE EVENT IN BIOLOGY.</li>
+              <li><strong>140 new species</strong> - The team has racked up descriptions of about 140 new species of mushrooms and eight new genera so far. Discovering a new genus is a rare event in biology.</li>
               <li>Aime and Henkel earned a National Science Foundation grant to study the symbiosis between fungi and the trees that dominate the forests they study.</li>
               <li>Fungi help provide clean air, clean water, and nutrition for plants, but much less is known about the estimated 3 million to 5 million fungal species than about the animal and plant kingdoms.</li>
               <li>Aime coauthored a recent study published in Science, announcing that lichens, thought to be a symbiosis between an algae and fungus, include a third partner: a previously undescribed yeast. This discovery was covered in National Geographic, Scientific American, The Atlantic, The New York Times, and The Washington Post.</li>

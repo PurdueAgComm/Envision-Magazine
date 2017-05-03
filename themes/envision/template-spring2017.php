@@ -162,7 +162,7 @@ get_header('faded'); ?>
 </style>
 <!-- PRIMARY FEATURE -->
 <div style="overflow-x: hidden;">
-  <a href="#">
+  <a href="/envision/s17-fungi-hunters/">
     <div class="landing" style="border-bottom: 7px solid #f87428;">
       <!-- TODO: update link -->
         <div id="scroll-down" class="mag-headline">
