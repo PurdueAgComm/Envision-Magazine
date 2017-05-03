@@ -30,19 +30,20 @@ if(!empty($featuredURL)) : ?>
  <body onload="niceTabs();">
 
  <script>
+
 function niceTabs() {
-  $('.tabgroup > div').hide();
-  $('.tabgroup > div:first-of-type').show();
-  $('.tabs a').click(function(e){
+  jQuery('.tabgroup > div').hide();
+  jQuery('.tabgroup > div:first-of-type').show();
+  jQuery('.tabs a').click(function(e){
   e.preventDefault();
-    var $this = $(this),
+    var $this = jQuery(this),
         tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
         others = $this.closest('li').siblings().children('a'),
         target = $this.attr('href');
     others.removeClass('active');
     $this.addClass('active');
-    $(tabgroup).children('div').hide();
-    $(target).show();
+    jQuery(tabgroup).children('div').hide();
+    jQuery(target).show();
     });
 }
 </script>
