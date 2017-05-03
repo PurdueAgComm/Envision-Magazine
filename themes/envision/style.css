@@ -541,21 +541,31 @@ table {
 
 /* line 28, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .navbar-brand {
-  font-size: 2em;
+  font-size: 3.5em;
   text-decoration: none;
   color: #fff !important;
   font-family: "Oswald", Arial, sans-serif;
   letter-spacing: 1px;
   font-weight: 600;
+  padding-top: 2px;
+  height: 80px;
 }
 
-/* line 37, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 39, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+.COA-heading {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: .22em;
+  padding-left: 3px;
+}
+
+/* line 47, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 ul.nav li a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 42, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 52, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: transparent;
   -webkit-box-shadow: inset 0 5px 0 #ffd100;
@@ -1325,6 +1335,12 @@ p {
   .maincontent figure {
     margin: 0 auto;
     width: 100%;
+  }
+  /* line 21, assets/stylesheets/Envision/sass/shared/_posts.scss */
+  .maincontent img {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 

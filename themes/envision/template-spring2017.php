@@ -264,7 +264,7 @@ get_header('faded'); ?>
       </a>
 
       <!-- TODO: update URL, article headline, article category -->
-      <a href="ARTICLEURL">
+      <a href="/envision/new-website-acts-as-information-hub-for-indiana-cfos/">
         <div class="col-sm-4 infocus-article">
           <h5 class="channel">Outreach</h5>
           <h3 class="article-heading">New website acts as information hub for Indiana CFOs</h3>
@@ -280,7 +280,7 @@ get_header('faded'); ?>
       </a>
 
       <!-- TODO: update URL, article headline, article category -->
-      <a href="ARTICLEURL">
+      <a href="envision/vanishing-soundscapes-initiative-featured-on-cnn/">
         <div class="col-sm-4 infocus-article">
           <h5 class="channel">Research</h5>
           <h3 class="article-heading">Vanishing Soundscapes Initiative featured on CNN</h3>
