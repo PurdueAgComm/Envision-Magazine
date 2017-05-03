@@ -273,30 +273,17 @@
 
 .viewahead-title, .evertrue-header{
   font-family: "Oswald", Arial, sans-serif;
-  font-weight: 800;
 }
 
-.alumni-headline {
-  font-family: "Oswald", Arial, sans-serif;
-  color: white;
-  margin: 0;
+.alumni-heading {
   text-align: center;
-}
+  margin-top: 5px;
+  margin-bottom: 30px;
 
-.alumni-pic {
-  width: 100%;
-  max-height: 438px;
+  a:visited {
+    text-decoration: none;
+  }
 }
-
-.alumni-headline-shader {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 16px;
-  bottom: 0;
-  width: 100%;
-  margin-top: -65px;
-  position: relative;
-}
-
 
 .headline {
   background-color: rgba(0, 0, 0, 0.8);

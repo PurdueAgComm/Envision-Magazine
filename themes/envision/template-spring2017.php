@@ -330,21 +330,36 @@ get_header('faded'); ?>
   <div class="section viewahead-alumni">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6">
-          <div class="col-sm-5 hidden-xs">
+        <div class="col-sm-5">
+          <div class="col-sm-6 hidden-xs">
             <img src="/envision/wp-content/uploads/2017/04/Jay-profile-signature-1.png" alt="Jay Adkrige" class="img-responsive">
           </div>
-          <div class="col-sm-7 viewahead-text">
+          <div class="col-sm-6 viewahead-text">
             <h2 class="viewahead-title">The View Ahead</h2>
             <p>Welcome to the inaugural edition of Envision, the new Purdue College of Agriculture magazine! Envision showcases the Purdue College of Agriculture’s distinctive strengths and global impact through the efforts of our faculty, staff, students, and alumni.</p>
             <a href="/experience/Pages/index.html" class="btn btn-primary btn-block">
           Read More</a>
           </div>
         </div>
-        <div class="col-sm-6">
-          <img src="/envision/wp-content/uploads/2017/05/alumnicloseup.jpg" alt="Alumni Close Up" class="img-responsive alumni-pic">
-          <div class="alumni-headline-shader">
-            <h2 class="alumni-headline">Alumni Close Up</h2>
+        <div class="col-sm-7">
+          <h2>Alumni</h2>
+          <div class="col-md-4">
+            <a href="#">
+              <img src="/envision/wp-content/uploads/2017/05/close-up.jpg" alt="Alumni Close Up" class="img-responsive">
+              <h3 class="alumni-heading">Alumni Close Up</h3>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+              <img src="/envision/wp-content/uploads/2017/05/thenandnow.jpg" alt="Then and Now" class="img-responsive">
+              <h3 class="alumni-heading">Then and Now</h3>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#">
+              <img src="/envision/wp-content/uploads/2017/05/close-up.jpg" alt="Alumni Spotlights" class="img-responsive">
+              <h3 class="alumni-heading">Alumni Spotlights</h3>
+            </a>
           </div>
         </div>
       </div>
