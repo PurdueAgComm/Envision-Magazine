@@ -35,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo home_url(); ?>">
+          <a class="navbar-brand navbar-brand-full" href="<?php echo home_url(); ?>">
             <div class="COA-heading">Purdue College of Agriculture</div>
             <div style="margin-top: 5px;">ENVISION</div>
           </a>

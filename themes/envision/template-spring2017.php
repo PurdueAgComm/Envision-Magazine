@@ -256,7 +256,7 @@ get_header('faded'); ?>
 
     <div class="col-sm-8 ">
       <!-- TODO: update URL, article headline, article category -->
-      <a href="article1">
+      <a href="/envision/sculpture-honors-pioneering-entomologists/">
         <div class="col-sm-4 infocus-article">
           <h5 class="channel">Alumni</h5>
           <h3 class="article-heading">Sculpture honoring pioneering entomologists</h3>
@@ -272,7 +272,7 @@ get_header('faded'); ?>
       </a>
 
       <!-- TODO: update URL, article headline, article category -->
-      <a href="ARTICLEURL">
+      <a href="/envision/union-tap-room-features-local-brews-and-science/">
         <div class="col-sm-4 infocus-article">
           <h5 class="channel">Alumni</h5>
           <h3 class="article-heading">Union Tap Room features local brews and science</h3>
@@ -280,7 +280,7 @@ get_header('faded'); ?>
       </a>
 
       <!-- TODO: update URL, article headline, article category -->
-      <a href="envision/vanishing-soundscapes-initiative-featured-on-cnn/">
+      <a href="/envision/vanishing-soundscapes-initiative-featured-on-cnn/">
         <div class="col-sm-4 infocus-article">
           <h5 class="channel">Research</h5>
           <h3 class="article-heading">Vanishing Soundscapes Initiative featured on CNN</h3>
@@ -288,7 +288,7 @@ get_header('faded'); ?>
       </a>
 
       <!-- TODO: update URL, article headline, article category -->
-      <a href="ARTICLEURL">
+      <a href="/envision/breakthrough-discovery-for-detecting-cancer/">
         <div class="col-sm-4 infocus-article">
           <h5 class="channel">Research</h5>
           <h3 class="article-heading">Breakthrough disocvery for detecting cancer</h3>
@@ -296,7 +296,7 @@ get_header('faded'); ?>
       </a>
 
       <!-- TODO: update URL, article headline, article category -->
-      <a href="ARTICLEURL">
+      <a href="/envision/plant-scientist-wins-award-for-early-career-innovation/">
         <div class="col-sm-4 infocus-article">
           <h5 class="channel">Awards</h5>
           <h3 class="article-heading">Plant scientist wins award for early-career innovation</h3>

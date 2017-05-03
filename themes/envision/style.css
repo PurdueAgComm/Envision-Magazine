@@ -541,17 +541,22 @@ table {
 
 /* line 28, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .navbar-brand {
-  font-size: 3.5em;
+  font-size: 2em;
   text-decoration: none;
   color: #fff !important;
   font-family: "Oswald", Arial, sans-serif;
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+/* line 37, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+.navbar-brand-full {
+  font-size: 3.5em;
   padding-top: 2px;
   height: 80px;
 }
 
-/* line 39, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 42, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .COA-heading {
   font-family: "PT Serif", serif;
   font-weight: 400;
@@ -559,13 +564,13 @@ table {
   padding-left: 3px;
 }
 
-/* line 47, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 50, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 ul.nav li a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 52, assets/stylesheets/Envision/sass/shared/_navigation.scss */
+/* line 55, assets/stylesheets/Envision/sass/shared/_navigation.scss */
 .nav > li > a:focus, .nav > li > a:hover {
   background-color: transparent;
   -webkit-box-shadow: inset 0 5px 0 #ffd100;

@@ -26,16 +26,19 @@
 }
 
 .navbar-brand{
-  font-size: 3.5em;
+  font-size: 2em;
   text-decoration: none;
   color: #fff !important;
   font-family: "Oswald", Arial, sans-serif; //champion substitute
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+.navbar-brand-full{
+  font-size: 3.5em;
   padding-top: 2px;
   height: 80px;
 }
-
 .COA-heading {
   font-family: "PT Serif", serif;
   font-weight: 400;
