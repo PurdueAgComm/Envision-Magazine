@@ -66,6 +66,17 @@ function niceTabs() {
     margin-top: -20px;
   }
 
+.big-idea-bottom-parallax {
+    background: url("/envision/wp-content/uploads/2017/05/Big-Idea-Bottom-Parallax-Background2.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
   .big-idea {
     color: #fff;
     text-align: center;
@@ -121,29 +132,47 @@ function niceTabs() {
   .arrow-down{
     border-top: 20px solid #033f47;
   }
+
+  .genotype-equation{
+    float: right;
+  }
+
+  @media (max-width: 768px){
+    .genotype-equation{
+      float:none;
+      text-align: center;
+    }
+    .big-idea-logo{
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .big-idea-heading{
+    text-align: center;
+  }
+  }
 </style>
   <!--Big Idea & Spotlights-->
 
 <div class="section big-idea-header big-idea-parallax">
   <div class="container-fluid">
     <div class="col-sm-4 col-md-offset-1 big-idea-container">
-      <img class="img-responsive" src="/envision/wp-content/uploads/2017/05/The-Big-Idea-ver2.png" style="max-height: 470px;">
+      <img class="img-responsive big-idea-logo" src="/envision/wp-content/uploads/2017/05/The-Big-Idea-ver2.png" style="max-height: 470px;">
     </div>
     <div class="col-md-7 col-sm-8">
       <div class="col-sm-12 big-idea">
         <h1 class="big-idea-heading">Phenotyping</h1>
-        <div class="col-sm-4">
-          <img class="circle-header" src="/envision/wp-content/uploads/2017/05/The-Big-Idea.png">
+        <div class="col-sm-4" style="margin-bottom: 20px; font-size: 1.2em;">
+          <img class="circle-header" src="/envision/wp-content/uploads/2017/05/DNA-circle.png">
           blueprint of genetic potential writteen across billions of DNA base pairs
         </div>
-        <div class="col-sm-4">
-          <img class="circle-header" src="/envision/wp-content/uploads/2017/05/The-Big-Idea.png">
+        <div class="col-sm-4" style="margin-bottom: 20px; font-size: 1.2em;"">
+          <img class="circle-header" src="/envision/wp-content/uploads/2017/05/plant-cirlce.png">
         environmental factors (e.g., precipitation, sunlight, nutrients, weed & pest protection applications)</div>
-        <div class="col-sm-4">
-          <img class="circle-header" src="/envision/wp-content/uploads/2017/05/The-Big-Idea.png">
+        <div class="col-sm-4" style="margin-bottom: 20px; font-size: 1.2em;"">
+          <img class="circle-header" src="/envision/wp-content/uploads/2017/05/corn-circle.png">
         observable characteristics resulting after the environmental has influenced which genes are expressed (e.g., leaf or canopy area, nitrogen content, photosynthetic activity)</div>
       </div>
-      <h1 style="float: right;">genotype x environment = phenotype</h1>
+      <h1 class="genotype-equation">genotype x environment = phenotype</h1>
     </div>
   </div>
 </div>
@@ -166,62 +195,49 @@ function niceTabs() {
 
 
 
-      <div class="section" style="margin-top: 30px; margin-bottom: 30px;">
+      <div class="section" style="margin-top: 30px; margin-bottom: 40px;">
         <div class="container">
             <div class="col-sm-6">
               <img class="img-responsive" src="/envision/wp-content/uploads/2017/05/corngenome.jpg">
               <p style="text-align: center;">Identify the minimum fertilizer application for a specific genotype that allows for maximum growth</p>
             </div>
             <div class="col-sm-6">
-            <img class="img-responsive" src="/envision/wp-content/uploads/2017/05/corngenome.jpg">
-              <p style="text-align: center;">Identify the minimum fertilizer application for a specific genotype that allows for maximum growth</p>
+            <img class="img-responsive" src="/envision/wp-content/uploads/2017/05/corngenome2.jpg">
+              <p style="text-align: center;">Identify the genotype that produces the highest yield after fertilizer application</p>
             </div>
         </div>
       </div>
 
 
 
-<div class="section big-idea-footer big-idea-parallax">
+<div class="section big-idea-footer big-idea-bottom-parallax">
   <div class="container">
     <div class="col-md-12">
       <div class="col-sm-12 big-idea">
         <h1 class="big-idea-bottom-heading">Why is phenotyping important?</h1>
-        <div class="col-sm-12">
-        <p>New Technologies are required to feed an estimated global population of 9 billion people by 2050 while minimizing our environmental impact.</p>
+        <div class="col-sm-12 new-tech">
+        <p style="margin-top: 10px; margin-bottom: 20px;text-align: left;font-size: 1.4em;">New Technologies are required to feed an estimated global population of <strong>9 billion people by 2050 </strong> while minimizing our environmental impact.</p>
         </div>
         <div class="col-sm-12">
-
-
+        <h2 style="background-color: rgba(0,0,0,.8);padding: 20px; margin-bottom: 0;">Matching phenotypes to their genotypes results in:</h2>
 
 <div class="wrapper">
-  <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-    <li><a href="#tab1" class="active">Tab 1</a></li>
-    <li><a href="#tab2">Tab 2</a></li>
-    <li><a href="#tab3">Tab 3</a></li>
-    <li><a href="#tab4">Tab 4</a></li>
-    <li><a href="#tab5">Tab 5</a></li>
+  <ul class="tabs clearfix" style="margin-bottom: 0px;" data-tabgroup="first-tab-group">
+    <li><a href="#tab1" class="active">1. Efficiency</a></li>
+    <li><a href="#tab2">2. Precision</a></li>
+    <li><a href="#tab3">3. Sustainability</a></li>
   </ul>
   <section id="first-tab-group" class="tabgroup">
     <div id="tab1">
-      <h2>Heading 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla deserunt consectetur ratione id tempore laborum laudantium facilis reprehenderit beatae dolores ipsum nesciunt alias iusto dicta eius itaque blanditiis modi velit.</p>
+      <h2>Higher yields with less waste</h2>
     </div>
     <div id="tab2">
-      <h2>Heading 2</h2>
-      <p>Adipisci autem obcaecati velit natus quos beatae explicabo at tempora minima voluptates deserunt eum consectetur reiciendis placeat dolorem repellat in nam asperiores impedit voluptas iure repellendus unde eveniet accusamus ex.</p>
+      <h2>Fewer inputs in just the right place</h2>
     </div>
     <div id="tab3">
-      <h2>Heading 3</h2>
-      <p>Atque ratione soluta laboriosam illo inventore amet ipsum aliquam assumenda harum provident nam accusantium neque debitis obcaecati maxime officia saepe ad ducimus in quam libero vero quasi. Saepe sit nisi?</p>
+      <h2>Reduced costs and environmental impact from precise inputs</h2>
     </div>
-    <div id="tab4">
-      <h2>Heading 4</h2>
-      <p>Quidem perferendis id sapiente cumque ullam repellendus dolorum odit rerum quibusdam tempora voluptatibus ipsum. Maiores laborum velit aperiam dicta quisquam assumenda at esse exercitationem culpa sequi porro minus ipsa aut.</p>
-    </div>
-    <div id="tab5">
-      <h2>Heading 5</h2>
-      <p>Iste eligendi ratione libero impedit quos necessitatibus labore corporis deserunt quo porro hic eius delectus ea ad amet dolore officiis debitis! Libero officia magnam consequuntur dignissimos molestias quia modi repellat.</p>
-    </div>
+
   </section>
 </div>
 
@@ -231,21 +247,32 @@ function niceTabs() {
   padding: 0;
 }
 .wrapper {
-  margin: 100px auto;
+  margin: 40px auto;
   width: 80%;
   font-family: sans-serif;
   color: #98927C;
   font-size: 14px;
   line-height: 24px;
-  max-width: 600px;
+  max-width: 650px;
   min-width: 340px;
   overflow: hidden;
 }
+
 .tabs li {
   list-style: none;
   float: left;
-  width: 20%;
+  width: 30%;
 }
+
+@media (max-width: 768px){
+  .wrapper {
+    font-size: 10px;
+  }
+  .tabs li {
+  width: 33%;
+}
+}
+
 .tabs a {
   display: block;
   text-align: center;
@@ -267,7 +294,7 @@ function niceTabs() {
   position: absolute;
   z-index: 11;
   left: 100%;
-  top: -100%;
+  top: -0%;
   height: 70px;
   line-height: 90px;
   width: 0;
@@ -279,7 +306,7 @@ function niceTabs() {
   position: absolute;
   z-index: 11;
   left: 100%;
-  top: -100%;
+  top: 0%;
   height: 70px;
   line-height: 90px;
   width: 0;
@@ -301,19 +328,44 @@ function niceTabs() {
 }
 
 </style>
-
-
-
-
         </div>
       </div>
-      <h1 style="float: right;">genotype x environment = phenotype</h1>
+      <h1 style="float: right;">Who benefits? Everyone.</h1>
     </div>
   </div>
 </div>
 
 
+      <div class="section" style="margin-top: 30px; margin-bottom: 30px;">
+        <div class="container">
+          <h1>A Multidisciplinary Approach</h1>
+            <div class="col-sm-4" style="text-align: center;">
+                <h3>Agronomy</h3>
+                <p>Applying the science of soil management and crop production.</p>
+             </div>
+            <div class="col-sm-4" style="text-align: center;">
+                <h3>Electrical Engineering</h3>
+                <p>Designing, constructing, and maintaining sensors.</p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+                <h3>Aviation Technology</h3>
+                <p>Using UAVs (unmanned aerial vehicles) to collect data.</p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+                <h3>Civil Engineering</h3>
+                <p>Developing images from sensors and collecting data from images.</p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+                <h3>Computer Science</h3>
+                <p>Analyzing data collected through machine learning more efficiently.</p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+                <h3>Producers</h3>
+                <p>Applying the science for better crops and yields.</p>
+            </div>
 
+        </div>
+      </div>
 
 
 <!--         <?php if(has_category() || has_tag()) : ?>
