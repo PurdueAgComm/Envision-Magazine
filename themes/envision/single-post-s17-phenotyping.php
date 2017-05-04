@@ -17,7 +17,7 @@ if(!empty($featuredURL)) {
   get_header('secondary-faded');
 }
 else {
-  get_header();
+  get_header('');
 }
 
 if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -138,17 +138,30 @@ function niceTabs() {
   }
 
   @media (max-width: 768px){
-    .genotype-equation{
+      .genotype-equation{
       float:none;
       text-align: center;
-    }
-    .big-idea-logo{
+      }
+      .big-idea-logo{
       margin-left: auto;
       margin-right: auto;
-  }
-  .big-idea-heading{
-    text-align: center;
-  }
+      }
+      .big-idea h1{
+      text-align: center;
+      }
+      .big-idea-heading {
+      font-size: 4em;
+      }
+
+      .big-idea-bottom-heading {
+      font-size: 3.5em;
+      }
+    }
+
+  @media (max-width: 550px){
+      .big-idea-heading, .big-idea-bottom-heading {
+      font-size: 3em;
+      }
   }
 </style>
   <!--Big Idea & Spotlights-->
@@ -213,7 +226,7 @@ function niceTabs() {
 <div class="section big-idea-footer big-idea-bottom-parallax">
   <div class="container">
     <div class="col-md-12">
-      <div class="col-sm-12 big-idea">
+      <div class="col-sm-12 big-idea-bottom">
         <h1 class="big-idea-bottom-heading">Why is phenotyping important?</h1>
         <div class="col-sm-12 new-tech">
         <p style="margin-top: 10px; margin-bottom: 20px;text-align: left;font-size: 1.4em;">New Technologies are required to feed an estimated global population of <strong>9 billion people by 2050 </strong> while minimizing our environmental impact.</p>
@@ -221,7 +234,7 @@ function niceTabs() {
         <div class="col-sm-12">
         <h2 style="background-color: rgba(0,0,0,.8);padding: 20px; margin-bottom: 0;">Matching phenotypes to their genotypes results in:</h2>
 
-<div class="wrapper">
+<div class="wrapper hidden-xs">
   <ul class="tabs clearfix" style="margin-bottom: 0px;" data-tabgroup="first-tab-group">
     <li><a href="#tab1" class="active">1. Efficiency</a></li>
     <li><a href="#tab2">2. Precision</a></li>
@@ -237,8 +250,16 @@ function niceTabs() {
     <div id="tab3">
       <h2>Reduced costs and environmental impact from precise inputs</h2>
     </div>
-
   </section>
+</div>
+
+<div class="hidden-sm hidden-md hidden-lg hidden-xl">
+  <h2>1. Efficiency</h2>
+  <h4><li>Higher yields with less waste</li></h4>
+  <h2>2. Precision</h2>
+  <h4><li>Fewer inputs in just the right place</li></h4>
+  <h2>3. Sustainability</h2>
+  <h4><li>Reduced costs and environmental impact from precise inputs</li></h4>
 </div>
 
 <style>
@@ -253,7 +274,7 @@ function niceTabs() {
   color: #98927C;
   font-size: 14px;
   line-height: 24px;
-  max-width: 650px;
+  max-width: 680px;
   min-width: 340px;
   overflow: hidden;
 }
@@ -264,14 +285,14 @@ function niceTabs() {
   width: 30%;
 }
 
-@media (max-width: 768px){
-  .wrapper {
-    font-size: 10px;
-  }
-  .tabs li {
-  width: 33%;
+
+@media (max-width: 992px){
+  .wrapper ul {
+    font-size: .9em;
+   }
 }
-}
+
+
 
 .tabs a {
   display: block;
@@ -330,7 +351,7 @@ function niceTabs() {
 </style>
         </div>
       </div>
-      <h1 style="float: right;">Who benefits? Everyone.</h1>
+      <h1 class="genotype-equation">Who benefits? Everyone.</h1>
     </div>
   </div>
 </div>
