@@ -1353,7 +1353,7 @@ p {
   /* background image is edited on each page template */
   height: 100%;
   margin-bottom: 30px;
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 /* line 48, assets/stylesheets/Envision/sass/shared/_posts.scss */
@@ -1387,6 +1387,16 @@ ul.takeaway {
 /* line 72, assets/stylesheets/Envision/sass/shared/_posts.scss */
 ul.takeaway li {
   padding: 10px;
+}
+
+/* line 76, assets/stylesheets/Envision/sass/shared/_posts.scss */
+ul.takeaway li ul li {
+  padding: 5px;
+}
+
+/* line 80, assets/stylesheets/Envision/sass/shared/_posts.scss */
+ul.takeaway li a {
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
