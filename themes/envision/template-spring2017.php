@@ -162,6 +162,7 @@ get_header('faded'); ?>
 </style>
 <!-- PRIMARY FEATURE -->
 <div style="overflow-x: hidden;">
+  <!-- TODO: Change link to match story -->
   <a href="/envision/s17-fungi-hunters/">
     <div class="landing" style="border-bottom: 7px solid #f87428;">
       <!-- TODO: update link -->
@@ -219,7 +220,8 @@ get_header('faded'); ?>
   <div class="section two-features">
     <div class="container-fluid bleed-both">
       <div class="col-sm-6 bleed-left">
-        <a href="#">
+        <!-- TODO: Change link to match story -->
+        <a href="/envision/s17-launching-technology/">
           <!-- TODO: Change color to match story -->
           <div class="col-sm-12 feature-two" style="border-bottom: 7px solid green;">
             <!-- TODO: Update image and alt text -->
@@ -231,7 +233,8 @@ get_header('faded'); ?>
         </a>
       </div>
       <div class="col-sm-6 bleed-right">
-        <a href="#">
+        <!-- TODO: Change link to match story -->
+        <a href="/envision/s17-bear-market/">
           <!-- TODO: Change color to match story -->
           <div class="col-sm-12 feature-three" style="border-bottom: 7px solid #5B6870;">
             <!-- TODO: Update image and alt text -->
@@ -316,12 +319,13 @@ get_header('faded'); ?>
     <div class="container">
         <div class="col-sm-4 col-sm-offset-1">
           <!-- TODO: link big idea & change alt text -->
-          <a href="#"><img src="/envision/wp-content/uploads/2017/05/The-Big-Idea-ver1.png" alt="the big idea - PHENOTYPING" class="img-responsive big-idea-pic"></a>
+          <a href="/envision/s17-phenotyping/"><img src="/envision/wp-content/uploads/2017/05/The-Big-Idea-ver1.png" alt="the big idea - PHENOTYPING" class="img-responsive big-idea-pic"></a>
         </div>
         <div class="col-sm-5 throw-shade big-idea-callout">
           <h1>PHENOTYPING</h1>
           <p class="hidden-xs">Phenotyping, the process of measuring and analyzing observable plant characteristics, is a term used frequently in the College of Agriculture these days—and a technique that is now automated for field research at Purdue.</p>
-          <a href="#" class="btn btn-success">Read More &raquo;</a>
+          <!-- TODO: update link -->
+          <a href="/envision/s17-phenotyping/" class="btn btn-success">Read More &raquo;</a>
         </div>
     </div>
   </div>
@@ -337,8 +341,7 @@ get_header('faded'); ?>
           <div class="col-sm-6 viewahead-text">
             <h2 class="viewahead-title">The View Ahead</h2>
             <p>Welcome to the inaugural edition of Envision, the new Purdue College of Agriculture magazine! Envision showcases the Purdue College of Agriculture’s distinctive strengths and global impact through the efforts of our faculty, staff, students, and alumni.</p>
-            <a href="/experience/Pages/index.html" class="btn btn-primary btn-block">
-          Read More</a>
+            <a href="/envision/s17-the-view-ahead/" class="btn btn-primary btn-block">Read More</a>
           </div>
         </div>
         <div class="col-sm-7">
