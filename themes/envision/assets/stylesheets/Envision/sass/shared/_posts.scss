@@ -42,7 +42,7 @@
   /* background image is edited on each page template */
   height: 100%;
   margin-bottom: 30px;
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 .takeaway {
@@ -71,4 +71,12 @@ ul.takeaway {
 
 ul.takeaway li {
   padding: 10px;
+}
+
+ul.takeaway li ul li {
+  padding: 5px;
+}
+
+ul.takeaway li a {
+  color: #fff;
 }
