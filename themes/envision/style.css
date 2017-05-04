@@ -288,71 +288,74 @@ textarea {
 
 /* line 13, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 .btn-primary:hover,
-.btn-primary:active {
-  background: #ffd100;
-  color: #000;
-  border: 2px solid #000;
+.btn-primary:active,
+.btn-primary:focus {
+  /* important to override :focus blue */
+  background: #ffd100 !important;
+  color: #000 !important;
+  border: 2px solid #000 !important;
 }
 
-/* line 20, assets/stylesheets/Envision/sass/shared/_buttons.scss */
+/* line 22, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 .btn-success {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
 }
 
-/* line 25, assets/stylesheets/Envision/sass/shared/_buttons.scss */
+/* line 27, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 .btn-success:hover,
 .btn-success:active,
 .btn-success:focus {
+  /* important to override :focus green */
   color: #000 !important;
   background: #ffd100 !important;
   border: 2px solid #b39200 !important;
 }
 
-/* line 33, assets/stylesheets/Envision/sass/shared/_buttons.scss */
+/* line 36, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 .btn-info {
   background: none;
   border: 2px solid #5bc0de;
   color: #5bc0de;
 }
 
-/* line 38, assets/stylesheets/Envision/sass/shared/_buttons.scss */
+/* line 41, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 .btn-info:hover,
 .btn-info:active {
   color: #FFF;
   background: #39b3d7;
 }
 
-/* line 44, assets/stylesheets/Envision/sass/shared/_buttons.scss */
+/* line 47, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 .btn-warning {
   background: none;
   border: 2px solid #f0ad4e;
   color: #f0ad4e;
 }
 
-/* line 49, assets/stylesheets/Envision/sass/shared/_buttons.scss */
+/* line 52, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 .btn-warning:hover,
 .btn-warning:active {
   color: #FFF;
   background: #ed9c28;
 }
 
-/* line 55, assets/stylesheets/Envision/sass/shared/_buttons.scss */
+/* line 58, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 .btn-danger {
   background: none;
   border: 2px solid #d9534f;
   color: #d9534f;
 }
 
-/* line 60, assets/stylesheets/Envision/sass/shared/_buttons.scss */
+/* line 63, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 .btn-danger:hover,
 .btn-danger:active {
   color: #FFF;
   background: #d2322d;
 }
 
-/* line 66, assets/stylesheets/Envision/sass/shared/_buttons.scss */
+/* line 69, assets/stylesheets/Envision/sass/shared/_buttons.scss */
 a.btn:link,
 a.btn:hover,
 a.btn:visited {
