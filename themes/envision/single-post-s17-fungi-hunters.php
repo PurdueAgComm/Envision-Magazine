@@ -23,8 +23,183 @@ else {
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 if(!empty($featuredURL)) : ?>
-  <div class="landing" style="background-image: url('<?php echo get_the_post_thumbnail_url($postID, "full"); ?>')"></div>
+
 <?php endif; ?>
+
+
+<style>
+/* FOG ANIMATION */
+.fogwrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#foglayer_01 {
+  width: 200%;
+  min-height: 70vh;
+  height: 100%;
+  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+#foglayer_01 .image01, #foglayer_01 .image02 {
+  background: url("/envision/wp-content/uploads/2017/05/fog1.png") repeat-x top left transparent;
+  background-size: 100%;
+  width: 50%;
+  min-height: 70vh;
+  height: 100%;
+  float: left;
+  background-repeat-y: repeat;
+}
+
+#foglayer_02 {
+  width: 200%;
+  min-height: 70vh;
+  height: 100%;
+  position: absolute;
+   top: 0;
+  animation: foglayer_02_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+  -webkit-animation: foglayer_01_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+}
+#foglayer_02 .image01, #foglayer_02 .image02 {
+  background: url("/envision/wp-content/uploads/2017/05/fog2.png") repeat-x top left transparent;
+  background-size: 100%;
+  width: 50%;
+  min-height: 70vh;
+  height: 100%;
+  float: left;
+  background-repeat-y: repeat;
+}
+
+#foglayer_03 {
+  width: 200%;
+  min-height: 70vh;
+  height: 100%;
+  position: absolute;
+   top: 0;
+  animation: foglayer_02_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+  -webkit-animation: foglayer_01_opacity 21s linear infinite,
+        foglayer_moveme 13s linear infinite;
+}
+#foglayer_03 .image01, #foglayer_03 .image02 {
+  background: url("/envision/wp-content/uploads/2017/05/fog2.png") repeat-x top left transparent;
+  background-size: 100%;
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-repeat-y: repeat;
+}
+
+@media (max-width: 768px) {
+  .fog {
+    visibility: hidden;
+  }
+}
+
+@keyframes foglayer_01_opacity {
+  0% {
+    opacity: .4;
+  }
+  22% {
+    opacity: .8;
+  }
+  40% {
+    opacity: .58;
+  }
+  58% {
+    opacity: .7;
+  }
+  80% {
+    opacity: .46;
+  }
+  100% {
+    opacity: .4;
+  }
+}
+
+
+@keyframes foglayer_02_opacity {
+  0% {
+    opacity: .8;
+  }
+  25% {
+    opacity: .5;
+  }
+  50% {
+    opacity: .4;
+  }
+  80% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .8;
+  }
+}
+
+
+@keyframes foglayer_03_opacity {
+  0% {
+    opacity: 1;
+  }
+  27% {
+    opacity: .5;
+  }
+  52% {
+    opacity: .9;
+  }
+  68% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes foglayer_moveme {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-webkit-keyframes foglayer_moveme {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+
+</style>
+<!-- PRIMARY FEATURE -->
+<div style="overflow-x: hidden;">
+  <!-- TODO: Change link to match story -->
+  <a href="/envision/s17-fungi-hunters/">
+    <div class="landing" style="border-bottom: 7px solid #f87428;">
+      <div id="foglayer_01" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_02" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_03" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+    </div>
+  </a>
+
+
 
 <style>
   .takeaway-parallax {
@@ -35,6 +210,7 @@ if(!empty($featuredURL)) : ?>
     background-size: cover;
   }
 </style>
+
 
 <div class="container story-body" style="/*shame*/min-height: 0vh;">
   <div class="row">

@@ -62,21 +62,39 @@
   padding: 0;
 }
 
-ul.takeaway {
+ul.takeaway{
   font-family: "Open Sans", Georgia, serif;
   font-size: 1.3em;
   padding: 30px;
   list-style-image: url('/envision/wp-content/uploads/2017/05/triangle-bullet.png');
 }
 
-ul.takeaway li {
+.takeaway p {
+  font-family: "Open Sans", Georgia, serif;
+  font-size: 1.3em;
+  padding: 30px 30px 0 30px;
+}
+
+ol.takeaway {
+  font-family: "Open Sans", Georgia, serif;
+  font-size: 1.3em;
+  padding: 30px;
+}
+
+
+ul.takeaway li, ol.takeaway li {
   padding: 10px;
 }
 
 ul.takeaway li ul li {
+list-style-image: url('/envision/wp-content/uploads/2017/05/triangle-bullet.png');
+}
+
+ul.takeaway li ul li, ol.takeaway li ul li {
   padding: 5px;
 }
 
-ul.takeaway li a {
+
+ul.takeaway li a, ol.takeaway li a {
   color: #fff;
 }

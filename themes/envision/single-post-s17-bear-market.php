@@ -23,7 +23,7 @@ else {
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 if(!empty($featuredURL)) : ?>
-  <div class="landing" style="background-image: url('<?php echo get_the_post_thumbnail_url($postID, "full"); ?>')"></div>
+  <div class="landing" style="border-bottom: 7px solid #5B6870; background-image: url('<?php echo get_the_post_thumbnail_url($postID, "full"); ?>')"></div>
 <?php endif; ?>
 
 <style>
@@ -52,6 +52,7 @@ if(!empty($featuredURL)) : ?>
         </div>
         <br>
         <p>A small printer tucked into a corner of Chris Hurt’s cluttered, busy office hums with rhythmic precision, spitting out page after page of the U.S. Department of Agriculture’s grain crop production report. Hurt snatches each sheet and scans the hundreds of rows of tiny numbers packed as tightly as corn stalks in a fertile field.</p>
+        <figure id="attachment_333" style="width: 400px" class="wp-caption alignright"><img class="wp-image-333" src="/envision/wp-content/uploads/2017/05/Chris-Hurt.jpg" alt="Chris Hurt" width="400" height="542" srcset="/envision/wp-content/uploads/2017/05/Chris-Hurt.jpg 600w, /envision/wp-content/uploads/2017/05/Chris-Hurt.jpg 256w" sizes="(max-width: 400px) 100vw, 400px"><figcaption class="wp-caption-text">Chris Hurt, professor of agricultural economics</figcaption></figure>
         <p>One of the nation’s leading agricultural economists, Hurt knows exactly what to look for in the dense block of data—specifically, which numbers will move the market up or down. For hundreds of farm families, a swing of a few cents in the price of a bushel of corn or soybeans can mean the difference between putting money away for a child’s education and keeping food on the table. The line between success and subsistence can be painfully thin.</p>
         <p>After he performs a few mental calculations, Hurt’s expression softens into a warm grin.</p>
         <p>“There’s not a major change here, but it is generally positive for producers,” he says.</p>
@@ -74,7 +75,7 @@ if(!empty($featuredURL)) : ?>
     <div class="container">
         <div class="col-sm-12 takeaway">
             <ul class="takeaway">
-              <ul><li>Agricultural market cycles typically last five years; the current downturn is in its third year.</li>
+              <li>Agricultural market cycles typically last five years; the current downturn is in its third year.</li>
               <li>Due to overproduction, grain prices are off about 30 percent since their peak in 2014—but they may be stabilizing.</li>
               <li>Dynamics in a family-owned business can make financial stress more difficult, but the Purdue Initiative for Family Firms can help with tools to maintain family bonds.</li><li>The College of Agriculture offers a wealth of online resources to provide farmers more information about financial management and business planning. Here are a few places to get started:<ul><li>See the <a href="http://ag.purdue.edu/commercialag">Center for Commercial Agriculture</a> for information on:
                 <ul>
@@ -86,6 +87,46 @@ if(!empty($featuredURL)) : ?>
                 <li>Purdue Farmland Value Survey</li>
                 <li>Purdue Crop Cost and Return Guide</li></ul></li>
             </ul>
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="container story-body" style="/*shame*/min-height: 0vh;">
+  <div class="row">
+    <div class="maincontent blog-maincontent col-md-offset-1 col-md-10">
+      <h2>A sense of comfort</h2>
+      <p>Associate Dean Jason Henderson, director of Purdue Extension and one of the nation’s foremost experts in agricultural market cycles, sees an almost reassuring predictability in current market conditions.</p>
+
+      <p>“There is some sense of comfort in that we’ve seen it before,” Henderson says. “Agricultural markets go through cycles. Periods of accelerated production create oversupply, which drives down prices and can create a liquidity crisis.”</p>
+
+      <p>The worst downturn in memory came in the 1980s. After the Soviet Union agreed to buy American grain in 1972, prices skyrocketed, and United States farmers borrowed money to expand production. Prices collapsed in 1980 after the United States cut off grain shipments to the U.S.S.R. in the wake of the Soviet invasion of Afghanistan. When interest rates soared in the early 1980s, many farmers faced debts they could not pay. In the 1930s, there were 6.8 million farms in the United States—but by 1985, only 2.2 million were left.</p>
+
+        <p>“Many farmers found themselves overextended after investments in the 1970s and high interest rates in the 1980s, didn’t make adjustments soon enough, and found themselves struggling to keep their family farms,” Henderson says.</p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="section takeaway-parallax">
+    <div class="section takeaway-header">
+      <div class="container">
+        <h2>creating a farm management plan</h2>
+      </div>
+    </div>
+    <div class="arrow-down"></div>
+    <div class="container">
+        <div class="col-sm-12 takeaway">
+          <p style="font-size: 1.5em">Surviving the current downturn in the agricultural economy requires planning and discipline, says Associate Dean Jason Henderson. Henderson offers five tips to help farmers solidify their bottom line:</p>
+            <ol class="takeaway">
+              <li><strong>Analyze</strong> your cost structure. Cutting production costs is vital when revenues are shrinking.</li>
+              <li><strong>Look</strong> at your debt structure. If possible, lock in lower long-term interest rates when borrowing money for capital expenses.</li>
+              <li><strong>Develop</strong> a risk management plan. Try to minimize downside risk while maximizing upside opportunities.</li>
+              <li><strong>Create</strong> a practical financial management plan. Know how to read and interpret your own balance sheets.</li>
+              <li><strong>Remember</strong> that the goal is to survive the short-term downturn and position yourself to take advantage of the market when it recovers.</li>
+            </ol>
+          <p style="font-size: 1.5em; padding-top: 0px; padding-bottom: 20px; ">“The biggest thing is don’t borrow a lot of money to get through this,” Henderson says. “You have to make some adjustments, but it can be done.” </p>
         </div>
     </div>
   </div>

@@ -216,44 +216,154 @@ get_header('faded'); ?>
     <?php } // end if ?>
   -->
 
+
+
+<style type="text/css">
+
+  .feature-1 {
+    border-bottom: 7px solid #8fcfac;
+  }
+
+  @media (max-width: 768px) {
+    .feature-1 {
+    margin-bottom:30px;
+  }
+}
+
+  figure.snip1213 {
+  font-family: "Oswald", Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  background-color: #07090c;
+  font-size: 16px;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+figure.snip1213 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+figure.snip1213 img {
+  max-width: 100%;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+figure.snip1213 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: rotateY(90deg) translate(0%, -50%);
+  transform: rotateY(90deg) translate(0%, -50%);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  z-index: 1;
+  opacity: 0;
+  padding: 0 30px;
+}
+figure.snip1213 h3,
+figure.snip1213 p {
+  line-height: 1.5em;
+}
+figure.snip1213 h3 {
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+figure.snip1213 p {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+figure.snip1213 .read-more {
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
+figure.snip1213 .read-more:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+figure.snip1213:hover img,
+figure.snip1213.hover img {
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  opacity: 0;
+}
+
+figure.snip1213:hover div.snip1213.feature-headline-shader,
+figure.snip1213.hover div.snip1213.feature-headline-shader {
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  opacity: 0;
+}
+
+figure.snip1213:hover figcaption,
+figure.snip1213.hover figcaption {
+  -webkit-transform: rotateY(0deg) translate(0, -50%);
+  transform: rotateY(0deg) translate(0, -50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+</style>
+
+
   <!--TWO SECONDARY FEATURES -->
   <div class="section two-features">
     <div class="container-fluid bleed-both">
-      <div class="col-sm-6 bleed-left">
-        <!-- TODO: Change link to match story -->
-        <a href="/envision/s17-launching-technology/">
-          <!-- TODO: Change color to match story -->
-          <div class="col-sm-12 feature-two" style="border-bottom: 7px solid green;">
-            <!-- TODO: Update image and alt text -->
-            <img src="/envision/wp-content/uploads/2017/05/launching-technology.jpg" alt="Launching Technology from Discovery to Delivery" class="img-responsive" style="width: 100%;">
-            <div class="feature-headline-shader">
+      <a href="/envision/s17-launching-technology/" style="color: white; text-decoration: none;">
+        <div class="col-sm-6 bleed-left">
+          <!-- TODO: Change link to match story -->
+          <figure class="snip1213 feature-1">
+            <img src="/envision/wp-content/uploads/2017/05/launching-technology.jpg" alt="Launching Technology"/>
+            <div class="snip1213 feature-headline-shader">
               <h1 class="feature-headline">Launching Technology from Discovery to Delivery</h1>
             </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-6 bleed-right">
-        <!-- TODO: Change link to match story -->
-        <a href="/envision/s17-bear-market/">
-          <!-- TODO: Change color to match story -->
-          <div class="col-sm-12 feature-three" style="border-bottom: 7px solid #5B6870;">
-            <!-- TODO: Update image and alt text -->
-            <img src="/envision/wp-content/uploads/2017/05/bear-market.jpg" alt="Taming Bear Market" class="img-responsive" style="width: 100%;">
-            <div class="feature-headline-shader">
+            <figcaption class="hidden-sm hidden-xs">
+            <h3>When David Wilson visited farmers in Ethiopia last fall, he watched oxen trample grain to remove the chaff.</h3>
+            <div class="btn btn-success" style="margin-top: 10px;">Read More »</div>
+            </figcaption>
+          </figure>
+        </div>
+      </a>
+
+      <a href="/envision/s17-bear-market/" style="color: white; text-decoration: none;">
+        <div class="col-sm-6 bleed-right">
+          <!-- TODO: Change link to match story -->
+          <figure class="snip1213" style="border-bottom: 7px solid #5B6870;">
+            <img src="/envision/wp-content/uploads/2017/05/bear-market.jpg" alt="Taming Bear Market"/>
+            <div class="snip1213 feature-headline-shader">
               <h1 class="feature-headline">Taming the Bear Market</h1>
             </div>
-          </div>
-        </a>
-      </div>
+            <figcaption class="hidden-sm hidden-xs">
+            <h3>A small printer tucked into a corner of Chris Hurt’s cluttered, busy office hums with rhythmic precision, spitting out page after page of the U.S. Department of Agriculture’s grain crop production report.</h3>
+            <div class="btn btn-success" style="margin-top: 10px;">Read More »</div>
+            </figcaption>
+          </figure>
+        </div>
+      </a>
     </div>
   </div>
+
 
   <div class="section infocus-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
           <a href="#">
-            <img src="/envision/wp-content/uploads/2017/04/EverTrue.jpg" alt="Ever True - The Campaign for Purdue University" class="img-responsive infocus-pic" >
+            <img src="/envision/wp-content/uploads/2017/05/EverTrue.jpg" alt="Ever True - The Campaign for Purdue University" class="img-responsive infocus-pic img-hover" >
           </a>
         </div>
 
@@ -348,19 +458,19 @@ get_header('faded'); ?>
           <h2>Alumni</h2>
           <div class="col-md-4">
             <a href="#">
-              <img src="/envision/wp-content/uploads/2017/05/close-up.jpg" alt="Alumni Close Up" class="img-responsive">
+              <img src="/envision/wp-content/uploads/2017/05/close-up.jpg" alt="Alumni Close Up" class="img-responsive img-hover">
               <h3 class="alumni-heading">Alumni Close Up</h3>
             </a>
           </div>
           <div class="col-md-4">
             <a href="#">
-              <img src="/envision/wp-content/uploads/2017/05/thenandnow.jpg" alt="Then and Now" class="img-responsive">
+              <img src="/envision/wp-content/uploads/2017/05/thenandnow.jpg" alt="Then and Now" class="img-responsive img-hover">
               <h3 class="alumni-heading">Then and Now</h3>
             </a>
           </div>
           <div class="col-md-4">
             <a href="#">
-              <img src="/envision/wp-content/uploads/2017/05/close-up.jpg" alt="Alumni Spotlights" class="img-responsive">
+              <img src="/envision/wp-content/uploads/2017/05/close-up.jpg" alt="Alumni Spotlights" class="img-responsive img-hover">
               <h3 class="alumni-heading">Alumni Spotlights</h3>
             </a>
           </div>
@@ -369,20 +479,6 @@ get_header('faded'); ?>
     </div>
   </div>
 
-  <!--Ever True Campaign (Not a main feature area)
-  <div class="section evertrue-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-        <img src="/envision/wp-content/uploads/2017/04/EverTrue.jpg" alt="Ever True - The Campaign for Purdue University" class="img-responsive">
-        </div>
-         <div class="col-sm-6">
-            <h2 class="evertrue-header">Ever True Campaign</h2>
-            <p>The Ever True campaign to advance Purdue as a national and global leader spans July 2012 through June 2019. See what generous support of the College of Agriculture has accomplisarticle-heading so far. </p>
-         </div>
-      </div>
-    </div>
-  </div> -->
 </div>
 
 

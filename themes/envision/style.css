@@ -967,7 +967,7 @@ object {
 /* line 115, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-left {
   padding-left: 0;
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 /* line 120, assets/stylesheets/Envision/sass/shared/_home.scss */
@@ -991,7 +991,7 @@ object {
   /* line 135, assets/stylesheets/Envision/sass/shared/_home.scss */
   .bleed-right {
     margin-top: 20px;
-    padding-right: 15px;
+    padding-right: 25px;
     padding-left: 15px;
   }
 }
@@ -1305,6 +1305,17 @@ p {
     background-attachment: scroll;
   }
 }
+/* line 442, assets/stylesheets/Envision/sass/shared/_home.scss */
+.img-hover:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  /* line 449, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .footer-span {
+    margin-top: 20px;
+  }
+}
 /*--------------------------------------------------------------
 # Posts
 --------------------------------------------------------------*/
@@ -1388,17 +1399,36 @@ ul.takeaway {
 }
 
 /* line 72, assets/stylesheets/Envision/sass/shared/_posts.scss */
-ul.takeaway li {
+.takeaway p {
+  font-family: "Open Sans", Georgia, serif;
+  font-size: 1.3em;
+  padding: 30px 30px 0 30px;
+}
+
+/* line 78, assets/stylesheets/Envision/sass/shared/_posts.scss */
+ol.takeaway {
+  font-family: "Open Sans", Georgia, serif;
+  font-size: 1.3em;
+  padding: 30px;
+}
+
+/* line 85, assets/stylesheets/Envision/sass/shared/_posts.scss */
+ul.takeaway li, ol.takeaway li {
   padding: 10px;
 }
 
-/* line 76, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 89, assets/stylesheets/Envision/sass/shared/_posts.scss */
 ul.takeaway li ul li {
+  list-style-image: url("/envision/wp-content/uploads/2017/05/triangle-bullet.png");
+}
+
+/* line 93, assets/stylesheets/Envision/sass/shared/_posts.scss */
+ul.takeaway li ul li, ol.takeaway li ul li {
   padding: 5px;
 }
 
-/* line 80, assets/stylesheets/Envision/sass/shared/_posts.scss */
-ul.takeaway li a {
+/* line 98, assets/stylesheets/Envision/sass/shared/_posts.scss */
+ul.takeaway li a, ol.takeaway li a {
   color: #fff;
 }
 

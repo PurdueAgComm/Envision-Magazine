@@ -23,7 +23,7 @@ else {
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 if(!empty($featuredURL)) : ?>
-  <div class="landing" style="background-image: url('<?php echo get_the_post_thumbnail_url($postID, "full"); ?>')"></div>
+  <div class="landing" style="border-bottom: 7px solid #8fcfac; background-image: url('<?php echo get_the_post_thumbnail_url($postID, "full"); ?>')"></div>
 <?php endif; ?>
 
 <style>
@@ -96,7 +96,6 @@ if(!empty($featuredURL)) : ?>
   <div class="container story-body">
     <div class="row">
       <div class="maincontent blog-maincontent col-md-offset-1 col-md-10">
-
 
 
 

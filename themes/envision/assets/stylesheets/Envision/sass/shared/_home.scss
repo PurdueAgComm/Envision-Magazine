@@ -114,7 +114,7 @@
 
 .bleed-left {
   padding-left: 0;
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 .bleed-right {
@@ -134,7 +134,7 @@
 
   .bleed-right {
     margin-top: 20px;
-    padding-right: 15px;
+    padding-right: 25px;
     padding-left: 15px;
   }
 
@@ -439,3 +439,14 @@ p {
 
 
 
+.img-hover:hover {
+  opacity: 0.6;
+}
+
+
+@media (max-width: 768px) {
+//at the bottom of all phones it needs padding
+.footer-span{
+  margin-top: 20px;
+}
+}
