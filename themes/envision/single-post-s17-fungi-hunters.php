@@ -190,7 +190,6 @@ if(!empty($featuredURL)) : ?>
 <!-- PRIMARY FEATURE -->
 <div style="overflow-x: hidden;">
   <!-- TODO: Change link to match story -->
-  <a href="/envision/s17-fungi-hunters/">
     <div class="landing" style="border-bottom: 7px solid #f87428;">
       <div id="foglayer_01" class="fog">
         <div class="image01"></div>
@@ -205,9 +204,6 @@ if(!empty($featuredURL)) : ?>
         <div class="image02"></div>
       </div>
     </div>
-  </a>
-
-
 
 <style>
   .takeaway-parallax {
