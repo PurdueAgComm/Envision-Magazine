@@ -176,13 +176,16 @@ function niceTabs() {
         <h1 class="big-idea-heading">Phenotyping</h1>
         <div class="col-sm-4" style="margin-bottom: 20px; font-size: 1.2em;">
           <img class="circle-header" src="/envision/wp-content/uploads/2017/05/DNA-circle.png">
+          <h2>genotype</h2>
           blueprint of genetic potential writteen across billions of DNA base pairs
         </div>
         <div class="col-sm-4" style="margin-bottom: 20px; font-size: 1.2em;"">
           <img class="circle-header" src="/envision/wp-content/uploads/2017/05/plant-cirlce.png">
+          <h2>environment</h2>
         environmental factors (e.g., precipitation, sunlight, nutrients, weed & pest protection applications)</div>
         <div class="col-sm-4" style="margin-bottom: 20px; font-size: 1.2em;"">
           <img class="circle-header" src="/envision/wp-content/uploads/2017/05/corn-circle.png">
+          <h2>phenotype</h2>
         observable characteristics resulting after the environmental has influenced which genes are expressed (e.g., leaf or canopy area, nitrogen content, photosynthetic activity)</div>
       </div>
       <h1 class="genotype-equation">genotype x environment = phenotype</h1>
