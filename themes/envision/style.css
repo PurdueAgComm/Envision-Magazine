@@ -1261,19 +1261,24 @@ p {
     height: 200px;
   }
 }
+/* line 376, assets/stylesheets/Envision/sass/shared/_home.scss */
+.article-heading {
+  margin-top: 10%;
+}
+
 @media (max-width: 768px) {
-  /* line 377, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 381, assets/stylesheets/Envision/sass/shared/_home.scss */
   .infocus-article {
     height: 125px;
   }
-}
-/* line 382, assets/stylesheets/Envision/sass/shared/_home.scss */
-.article-heading {
-  text-decoration: none;
-  margin-top: 0;
-}
 
-/* line 387, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 384, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .article-heading {
+    text-decoration: none;
+    margin-top: 5%;
+  }
+}
+/* line 393, assets/stylesheets/Envision/sass/shared/_home.scss */
 .item {
   border-left: 3px solid #ffd100;
 }
@@ -1286,7 +1291,7 @@ p {
     opacity: 1;
   }
 }
-/* line 420, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 426, assets/stylesheets/Envision/sass/shared/_home.scss */
 .parallax {
   /* The image used */
   background-image: url("/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
@@ -1300,18 +1305,18 @@ p {
 }
 
 @media (max-width: 768px) {
-  /* line 435, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 441, assets/stylesheets/Envision/sass/shared/_home.scss */
   .parallax {
     background-attachment: scroll;
   }
 }
-/* line 442, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 448, assets/stylesheets/Envision/sass/shared/_home.scss */
 .img-hover:hover {
   opacity: 0.6;
 }
 
 @media (max-width: 768px) {
-  /* line 449, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 455, assets/stylesheets/Envision/sass/shared/_home.scss */
   .footer-span {
     margin-top: 20px;
   }

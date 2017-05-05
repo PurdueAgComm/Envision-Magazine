@@ -373,16 +373,22 @@ p {
     }
   }
 
+.article-heading {
+  margin-top: 10%;
+}
+
   @media (max-width: 768px) {
     .infocus-article {
       height: 125px;
     }
+    .article-heading {
+    text-decoration: none;
+    margin-top: 5%;
+    }
   }
 
-.article-heading {
-  text-decoration: none;
-  margin-top: 0;
-}
+
+
 
 .item{
  border-left: 3px solid #ffd100;
