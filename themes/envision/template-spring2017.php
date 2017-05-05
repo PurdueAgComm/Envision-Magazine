@@ -422,11 +422,6 @@ figure.snip1213.hover figcaption {
   </div> <!-- /.row -->
   </div></div>
 
-
-
-
-
-
   <!--Big Idea & Spotlights-->
   <div class="section big-idea-section parallax">
     <div class="container">
