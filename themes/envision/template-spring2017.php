@@ -370,7 +370,7 @@ figure.snip1213.hover figcaption {
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
-          <a href="/envision/wp-content/uploads/2017/05/Ever-True-Campaign-Update.pdf">
+          <a href="/envision/ever-true-the-campaign-for-purdue-university/">
             <img src="/envision/wp-content/uploads/2017/05/EverTrue.jpg" alt="Ever True - The Campaign for Purdue University" class="img-responsive infocus-pic img-hover" >
           </a>
         </div>
