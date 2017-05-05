@@ -1375,8 +1375,12 @@ p {
   color: #fff;
   text-shadow: 2px 2px 2px black;
 }
+/* line 52, assets/stylesheets/Envision/sass/shared/_posts.scss */
+.takeaway a:link, .takeaway a:hover, .takeaway a:visited {
+  color: #fff;
+}
 
-/* line 53, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 57, assets/stylesheets/Envision/sass/shared/_posts.scss */
 .takeaway-header {
   background-color: rgba(43, 42, 58, 0.6);
   padding: 20px;
@@ -1384,13 +1388,13 @@ p {
   margin-bottom: 0;
 }
 
-/* line 60, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 64, assets/stylesheets/Envision/sass/shared/_posts.scss */
 .takeaway-header h2 {
   margin: 0;
   padding: 0;
 }
 
-/* line 65, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 69, assets/stylesheets/Envision/sass/shared/_posts.scss */
 ul.takeaway {
   font-family: "Open Sans", Georgia, serif;
   font-size: 1.3em;
@@ -1398,36 +1402,36 @@ ul.takeaway {
   list-style-image: url("/envision/wp-content/uploads/2017/05/triangle-bullet.png");
 }
 
-/* line 72, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 76, assets/stylesheets/Envision/sass/shared/_posts.scss */
 .takeaway p {
   font-family: "Open Sans", Georgia, serif;
   font-size: 1.3em;
   padding: 30px 30px 0 30px;
 }
 
-/* line 78, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 82, assets/stylesheets/Envision/sass/shared/_posts.scss */
 ol.takeaway {
   font-family: "Open Sans", Georgia, serif;
   font-size: 1.3em;
   padding: 30px;
 }
 
-/* line 85, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 89, assets/stylesheets/Envision/sass/shared/_posts.scss */
 ul.takeaway li, ol.takeaway li {
   padding: 10px;
 }
 
-/* line 89, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 93, assets/stylesheets/Envision/sass/shared/_posts.scss */
 ul.takeaway li ul li {
   list-style-image: url("/envision/wp-content/uploads/2017/05/triangle-bullet.png");
 }
 
-/* line 93, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 97, assets/stylesheets/Envision/sass/shared/_posts.scss */
 ul.takeaway li ul li, ol.takeaway li ul li {
   padding: 5px;
 }
 
-/* line 98, assets/stylesheets/Envision/sass/shared/_posts.scss */
+/* line 102, assets/stylesheets/Envision/sass/shared/_posts.scss */
 ul.takeaway li a, ol.takeaway li a {
   color: #fff;
 }

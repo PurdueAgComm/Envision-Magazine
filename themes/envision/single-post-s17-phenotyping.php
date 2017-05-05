@@ -229,7 +229,7 @@ function niceTabs() {
       <div class="col-sm-12 big-idea-bottom">
         <h1 class="big-idea-bottom-heading">Why is phenotyping important?</h1>
         <div class="col-sm-12 new-tech">
-        <p style="margin-top: 10px; margin-bottom: 20px;text-align: left;font-size: 1.4em;">New Technologies are required to feed an estimated global population of <strong>9 billion people by 2050 </strong> while minimizing our environmental impact.</p>
+        <p style="margin-top: 10px; margin-bottom: 20px;text-align: left;font-size: 1.4em;">New technologies are required to feed an estimated global population of <strong>9 billion people by 2050 </strong> while minimizing our environmental impact.</p>
         </div>
         <div class="col-sm-12">
         <h2 style="background-color: rgba(0,0,0,.8);padding: 20px; margin-bottom: 0;">Matching phenotypes to their genotypes results in:</h2>

@@ -48,6 +48,10 @@
 .takeaway {
   color: #fff;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+
+  a:link, a:hover, a:visited {
+    color: #fff;
+  }
 }
 
 .takeaway-header {

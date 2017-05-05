@@ -376,10 +376,11 @@ figure.snip1213.hover figcaption {
         </div>
 
     <div class="col-sm-8 ">
+      <h2>In Focus: News from Purdue Agriculture</h2>
+      <br>
       <!-- TODO: update URL, article headline, article category -->
       <a href="/envision/sculpture-honors-pioneering-entomologists/">
         <div class="col-sm-4 infocus-article">
-          <h5 class="channel">Alumni</h5>
           <h3 class="article-heading">Sculpture honoring pioneering entomologists</h3>
         </div>
       </a>
@@ -387,7 +388,6 @@ figure.snip1213.hover figcaption {
       <!-- TODO: update URL, article headline, article category -->
       <a href="/envision/new-website-acts-as-information-hub-for-indiana-cfos/">
         <div class="col-sm-4 infocus-article">
-          <h5 class="channel">Outreach</h5>
           <h3 class="article-heading">New website acts as information hub for Indiana CFOs</h3>
         </div>
       </a>
@@ -395,7 +395,6 @@ figure.snip1213.hover figcaption {
       <!-- TODO: update URL, article headline, article category -->
       <a href="/envision/union-tap-room-features-local-brews-and-science/">
         <div class="col-sm-4 infocus-article">
-          <h5 class="channel">Alumni</h5>
           <h3 class="article-heading">Union Tap Room features local brews and science</h3>
         </div>
       </a>
@@ -403,7 +402,6 @@ figure.snip1213.hover figcaption {
       <!-- TODO: update URL, article headline, article category -->
       <a href="/envision/vanishing-soundscapes-initiative-featured-on-cnn/">
         <div class="col-sm-4 infocus-article">
-          <h5 class="channel">Research</h5>
           <h3 class="article-heading">Vanishing Soundscapes Initiative featured on CNN</h3>
         </div>
       </a>
@@ -411,15 +409,13 @@ figure.snip1213.hover figcaption {
       <!-- TODO: update URL, article headline, article category -->
       <a href="/envision/breakthrough-discovery-for-detecting-cancer/">
         <div class="col-sm-4 infocus-article">
-          <h5 class="channel">Research</h5>
-          <h3 class="article-heading">Breakthrough disocvery for detecting cancer</h3>
+          <h3 class="article-heading">Breakthrough discovery for detecting cancer</h3>
         </div>
       </a>
 
       <!-- TODO: update URL, article headline, article category -->
       <a href="/envision/plant-scientist-wins-award-for-early-career-innovation/">
         <div class="col-sm-4 infocus-article">
-          <h5 class="channel">Awards</h5>
           <h3 class="article-heading">Plant scientist wins award for early-career innovation</h3>
         </div>
       </a>
@@ -467,7 +463,7 @@ figure.snip1213.hover figcaption {
           <div class="col-md-4">
             <a href="/envision/the-future-of-the-worlds-water/" class="alumni-link">
               <img src="/envision/wp-content/uploads/2017/05/close-up.jpg" alt="Alumni Close Up" class="img-responsive img-hover">
-              <h3 class="alumni-heading">Alumni Close Up</h3>
+              <h3 class="alumni-heading">Alumni Close-Up</h3>
             </a>
           </div>
           <div class="col-md-4">

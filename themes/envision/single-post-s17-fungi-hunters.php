@@ -177,6 +177,14 @@ if(!empty($featuredURL)) : ?>
   }
 }
 
+.exposure-callout {
+  width: 100%;
+  background-image: url('/envision/wp-content/uploads/2017/05/photo-library.jpg');
+  height: 602px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 </style>
 <!-- PRIMARY FEATURE -->
@@ -229,8 +237,17 @@ if(!empty($featuredURL)) : ?>
         <br>
 
         <p>The Islander pitches in the headwinds as gauzy clouds spatter the windshield. Below, the plane’s shadow ripples over dense tracts of canopy broken only by dark rivers snaking toward the horizon and the occasional mine, bright gashes on the landscape. A placard in the cockpit reads “No flips, spins or acrobatic maneuvers permitted.” But landing on a jungle airstrip—just a streak of red dirt on a hillside—is quite an aerial feat in itself. A slick patch can send the plane reeling into the rainforest that flanks the strip, but with some rib-rattling jolts and a screech of metal on metal, we are suddenly on the ground in the Pakaraima Mountains of western Guyana.</p>
-
-        <p>The researchers tumble out: <a href="https://ag.purdue.edu/btny/Pages/Profile.aspx?strAlias=maime">Catherine Aime</a>, professor of <a href="https://ag.purdue.edu/btny/Pages/default.aspx">botany and plant pathology</a>; her doctoral student <a href="https://ag.purdue.edu/btny/Pages/Profile.aspx?strAlias=koch17&intDirDeptID=10">Rachel Koch</a>; and <a href="http://www2.humboldt.edu/biosci/faculty/henkel.html">Terry Henkel</a>, a professor of botany at Humboldt State University. Everyone hustles to unload the gear from the cargo hold so the pilot can be on his way before the weather changes. Fifteen Patamona, Amerindians who have worked with Aime and Henkel in this region for nearly two decades, wade out of the bushes to lend a hand. It’s been a year since the last expedition, and handshakes and hugs are exchanged all around.</p>
+        <br style="clear: both;">
+        <a href="https://purdueag.exposure.co/ec6cace3f8aabbc878cf9d4b652d7fa3" style="text-decoration: none !important;">
+        <div class="col-sm-5 exposure-callout">
+          <div class="throw-shade" style="position: relative; top: 52%; text-align: center;">
+            <h1 style="margin-top: 0; margin-bottom: 10px; color: #fff; text-decoration: none !important;">Rainforest Researchers</h1>
+           <div class="btn btn-success">View Gallery &raquo;</div>
+          </div>
+        </div>
+        </a>
+        <br style="clear: both;"><br style="clear: both;">
+        <p style="margin-top: 10px;">The researchers tumble out: <a href="https://ag.purdue.edu/btny/Pages/Profile.aspx?strAlias=maime">Catherine Aime</a>, professor of <a href="https://ag.purdue.edu/btny/Pages/default.aspx">botany and plant pathology</a>; her doctoral student <a href="https://ag.purdue.edu/btny/Pages/Profile.aspx?strAlias=koch17&intDirDeptID=10">Rachel Koch</a>; and <a href="http://www2.humboldt.edu/biosci/faculty/henkel.html">Terry Henkel</a>, a professor of botany at Humboldt State University. Everyone hustles to unload the gear from the cargo hold so the pilot can be on his way before the weather changes. Fifteen Patamona, Amerindians who have worked with Aime and Henkel in this region for nearly two decades, wade out of the bushes to lend a hand. It’s been a year since the last expedition, and handshakes and hugs are exchanged all around.</p>
 
         <p>The team hauls buckets of provisions into the forest and prepares to hike further into the interior to an open-air research camp next to the blackwater Potaro River. In this makeshift home, army ants scurry below the hammocks at night, bees clean the sugar spoon in the morning, scorpions shelter inside shoes left out to dry, and drifts of mold thicken on backpacks. And with the Patamona as research partners, Aime and Henkel’s team pursues the undiscovered fungi of Guyana.</p>
       </div>
