@@ -1189,36 +1189,37 @@ object {
   color: white;
   margin: 0;
   text-align: center;
-  font-weight: 600;
+  font-weight: normal;
+  font-size: 2.5em;
   letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
-  /* line 315, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 316, assets/stylesheets/Envision/sass/shared/_home.scss */
   .feature-headline {
     font-size: 1.5em;
   }
 }
 @media (max-width: 992px) {
-  /* line 321, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 322, assets/stylesheets/Envision/sass/shared/_home.scss */
   .feature-headline {
     font-size: 1.8em;
   }
 }
-/* line 326, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 327, assets/stylesheets/Envision/sass/shared/_home.scss */
 p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.2em;
 }
 
-/* line 331, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 332, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1 {
   border: 2px solid #171717;
   border-radius: 0;
   color: #171717;
 }
 
-/* line 336, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 337, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1a:visited, .btn-1a:link {
   color: #171717;
   text-decoration: none;
@@ -1227,13 +1228,13 @@ p {
   width: 50%;
 }
 
-/* line 344, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 345, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1a:hover, .btn-1a:active {
   color: #171717;
   background: #FFD100;
 }
 
-/* line 349, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 350, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus-article {
   color: #000;
   font-family: "Oswald", "Open Sans", Arial, sans-serif;
@@ -1250,35 +1251,35 @@ p {
   margin-bottom: 20px;
   padding-top: 5px;
 }
-/* line 365, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 366, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus-article:hover {
   background-color: #efefef;
 }
 
 @media (max-width: 992px) {
-  /* line 371, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 372, assets/stylesheets/Envision/sass/shared/_home.scss */
   .infocus-article {
     height: 200px;
   }
 }
-/* line 376, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 377, assets/stylesheets/Envision/sass/shared/_home.scss */
 .article-heading {
   margin-top: 10%;
 }
 
 @media (max-width: 768px) {
-  /* line 381, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 382, assets/stylesheets/Envision/sass/shared/_home.scss */
   .infocus-article {
     height: 125px;
   }
 
-  /* line 384, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 385, assets/stylesheets/Envision/sass/shared/_home.scss */
   .article-heading {
     text-decoration: none;
     margin-top: 5%;
   }
 }
-/* line 393, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 394, assets/stylesheets/Envision/sass/shared/_home.scss */
 .item {
   border-left: 3px solid #ffd100;
 }
@@ -1291,7 +1292,7 @@ p {
     opacity: 1;
   }
 }
-/* line 426, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 427, assets/stylesheets/Envision/sass/shared/_home.scss */
 .parallax {
   /* The image used */
   background-image: url("/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
@@ -1305,18 +1306,18 @@ p {
 }
 
 @media (max-width: 768px) {
-  /* line 441, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 442, assets/stylesheets/Envision/sass/shared/_home.scss */
   .parallax {
     background-attachment: scroll;
   }
 }
-/* line 448, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 449, assets/stylesheets/Envision/sass/shared/_home.scss */
 .img-hover:hover {
   opacity: 0.6;
 }
 
 @media (max-width: 768px) {
-  /* line 455, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 456, assets/stylesheets/Envision/sass/shared/_home.scss */
   .footer-span {
     margin-top: 20px;
   }
