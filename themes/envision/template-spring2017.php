@@ -317,6 +317,14 @@ figure.snip1213.hover figcaption {
   transition-delay: 0.2s;
 }
 
+.alumni-link {
+  text-decoration: none;
+}
+
+.alumni-link:hover {
+  text-decoration: underline;
+}
+
 </style>
 
 
@@ -362,7 +370,7 @@ figure.snip1213.hover figcaption {
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
-          <a href="#">
+          <a href="/envision/wp-content/uploads/2017/05/Ever-True-Campaign-Update.pdf">
             <img src="/envision/wp-content/uploads/2017/05/EverTrue.jpg" alt="Ever True - The Campaign for Purdue University" class="img-responsive infocus-pic img-hover" >
           </a>
         </div>
@@ -457,20 +465,20 @@ figure.snip1213.hover figcaption {
         <div class="col-sm-7">
           <h2>Alumni</h2>
           <div class="col-md-4">
-            <a href="#">
+            <a href="/envision/the-future-of-the-worlds-water/" class="alumni-link">
               <img src="/envision/wp-content/uploads/2017/05/close-up.jpg" alt="Alumni Close Up" class="img-responsive img-hover">
               <h3 class="alumni-heading">Alumni Close Up</h3>
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#">
+            <a href="/envision/then-and-now/" class="alumni-link">
               <img src="/envision/wp-content/uploads/2017/05/thenandnow.jpg" alt="Then and Now" class="img-responsive img-hover">
               <h3 class="alumni-heading">Then and Now</h3>
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#">
-              <img src="/envision/wp-content/uploads/2017/05/close-up.jpg" alt="Alumni Spotlights" class="img-responsive img-hover">
+            <a href="/envision/alumni-spotlights/" class="alumni-link">
+              <img src="/envision/wp-content/uploads/2017/05/spotlight.jpg" alt="Alumni Spotlights" class="img-responsive img-hover">
               <h3 class="alumni-heading">Alumni Spotlights</h3>
             </a>
           </div>
