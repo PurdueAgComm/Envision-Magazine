@@ -275,7 +275,6 @@ figure.snip1213 p {
 figure.snip1213 h3 {
   margin: 0;
   font-weight: 800;
-  text-transform: uppercase;
 }
 figure.snip1213 p {
   font-size: 0.8em;
