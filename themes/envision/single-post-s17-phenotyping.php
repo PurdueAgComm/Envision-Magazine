@@ -392,23 +392,36 @@ function niceTabs() {
       </div>
 
 
-<!--         <?php if(has_category() || has_tag()) : ?>
-          <div class="blog-meta">
-            <?php if(has_category()) : ?>
-              <i class="fa fa-folder" title="category"></i> Category: <?php the_category(', '); ?> <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <?php
+            $custom_fields = get_post_custom();
+            if(isset($custom_fields["photo-credit"])) {
+              echo "<p class='text-muted small'><em>Inforgraphics provided by " . $custom_fields['photo-credit'][0] . ".</em></p>";
+            } ?>
+
+            <?php if(has_category() || has_tag()) : ?>
+              <div class="blog-meta">
+                <?php if(has_category()) : ?>
+                  <i class="fa fa-folder" title="category"></i> Category <?php the_category(', '); ?> <br>
+                <?php endif; ?>
+                <?php if(has_tag()) : ?>
+                  <i class="fa fa-tags"></i> Tag: <?php the_tags(''); ?>
+                <?php endif; ?>
+              </div>
             <?php endif; ?>
-            <?php if(has_tag()) : ?>
-              <i class="fa fa-tags"></i> Tag: <?php the_tags(''); ?>
-            <?php endif; ?>
+            <br>
+            <nav id="nav-single">
+              <h3 class="sr-only"><?php _e( 'Read more', 'purduetwentyfourteen' ); ?></h3>
+              <div class="pull-left"><?php previous_post_link( '%link', __( '<i class="fa fa-arrow-circle-left"></i> %title', 'purduetwentyfourteen' ) ); ?></div>
+              <div class="pull-right"><?php next_post_link( '%link', __( '%title <i class="fa fa-arrow-circle-right"></i>', 'purduetwentyfourteen' ) ); ?></div>
+            </nav>
+            <br><br>
           </div>
-        <?php endif; ?>
-        <br>
-        <nav id="nav-single">
-          <h3 class="sr-only"><?php _e( 'Read more', 'purduetwentyfourteen' ); ?></h3>
-          <div class="pull-left"><?php previous_post_link( '%link', __( '<i class="fa fa-arrow-circle-left"></i> %title', 'purduetwentyfourteen' ) ); ?></div>
-          <div class="pull-right"><?php next_post_link( '%link', __( '%title <i class="fa fa-arrow-circle-right"></i>', 'purduetwentyfourteen' ) ); ?></div>
-        </nav>
-        <br><br> -->
+        </div>
+      </div>
 
 
 <?php endwhile; else: ?>
