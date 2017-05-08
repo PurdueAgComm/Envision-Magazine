@@ -25,19 +25,10 @@
   min-height: 500px;
   width: 100%;
   position: relative;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 7px solid #ffd100;
 }
-
-  @media (max-width: 768px) {
-   .landing {
-    background-attachment: scroll;
-   }
-  }
-
 
 .mag-headline {
   position: absolute;
