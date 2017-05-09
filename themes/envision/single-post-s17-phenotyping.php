@@ -56,7 +56,7 @@ function niceTabs() {
     max-height: 500px;
   }
   .big-idea-parallax {
-    background: url("https://dev.ag.purdue.edu/envision/wp-content/uploads/2017/05/big-idea-banner.jpg");
+    background: url("/envision/wp-content/uploads/2017/05/big-idea-banner.jpg");
     height: 100%;
     background-attachment: fixed;
     background-position: center;
