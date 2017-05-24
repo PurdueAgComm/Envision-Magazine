@@ -2,6 +2,7 @@
   <div class="col-md-4">
     <h3>Browse Envision</h3>
     <ul class="footer-nav">
+      <li><a href="/envision/">Home</a></li>
       <li><a href="/envision/about-envision/#contact">Contact Us</a></li>
       <li><a href="/envision/about-envision/">About</a></li>
       <!-- <li><a href="#">Previous Issues</a></li> -->
