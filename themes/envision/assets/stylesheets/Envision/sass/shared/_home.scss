@@ -20,7 +20,6 @@
 }
 
 .landing {
-  background-image: url("/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
   height: 70vh;
   min-height: 500px;
   width: 100%;
@@ -29,6 +28,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+  .landing-s17 {
+    background-image: url("/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
+  }
+
+  .landing-f17 {
+    background-image: url("https://ag.purdue.edu/envision/wp-content/uploads/2017/11/cover-banner.jpg");
+  }
 
 .mag-headline {
   position: absolute;
@@ -56,18 +63,28 @@
   margin: 0 auto;
   text-align: center;
 
-  h1 {
+  h1.s17 {
     font-family: "destroy", "Open Sans", Arial, sans-serif;
     color: #f87428;
   }
+
 }
+  .mag-headline h1.f17 {
+      font-family: 'Faster One', "Open Sans", Arial, sans-serif;
+      /*color: #477f2c; */
+      color: #fff;
+      font-size: 5em;
+      text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+
+  }
 
 @media (max-width: 1500px) {
   .mag-headline {
     top: 20vh;
   }
 
-  .mag-headline h1 {
+  .mag-headline h1,
+  .mag-headline h1.f17 {
     font-size: 2.4em;
   }
 }
@@ -80,19 +97,58 @@
 
 @media (max-width: 768px) {
   .mag-headline {
-    top: 15vh;
+    top: 20vh;
 
     div.border {
       width: 80%;
     }
   }
 
-  .mag-headline h1 {
-    font-size: 1.8em;
+  .mag-headline h1,
+  .mag-headline h1.f17 {
+    font-size: 1.5em;
   }
+
 }
 
 .two-features {margin-top: 25px;}
+.two-features-f17 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.two-features-f17::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 950px;
+    height: 1300px;
+    background: #f6f9fc;
+    transform: skew(0,-9deg);
+    border-top: 60px solid #FFD100;
+    border-bottom: 60px solid #FFD100;
+    background-image: linear-gradient(-9deg, #dfe9f3 0%, white 100%);
+}
+
+@media (max-width: 768px) {
+  .two-features-f17::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 650px;
+    height: 1100px;
+    background: #f6f9fc;
+    transform: skew(0,-9deg);
+    border-top: 60px solid #FFD100;
+    border-bottom: 60px solid #FFD100;
+    background-image: linear-gradient(-9deg, #dfe9f3 0%, white 100%);
+  }
+}
+
+
 
 /*makes read more fade in*/
 #scroll-down p, #scroll-down {
@@ -235,7 +291,7 @@
 }
 
 .big-idea-callout {
-  margin-top: 3%;
+  margin-top: 6%;
 }
 
 @media (min-width: 992px) {
@@ -417,7 +473,7 @@ p {
 
 .parallax {
     /* The image used */
-    background-image: url("/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
+
 
     /* Set a specific height */
     height: 100%;
@@ -427,6 +483,14 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallax-s17 {
+  background-image: url("/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
+}
+
+.parallax-f17 {
+  background-image: url("/envision/wp-content/uploads/2017/11/big-idea-parallax.png");
 }
 
 @media (max-width: 768px) {

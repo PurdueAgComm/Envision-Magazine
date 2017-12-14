@@ -177,7 +177,7 @@ function niceTabs() {
         <div class="col-sm-4" style="margin-bottom: 20px; font-size: 1.2em;">
           <img class="circle-header" src="/envision/wp-content/uploads/2017/05/DNA-circle.png">
           <h2>genotype</h2>
-          blueprint of genetic potential writteen across billions of DNA base pairs
+          blueprint of genetic potential written across billions of DNA base pairs
         </div>
         <div class="col-sm-4" style="margin-bottom: 20px; font-size: 1.2em;"">
           <img class="circle-header" src="/envision/wp-content/uploads/2017/05/plant-cirlce.png">

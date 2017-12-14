@@ -219,6 +219,13 @@ if(!empty($featuredURL)) : ?>
 <div class="container story-body" style="/*shame*/min-height: 0vh;">
   <div class="row">
     <div class="maincontent blog-maincontent col-md-offset-1 col-md-10">
+       <?php
+       if(isset($custom_fields["banner-caption"])) {
+          echo "<div class='blog-meta' style='border-left: 3px solid #dadada;'>";
+            echo "<p style='margin: 0;' class='text-muted'><small>" . $custom_fields['banner-caption'][0] . "</small></p>";
+          echo "</div>";
+        }
+        ?>
         <h1 class="blog-title"><?php the_title(); ?></h1>
         <div class="blog-date text-muted">
           <i class="fa fa-calendar fa-fw"></i> <?php the_time('l, F jS, Y'); ?>

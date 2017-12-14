@@ -4,7 +4,7 @@ Theme URI: https://ag.purdue.edu/envision
 Author: Kenny Wilson, Osmar Lopez, Andrew Banta
 Author URI: https://ag.purdue.edu/agcomm
 Description: Theme for Envision Magazine
-Version: 1.0.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: envision
@@ -861,7 +861,6 @@ object {
 
 /* line 22, assets/stylesheets/Envision/sass/shared/_home.scss */
 .landing {
-  background-image: url("/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
   height: 70vh;
   min-height: 500px;
   width: 100%;
@@ -871,7 +870,17 @@ object {
   background-size: cover;
 }
 
-/* line 33, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 32, assets/stylesheets/Envision/sass/shared/_home.scss */
+.landing-s17 {
+  background-image: url("/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
+}
+
+/* line 36, assets/stylesheets/Envision/sass/shared/_home.scss */
+.landing-f17 {
+  background-image: url("https://ag.purdue.edu/envision/wp-content/uploads/2017/11/cover-banner.jpg");
+}
+
+/* line 40, assets/stylesheets/Envision/sass/shared/_home.scss */
 .mag-headline {
   position: absolute;
   left: 0;
@@ -881,7 +890,7 @@ object {
   color: #000;
   z-index: 100;
 }
-/* line 42, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 49, assets/stylesheets/Envision/sass/shared/_home.scss */
 .mag-headline h1 {
   font-size: 3.1em;
   letter-spacing: 5px;
@@ -890,7 +899,7 @@ object {
   font-weight: normal;
 }
 
-/* line 51, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 58, assets/stylesheets/Envision/sass/shared/_home.scss */
 .mag-headline div.border {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 18px;
@@ -899,51 +908,101 @@ object {
   margin: 0 auto;
   text-align: center;
 }
-/* line 59, assets/stylesheets/Envision/sass/shared/_home.scss */
-.mag-headline div.border h1 {
+/* line 66, assets/stylesheets/Envision/sass/shared/_home.scss */
+.mag-headline div.border h1.s17 {
   font-family: "destroy", "Open Sans", Arial, sans-serif;
   color: #f87428;
 }
 
+/* line 72, assets/stylesheets/Envision/sass/shared/_home.scss */
+.mag-headline h1.f17 {
+  font-family: 'Faster One', "Open Sans", Arial, sans-serif;
+  /*color: #477f2c; */
+  color: #fff;
+  font-size: 5em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
 @media (max-width: 1500px) {
-  /* line 66, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 82, assets/stylesheets/Envision/sass/shared/_home.scss */
   .mag-headline {
     top: 20vh;
   }
 
-  /* line 70, assets/stylesheets/Envision/sass/shared/_home.scss */
-  .mag-headline h1 {
+  /* line 86, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .mag-headline h1,
+  .mag-headline h1.f17 {
     font-size: 2.4em;
   }
 }
 @media (max-width: 992px) {
-  /* line 76, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 93, assets/stylesheets/Envision/sass/shared/_home.scss */
   .mag-headline div.border {
     width: 80%;
   }
 }
 @media (max-width: 768px) {
-  /* line 82, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 99, assets/stylesheets/Envision/sass/shared/_home.scss */
   .mag-headline {
-    top: 15vh;
+    top: 20vh;
   }
-  /* line 85, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 102, assets/stylesheets/Envision/sass/shared/_home.scss */
   .mag-headline div.border {
     width: 80%;
   }
 
-  /* line 90, assets/stylesheets/Envision/sass/shared/_home.scss */
-  .mag-headline h1 {
-    font-size: 1.8em;
+  /* line 107, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .mag-headline h1,
+  .mag-headline h1.f17 {
+    font-size: 1.5em;
   }
 }
-/* line 95, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 114, assets/stylesheets/Envision/sass/shared/_home.scss */
 .two-features {
   margin-top: 25px;
 }
 
+/* line 115, assets/stylesheets/Envision/sass/shared/_home.scss */
+.two-features-f17 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* line 119, assets/stylesheets/Envision/sass/shared/_home.scss */
+.two-features-f17::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 950px;
+  height: 1300px;
+  background: #f6f9fc;
+  transform: skew(0, -9deg);
+  border-top: 60px solid #FFD100;
+  border-bottom: 60px solid #FFD100;
+  background-image: linear-gradient(-9deg, #dfe9f3 0%, white 100%);
+}
+
+@media (max-width: 768px) {
+  /* line 135, assets/stylesheets/Envision/sass/shared/_home.scss */
+  .two-features-f17::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 650px;
+    height: 1100px;
+    background: #f6f9fc;
+    transform: skew(0, -9deg);
+    border-top: 60px solid #FFD100;
+    border-bottom: 60px solid #FFD100;
+    background-image: linear-gradient(-9deg, #dfe9f3 0%, white 100%);
+  }
+}
 /*makes read more fade in*/
-/* line 98, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 154, assets/stylesheets/Envision/sass/shared/_home.scss */
 #scroll-down p, #scroll-down {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -956,93 +1015,93 @@ object {
   /* Opera */
 }
 
-/* line 106, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 162, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-left {
   padding-left: 0;
   padding-right: 25px;
 }
 
-/* line 111, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 167, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-right {
   padding-right: 0;
   padding-left: 25px;
 }
 
-/* line 116, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 172, assets/stylesheets/Envision/sass/shared/_home.scss */
 .bleed-both {
   padding: 0;
   margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
-  /* line 122, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 178, assets/stylesheets/Envision/sass/shared/_home.scss */
   .bleed-left {
     padding-left: 15px;
   }
 
-  /* line 126, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 182, assets/stylesheets/Envision/sass/shared/_home.scss */
   .bleed-right {
     margin-top: 20px;
     padding-right: 25px;
     padding-left: 15px;
   }
 }
-/* line 134, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 190, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-two {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 139, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 195, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-two img {
   width: 100%;
 }
 
-/* line 142, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 198, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-three {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 147, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 203, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-three img {
   width: 100%;
 }
 
-/* line 151, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 207, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus-section {
   margin-top: 20px;
   margin-bottom: 25px;
 }
 
-/* line 156, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 212, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus {
   padding: 0;
   margin: 0;
   margin-left: 12px;
 }
-/* line 161, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 217, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li {
   padding-top: 10px;
   padding-bottom: 5px;
   display: block;
 }
-/* line 167, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 223, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a {
   font-size: 1.4em;
   text-decoration: none;
   color: black;
 }
-/* line 172, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 228, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a:visited {
   color: black;
 }
-/* line 176, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 232, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li a:hover {
   font-size: 1.4em;
   text-decoration: underline;
 }
-/* line 182, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 238, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus li:before {
   /*Using a Bootstrap glyphicon as the bullet point*/
   content: "\e250";
@@ -1054,110 +1113,110 @@ object {
   color: #4D4038;
 }
 
-/* line 194, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 250, assets/stylesheets/Envision/sass/shared/_home.scss */
 .idea-infocus {
   margin-bottom: 50px;
   margin-top: 80px;
 }
 
-/* line 199, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 255, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus-pic {
   padding-bottom: 20px;
 }
 
 @media (max-width: 768px) {
-  /* line 204, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 260, assets/stylesheets/Envision/sass/shared/_home.scss */
   .infocus-pic {
     width: 100%;
   }
 }
-/* line 209, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 265, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-alumni {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* line 214, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 270, assets/stylesheets/Envision/sass/shared/_home.scss */
 .popular-section {
   margin-top: 75px;
   margin-bottom: 60px;
 }
 
-/* line 218, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 274, assets/stylesheets/Envision/sass/shared/_home.scss */
 .evertrue-container {
   padding: 40px 0px;
 }
 
-/* line 220, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 276, assets/stylesheets/Envision/sass/shared/_home.scss */
 .big-idea-section {
   background-color: #5b6870;
   padding: 40px;
 }
 
-/* line 225, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 281, assets/stylesheets/Envision/sass/shared/_home.scss */
 .throw-shade {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 18px;
 }
-/* line 230, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 286, assets/stylesheets/Envision/sass/shared/_home.scss */
 .throw-shade h1 {
   font-family: "Oswald", Arial, sans-serif;
   letter-spacing: 1px;
   font-size: 3em;
 }
 
-/* line 237, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 293, assets/stylesheets/Envision/sass/shared/_home.scss */
 .big-idea-callout {
-  margin-top: 3%;
+  margin-top: 6%;
 }
 
 @media (min-width: 992px) {
-  /* line 242, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 298, assets/stylesheets/Envision/sass/shared/_home.scss */
   .big-idea-callout {
     max-height: 364px;
   }
 }
 @media (max-width: 768px) {
-  /* line 248, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 304, assets/stylesheets/Envision/sass/shared/_home.scss */
   .big-idea-callout {
     text-align: center;
   }
 
-  /* line 251, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 307, assets/stylesheets/Envision/sass/shared/_home.scss */
   .throw-shade h1 {
     text-align: center;
     font-size: 2em;
   }
 }
-/* line 257, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 313, assets/stylesheets/Envision/sass/shared/_home.scss */
 .big-idea-pic {
   max-height: 364px;
 }
 
-/* line 261, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 317, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-text {
   padding: 0;
   margin-bottom: 20px;
 }
 
-/* line 266, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 322, assets/stylesheets/Envision/sass/shared/_home.scss */
 .viewahead-title, .evertrue-header {
   font-family: "Oswald", Arial, sans-serif;
 }
 
-/* line 270, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 326, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-heading {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 30px;
 }
-/* line 275, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 331, assets/stylesheets/Envision/sass/shared/_home.scss */
 .alumni-heading a:visited {
   text-decoration: none;
 }
 
-/* line 280, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 336, assets/stylesheets/Envision/sass/shared/_home.scss */
 .headline {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -1166,7 +1225,7 @@ object {
   width: 95%;
 }
 
-/* line 288, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 344, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-headline-shader {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 16px;
@@ -1175,7 +1234,7 @@ object {
   width: 100%;
 }
 
-/* line 296, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 352, assets/stylesheets/Envision/sass/shared/_home.scss */
 .feature-headline {
   font-family: "Oswald", Arial, sans-serif;
   color: white;
@@ -1187,31 +1246,31 @@ object {
 }
 
 @media (max-width: 768px) {
-  /* line 307, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 363, assets/stylesheets/Envision/sass/shared/_home.scss */
   .feature-headline {
     font-size: 1.5em;
   }
 }
 @media (max-width: 992px) {
-  /* line 313, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 369, assets/stylesheets/Envision/sass/shared/_home.scss */
   .feature-headline {
     font-size: 1.8em;
   }
 }
-/* line 318, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 374, assets/stylesheets/Envision/sass/shared/_home.scss */
 p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.2em;
 }
 
-/* line 323, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 379, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1 {
   border: 2px solid #171717;
   border-radius: 0;
   color: #171717;
 }
 
-/* line 328, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 384, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1a:visited, .btn-1a:link {
   color: #171717;
   text-decoration: none;
@@ -1220,13 +1279,13 @@ p {
   width: 50%;
 }
 
-/* line 336, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 392, assets/stylesheets/Envision/sass/shared/_home.scss */
 .btn-1a:hover, .btn-1a:active {
   color: #171717;
   background: #FFD100;
 }
 
-/* line 341, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 397, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus-article {
   color: #000;
   font-family: "Oswald", "Open Sans", Arial, sans-serif;
@@ -1243,35 +1302,35 @@ p {
   margin-bottom: 20px;
   padding-top: 5px;
 }
-/* line 357, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 413, assets/stylesheets/Envision/sass/shared/_home.scss */
 .infocus-article:hover {
   background-color: #efefef;
 }
 
 @media (max-width: 992px) {
-  /* line 363, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 419, assets/stylesheets/Envision/sass/shared/_home.scss */
   .infocus-article {
     height: 200px;
   }
 }
-/* line 368, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 424, assets/stylesheets/Envision/sass/shared/_home.scss */
 .article-heading {
   margin-top: 10%;
 }
 
 @media (max-width: 768px) {
-  /* line 373, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 429, assets/stylesheets/Envision/sass/shared/_home.scss */
   .infocus-article {
     height: 125px;
   }
 
-  /* line 376, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 432, assets/stylesheets/Envision/sass/shared/_home.scss */
   .article-heading {
     text-decoration: none;
     margin-top: 5%;
   }
 }
-/* line 385, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 441, assets/stylesheets/Envision/sass/shared/_home.scss */
 .item {
   border-left: 3px solid #ffd100;
 }
@@ -1284,10 +1343,9 @@ p {
     opacity: 1;
   }
 }
-/* line 418, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 474, assets/stylesheets/Envision/sass/shared/_home.scss */
 .parallax {
   /* The image used */
-  background-image: url("/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
   /* Set a specific height */
   height: 100%;
   /* Create the parallax scrolling effects */
@@ -1297,19 +1355,29 @@ p {
   background-size: cover;
 }
 
+/* line 488, assets/stylesheets/Envision/sass/shared/_home.scss */
+.parallax-s17 {
+  background-image: url("/envision/wp-content/uploads/2017/05/big-idea-bg.jpg");
+}
+
+/* line 492, assets/stylesheets/Envision/sass/shared/_home.scss */
+.parallax-f17 {
+  background-image: url("/envision/wp-content/uploads/2017/11/big-idea-parallax.png");
+}
+
 @media (max-width: 768px) {
-  /* line 433, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 497, assets/stylesheets/Envision/sass/shared/_home.scss */
   .parallax {
     background-attachment: scroll;
   }
 }
-/* line 440, assets/stylesheets/Envision/sass/shared/_home.scss */
+/* line 504, assets/stylesheets/Envision/sass/shared/_home.scss */
 .img-hover:hover {
   opacity: 0.6;
 }
 
 @media (max-width: 768px) {
-  /* line 447, assets/stylesheets/Envision/sass/shared/_home.scss */
+  /* line 511, assets/stylesheets/Envision/sass/shared/_home.scss */
   .footer-span {
     margin-top: 20px;
   }

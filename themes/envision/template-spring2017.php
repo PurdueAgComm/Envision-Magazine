@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Template Name: Spring 2017
+ * Template Name: Spring 2017 Cover
  *
 **/
 
@@ -164,10 +164,10 @@ get_header('faded'); ?>
 <div style="overflow-x: hidden;">
   <!-- TODO: Change link to match story -->
   <a href="/envision/s17-fungi-hunters/">
-    <div class="landing" style="border-bottom: 7px solid #f87428;">
+    <div class="landing landing-s17" style="border-bottom: 7px solid #f87428;">
       <!-- TODO: update link -->
-        <div id="scroll-down" class="mag-headline">
-          <div class="border"><h1>FUNGI HUNTERS UNCOVER HIDDEN WORLDS</h1></div>
+        <div id="scroll-down" class="mag-headline s17">
+          <div class="border"><h1 class="s17">FUNGI HUNTERS UNCOVER HIDDEN WORLDS</h1></div>
           <br>
           <div class="btn btn-success">Read More &raquo;</div>
         </div>
@@ -423,7 +423,7 @@ figure.snip1213.hover figcaption {
   </div></div>
 
   <!--Big Idea & Spotlights-->
-  <div class="section big-idea-section parallax">
+  <div class="section big-idea-section parallax parallax-s17">
     <div class="container">
         <div class="col-sm-4 col-sm-offset-1">
           <!-- TODO: link big idea & change alt text -->
