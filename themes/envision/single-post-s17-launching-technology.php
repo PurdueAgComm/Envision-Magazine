@@ -17,7 +17,7 @@ if(!empty($featuredURL)) {
   get_header('secondary-faded');
 }
 else {
-  get_header();
+  get_header('');
 }
 
 if ( have_posts() ) : while ( have_posts() ) : the_post();

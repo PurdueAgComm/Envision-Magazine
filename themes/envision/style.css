@@ -880,6 +880,11 @@ object {
   background-image: url("https://ag.purdue.edu/envision/wp-content/uploads/2017/11/cover-banner.jpg");
 }
 
+/* Andrew line 40, assets/stylesheets/Envision/sass/shared/_home.scss */
+.landing-s18 {
+  background-image: url("https://ag.purdue.edu/envision/wp-content/uploads/2018/04/using-the-unused-banner.jpg");
+}
+
 /* line 40, assets/stylesheets/Envision/sass/shared/_home.scss */
 .mag-headline {
   position: absolute;
@@ -1363,6 +1368,14 @@ p {
 /* line 492, assets/stylesheets/Envision/sass/shared/_home.scss */
 .parallax-f17 {
   background-image: url("/envision/wp-content/uploads/2017/11/big-idea-parallax.png");
+}
+
+/* Andrew line 492, assets/stylesheets/Envision/sass/shared/_home.scss */
+.parallax-s18 {
+  background-image: url("https://ag.purdue.edu/envision/wp-content/uploads/2018/05/s18-big-idea-parallax-1.jpg");
+}
+.parallax2-s18 {
+  background-image: url("https://ag.purdue.edu/envision/wp-content/uploads/2018/05/s18-big-idea-parallax-2.jpg");
 }
 
 @media (max-width: 768px) {

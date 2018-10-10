@@ -94,6 +94,11 @@ if(!empty($featuredURL)) : ?>
   background-repeat-y: repeat;
 }
 
+.landing {
+  background: url("https://ag.purdue.edu/envision/wp-content/uploads/2017/05/mushrooms-bg.jpg");
+  background-size: cover;
+}
+
 @media (max-width: 768px) {
   .fog {
     visibility: hidden;
